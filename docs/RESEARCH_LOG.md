@@ -138,6 +138,30 @@ Protocol: `docs/PREREG_exp03.md` (written before any run). Runner: `src/aisci/ex
 
 **Decisions applied from the external review:** exp03 chosen as the next step (not the delay-differential scenario); isolation for LLM stays a prerequisite before any API call; `c49524a` on master left unchanged.
 
+## 2026-10-18 — truth moved out of the repository (step A.1)
+Decisions from the user: API for stage C is NOT approved yet (A, then B, then a separate decision); truth moves out of the working tree; git history is NOT rewritten; condition labels A1–A3 (algorithmic) and L1–L2 (LLM); the fourth experiment in the report is not used because no artifacts were provided.
+
+What was done:
+- The three laws were copied into `../aisci-truth-vault/laws.json` (outside the git working tree). The vault SHA-256 is pinned in `src/aisci/hidden_laws.py` (`TRUTH_SHA256`). The loader refuses a mismatched or missing vault (`AISCI_TRUTH_VAULT` overrides the path).
+- Expressions are parsed with an AST whitelist (arithmetic, `x[i]`, `math.{tanh,sin,cos,exp}`), then compiled. No general `eval` of file contents.
+- Verified before the change: the new functions equal the old ones on 60 000 random points (0 mismatches), and the term sets are unchanged.
+- Verified after the change: exp01 `runs.csv`, `summary.md` and `evidence_ledger.jsonl` are byte-identical to the baseline; exp02 and exp03 data artifacts (calibration, runs, test results, verdicts) are byte-identical to the baseline. Only `run_metadata.json` differs, as expected (git state and code hashes).
+- Coefficients were removed from `README.md` and from test fixtures. `tests/test_truth_vault.py` fails if any full law expression appears in a tracked file. The check found one leak in `tests/test_core.py`, which was fixed.
+- 52 tests pass; ruff is clean.
+
+Limits, stated plainly:
+- **The exp01–exp03 laws are not secret any more.** They remain in git history from `c49524a` and in `results/runs.csv` (`chosen_terms`). History is not rewritten. Blind tests must use freshly generated laws.
+- File permissions on Windows are not restricted by this change. Access control of the vault directory is the user's responsibility.
+- The vault must exist to import `aisci.hidden_laws`; the test suite needs it.
+- **Logic review** (independent, read-only): no defects. Vault expressions match the old lambdas token for token; term sets unchanged; test-fixture coefficient changes do not weaken assertions. The reviewer could not run pytest (its Bash was blocked), so it reasoned from the code; the numeric equality above was measured by me.
+- **Security review** (sec-auditor, SECURITY tier, read-only, narrow): no P0 or P1. Found and fixed, with tests:
+  - P3: a constant power such as `9**9**9` was allowed and would hang at eval time. Now only literal exponents with |e| ≤ 8 are accepted, and expressions are capped at 500 characters.
+  - P3: a `SyntaxError` carried the expression text into the traceback. Now the error is re-raised without the source (`from None`).
+  - P2: the default dataclass `repr(Law)` printed terms and description. Now it prints only the name.
+  - Checked OK: no whitelist bypass found (bare names, attributes, other calls and node types are rejected; NFKC normalisation does not create a new name); the hash and the parse use the same bytes (no TOCTOU).
+- Test fixtures in `tests/test_exp02.py` no longer use the `needs_expansion` structure; the abstention test is now structure-agnostic (exp outside BASE_LIB vs an in-space law).
+- The first sec-auditor run stopped at its turn limit without a report; a narrower second run delivered the report above. Recorded here so the gap is visible.
+
 ## Open decisions for the user
 - The project's research question (LLM vs algorithm) needs an LLM. Approval is needed before any paid API is used, and the task says not to use one without approval. Until then the LLM part is NOT-VERIFIED.
 - Whether to keep the folder as a standalone repo or move it into a larger workspace.

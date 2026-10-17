@@ -27,7 +27,7 @@ def test_lstsq_recovers_known_coefficients():
 def test_fit_all_finds_true_terms_on_noiseless_data():
     rng = random.Random(1)
     X = [tuple(rng.uniform(-2, 2) for _ in range(3)) for _ in range(40)]
-    y = [1.5 * x[0] * x[1] - 0.8 * x[2] ** 2 for x in X]
+    y = [1.1 * x[0] * x[1] + 0.3 * x[2] ** 2 for x in X]
     best = fit_all(X, y, BASE_LIB)[0]
     assert set(best.names) == {"x1*x2", "x3^2"}
 

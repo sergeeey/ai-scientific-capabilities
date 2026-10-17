@@ -5,6 +5,7 @@ by hash, and the wrapper is checked against exp01 on a single run.
 """
 
 import json
+import math
 import os
 import random
 
@@ -41,25 +42,26 @@ def test_rules_module_does_not_import_hidden_or_runner_modules():
 def test_margin_select_falls_back_to_intercept_for_huge_margin():
     rng = random.Random(0)
     X = [tuple(rng.uniform(-2, 2) for _ in range(3)) for _ in range(30)]
-    y = [1.5 * x[0] * x[1] for x in X]
+    y = [1.1 * x[0] * x[1] for x in X]
     assert margin_select(X, y, margin=1e9).names == ()
 
 
 def test_margin_select_keeps_best_model_for_zero_margin_on_real_signal():
     rng = random.Random(1)
     X = [tuple(rng.uniform(-2, 2) for _ in range(3)) for _ in range(30)]
-    y = [1.5 * x[0] * x[1] for x in X]
+    y = [1.1 * x[0] * x[1] for x in X]
     assert margin_select(X, y, margin=0).names == ("x1*x2",)
 
 
 def test_abstain_select_returns_none_on_misfit():
     rng = random.Random(2)
     X = [tuple(rng.uniform(-2, 2) for _ in range(3)) for _ in range(30)]
-    y = [2 * __import__("math").tanh(x[0]) * x[1] for x in X]
-    # Base space approximates tanh(x1)*x2 with RMSE ~0.24, so the frozen tau (0.15) must abstain.
-    # A looser tau (0.25) would NOT abstain: this is why tau was calibrated, not chosen.
-    assert abstain_select(X, y, tau=0.15) is None
-    assert abstain_select(X, y, tau=0.25) is not None
+    # Misfit: exp is not in BASE_LIB, so the base space cannot represent this function.
+    # Structure-agnostic on purpose: this test must not reuse any vault law.
+    y_misfit = [math.exp(x[0]) * x[1] for x in X]
+    y_fit = [1.1 * x[0] * x[1] for x in X]  # inside BASE_LIB
+    assert abstain_select(X, y_misfit, tau=0.15) is None
+    assert abstain_select(X, y_fit, tau=0.15) is not None
 
 
 def test_recording_wrapper_does_not_change_mechanism_output():

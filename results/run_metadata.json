@@ -18,15 +18,18 @@
   "baseline": "M1_fixed_search",
   "budget_enforcement": "Oracle raises BudgetExceeded after `budget` calls",
   "code_sha256": {
-    "src/aisci/agents.py": "449c77fd6761de7b07f4b7426dbbfea2a8e08f79514ef90e7c6e2f06fc7a00e4",
+    "src/aisci/agents.py": "3344423e8b5073688848b00698ed0ef84139953b3ab375ae55014bb6635a6d5d",
     "src/aisci/checker.py": "31e565b0707541e502133b0fa13843e68d443dcd588fc27354230e351dbad969",
     "src/aisci/environment.py": "3d83d42bf1567dbb99615e6c511a342e23eb26aa6f81f6003fad8b7d5f02dab5",
+    "src/aisci/exp02.py": "7ef8e513db738511087a87751434244996d5f2def1626fef10f00a945d642642",
+    "src/aisci/exp03.py": "8c9e23a98ca5cab8d9087662414c5b78220976984d7048248428bb3e80780592",
     "src/aisci/features.py": "25d91e260c85b949672dd73204770025e0bd918b05ba14055d6ea8f02119585d",
     "src/aisci/fit.py": "5e03aa80ab350c8e23f18e447d758f9a5cf28fdb6d21a9965a1bcb35333433f2",
-    "src/aisci/hidden_laws.py": "c7588c732a6da7dfe06cb7135cfdf1c1a6ddb4cde3acbc25552c349e1407efbe",
-    "src/aisci/ledger.py": "f33035891945fbd8a2de7885dd3db34086d3bcfbd71fdf1dfbc42e5370a4d7a0",
+    "src/aisci/hidden_laws.py": "0995c262dde6c3cca733a687240f3c27ef0c64011a877f6574ed7571247891f9",
+    "src/aisci/ledger.py": "0216b27b2a54b4fd4655bf653b777547c81ef7a09ece9657823607ab5c938616",
     "src/aisci/provenance.py": "6c853d212cf8b16d72e78dac2d897b48310facc98baeadea4da0f30a3f9bdb8e",
-    "src/aisci/run.py": "4221faf2ff2e889494a4690add13b7e0a0e088a0f97dc66d996ede7862585582"
+    "src/aisci/rules.py": "4fcfec16074d7cc0f52e161403a959d4ba51474c6af79fa7e7b56fed79ac51cc",
+    "src/aisci/run.py": "70b3bca72ccc4520ab1101edf39214a972594be71be945e0e07e90b4174c8245"
   },
   "command": "PYTHONPATH=src python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results",
   "config": {
@@ -65,7 +68,7 @@
   },
   "git": {
     "branch_dirty_in_src_tests_docs": true,
-    "commit": "2f0033518d9d9423dd41887058fb0db8fe3df190"
+    "commit": "b055a13f90132ac9b8eff0ae0ae8586909c3dca6"
   },
   "isolation": "soft: in-process; see src/aisci/environment.py docstring",
   "run_id": "67332cbf9f27"

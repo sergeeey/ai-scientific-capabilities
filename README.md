@@ -55,9 +55,12 @@ Not done: exp02, any LLM run, the cost and human-effort parts of Q10, and cross-
 **Limit:** FULL_LIB is fixed in advance. M3 is search in a larger fixed space, not open-ended invention.
 
 ## Scenarios
-- `in_space`: y = 1.5·x1·x2 − 0.8·x3² (in H0)
-- `needs_expansion`: y = 2·tanh(x1)·x2 + 0.5·x3 (not in H0)
-- `null`: y = 0 (only noise; any selected term is a false discovery)
+Laws are NOT in the repository. They are stored in the truth vault outside the working tree (`../aisci-truth-vault/laws.json`, or the path in env var `AISCI_TRUTH_VAULT`). The repo pins only the vault's SHA-256 (`src/aisci/hidden_laws.py`).
+- `in_space`: a law expressible in H0 (structure in the vault)
+- `needs_expansion`: a law outside H0 (structure in the vault)
+- `null`: no law (only noise; any selected term is a false discovery)
+
+Note: the exp01–exp03 laws are no longer hidden. Their structure appears in git history (commits from `c49524a`) and in `results/runs.csv` (`chosen_terms`). The vault protects only future blind tests, which must use freshly generated laws.
 
 ## Reproduce
 ```bash

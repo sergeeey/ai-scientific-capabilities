@@ -10,9 +10,10 @@
     "src/aisci/checker.py": "31e565b0707541e502133b0fa13843e68d443dcd588fc27354230e351dbad969",
     "src/aisci/environment.py": "3d83d42bf1567dbb99615e6c511a342e23eb26aa6f81f6003fad8b7d5f02dab5",
     "src/aisci/exp02.py": "7ef8e513db738511087a87751434244996d5f2def1626fef10f00a945d642642",
+    "src/aisci/exp03.py": "8c9e23a98ca5cab8d9087662414c5b78220976984d7048248428bb3e80780592",
     "src/aisci/features.py": "25d91e260c85b949672dd73204770025e0bd918b05ba14055d6ea8f02119585d",
     "src/aisci/fit.py": "5e03aa80ab350c8e23f18e447d758f9a5cf28fdb6d21a9965a1bcb35333433f2",
-    "src/aisci/hidden_laws.py": "c7588c732a6da7dfe06cb7135cfdf1c1a6ddb4cde3acbc25552c349e1407efbe",
+    "src/aisci/hidden_laws.py": "ef54989a0e098a1a4dadd8ae48bb6502a821d92ecaabc42adee0a3332d24287b",
     "src/aisci/ledger.py": "0216b27b2a54b4fd4655bf653b777547c81ef7a09ece9657823607ab5c938616",
     "src/aisci/provenance.py": "6c853d212cf8b16d72e78dac2d897b48310facc98baeadea4da0f30a3f9bdb8e",
     "src/aisci/rules.py": "4fcfec16074d7cc0f52e161403a959d4ba51474c6af79fa7e7b56fed79ac51cc",
@@ -56,6 +57,6 @@
   },
   "git": {
     "branch_dirty_in_src_tests_docs": true,
-    "commit": "b235ae381ba5302f6179524941a6bff0d4c74b1a"
+    "commit": "b055a13f90132ac9b8eff0ae0ae8586909c3dca6"
   }
 }
