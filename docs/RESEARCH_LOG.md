@@ -90,6 +90,28 @@ Not verified:
 ## 2026-10-17 — exp02 plan drafted (not started)
 - `docs/EXP02_PLAN.md`: questions A–D, competing hypotheses, calibration seeds 1000–1199 disjoint from test seeds 0–199, refutation criteria written before any run. Exp02 does not start until its pre-registration is frozen.
 
+## 2026-10-18 — Foundation review (narrow) and exp02 run
+- **Review of ledger, claims and run.py:** independent reviewer, read-only, no defects found in claims-vs-ledger, derived-entry filters, or hash order. The earlier full review hit its turn limit and produced no report; this narrow one did finish. **Isolation was not in this review's scope** (it is covered by tests and documented as a soft residual).
+- **Plumbing check:** exp02 `M2_raw` on in_space seeds 0–29 is identical to exp01 `M2` chosen terms (diff empty). The recording wrapper does not change the mechanism.
+- **Calibration** (seeds 1000–1199, frozen values in `results/exp02/calibration.json`):
+  - margin m = 10, the largest value in the grid. Null FDR by margin: 0→0.56, 2→0.35, 4→0.20, 6→0.105, 8→0.055, 10→0.03.
+  - τ = 0.15. In-space abstention: τ=0.10→35%, τ≥0.15→0%.
+
+**Test-seed verdicts** (seeds 0–199, `results/exp02/verdicts.json`):
+
+| hyp | result | what it actually means |
+|---|---|---|
+| A active > fixed | mean diff 0.0, CI [0, 0]; by the pre-registered rule, **refuted** | Exact recovery on in_space is **at ceiling**: M1 200/200, M2 200/200. The endpoint has no room to show a difference, so this is not evidence that active design is useless. It is evidence that this endpoint cannot test A. |
+| B plain BIC controls null FDR | M1 0.625, M2 0.565; **problem confirmed** | Consistent with exp01 (17/30, 18/30). |
+| C margin rule | null FDR 0.015, in_space exact 1.00; **supported** | m=10 sits **on the grid edge**, so the true threshold may be higher. Nothing here shows what a larger margin costs on harder laws. |
+| D abstention | needs_expansion 100%, in_space 0%, null 0%; **supported** | Works for this misfit only. The base-space approximation of tanh gives RMSE ≈0.24, just below the 0.25 used earlier. τ=0.15 separates it from the noise floor (≈0.10). A weaker misfit would not be separated. |
+
+**Limits of this run:**
+1. A cannot be tested with `exact_terms` on in_space. The next test needs a metric with headroom, for example test RMSE at a smaller budget, or a harder law. This is a design change and must be pre-registered before it runs.
+2. C's margin grid ends at 10. A larger grid could give a different m. Extending it now, after seeing the result, would be exploratory.
+3. exp02 artifacts are hashed in `results/exp02/run_metadata.json`, but **not yet in the evidence ledger** and not in `claims.json`. Under Foundation rules, exp02 conclusions are not yet traceable through the ledger. This is the next gap to close.
+4. The default scenario is the exp01 laws, as I chose without your decision. The delay-differential scenario is not run.
+
 ## Open decisions for the user
 - The project's research question (LLM vs algorithm) needs an LLM. Approval is needed before any paid API is used, and the task says not to use one without approval. Until then the LLM part is NOT-VERIFIED.
 - Whether to keep the folder as a standalone repo or move it into a larger workspace.

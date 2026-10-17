@@ -1,0 +1,2601 @@
+law,seed,procedure,chosen_terms,exact_terms,false_terms,abstained,test_rmse,recovered
+null,1000,M2_raw,x3^2,False,x3^2,False,0.029183,True
+null,1000,M2_margin_0,x3^2,False,x3^2,False,0.029183,True
+null,1000,M2_margin_2,(intercept only),True,,False,0.00018,True
+null,1000,M2_margin_4,(intercept only),True,,False,0.00018,True
+null,1000,M2_margin_6,(intercept only),True,,False,0.00018,True
+null,1000,M2_margin_8,(intercept only),True,,False,0.00018,True
+null,1000,M2_margin_10,(intercept only),True,,False,0.00018,True
+in_space,1000,M1_raw,x1*x2+x3^2,True,,False,0.054901,False
+in_space,1000,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.054901,False
+in_space,1000,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.054901,False
+in_space,1000,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.054901,False
+in_space,1000,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.054901,False
+in_space,1000,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.054901,False
+null,1001,M2_raw,(intercept only),True,,False,0.00558,True
+null,1001,M2_margin_0,(intercept only),True,,False,0.00558,True
+null,1001,M2_margin_2,(intercept only),True,,False,0.00558,True
+null,1001,M2_margin_4,(intercept only),True,,False,0.00558,True
+null,1001,M2_margin_6,(intercept only),True,,False,0.00558,True
+null,1001,M2_margin_8,(intercept only),True,,False,0.00558,True
+null,1001,M2_margin_10,(intercept only),True,,False,0.00558,True
+in_space,1001,M1_raw,x1*x2+x3^2,True,,False,0.032378,True
+in_space,1001,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1001,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.032378,True
+in_space,1001,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.032378,True
+in_space,1001,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.032378,True
+in_space,1001,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.032378,True
+null,1002,M2_raw,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.059037,False
+null,1002,M2_margin_0,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.059037,False
+null,1002,M2_margin_2,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.059037,False
+null,1002,M2_margin_4,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.059037,False
+null,1002,M2_margin_6,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.059037,False
+null,1002,M2_margin_8,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.059037,False
+null,1002,M2_margin_10,(intercept only),True,,False,0.030684,True
+in_space,1002,M1_raw,x1*x2+x3^2,True,,False,0.048686,True
+in_space,1002,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.048686,True
+in_space,1002,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.048686,True
+in_space,1002,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.048686,True
+in_space,1002,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.048686,True
+in_space,1002,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.048686,True
+null,1003,M2_raw,x1*x2+x1^2,False,x1*x2+x1^2,False,0.028629,True
+null,1003,M2_margin_0,x1*x2+x1^2,False,x1*x2+x1^2,False,0.028629,True
+null,1003,M2_margin_2,x1*x2+x1^2,False,x1*x2+x1^2,False,0.028629,True
+null,1003,M2_margin_4,(intercept only),True,,False,0.012917,True
+null,1003,M2_margin_6,(intercept only),True,,False,0.012917,True
+null,1003,M2_margin_8,(intercept only),True,,False,0.012917,True
+null,1003,M2_margin_10,(intercept only),True,,False,0.012917,True
+in_space,1003,M1_raw,x1*x2+x3^2,True,,False,0.022703,True
+in_space,1003,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.022703,True
+in_space,1003,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.022703,True
+in_space,1003,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.022703,True
+in_space,1003,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.022703,True
+in_space,1003,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.022703,True
+null,1004,M2_raw,(intercept only),True,,False,0.001401,True
+null,1004,M2_margin_0,(intercept only),True,,False,0.001401,True
+null,1004,M2_margin_2,(intercept only),True,,False,0.001401,True
+null,1004,M2_margin_4,(intercept only),True,,False,0.001401,True
+null,1004,M2_margin_6,(intercept only),True,,False,0.001401,True
+null,1004,M2_margin_8,(intercept only),True,,False,0.001401,True
+null,1004,M2_margin_10,(intercept only),True,,False,0.001401,True
+in_space,1004,M1_raw,x1*x2+x3^2,True,,False,0.030203,True
+in_space,1004,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1004,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.030203,True
+in_space,1004,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.030203,True
+in_space,1004,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.030203,True
+in_space,1004,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.030203,True
+null,1005,M2_raw,(intercept only),True,,False,0.045897,True
+null,1005,M2_margin_0,(intercept only),True,,False,0.045897,True
+null,1005,M2_margin_2,(intercept only),True,,False,0.045897,True
+null,1005,M2_margin_4,(intercept only),True,,False,0.045897,True
+null,1005,M2_margin_6,(intercept only),True,,False,0.045897,True
+null,1005,M2_margin_8,(intercept only),True,,False,0.045897,True
+null,1005,M2_margin_10,(intercept only),True,,False,0.045897,True
+in_space,1005,M1_raw,x1*x2+x3^2,True,,False,0.065274,False
+in_space,1005,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1005,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.065274,False
+in_space,1005,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.065274,False
+in_space,1005,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.065274,False
+in_space,1005,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.065274,False
+null,1006,M2_raw,(intercept only),True,,False,0.004155,True
+null,1006,M2_margin_0,(intercept only),True,,False,0.004155,True
+null,1006,M2_margin_2,(intercept only),True,,False,0.004155,True
+null,1006,M2_margin_4,(intercept only),True,,False,0.004155,True
+null,1006,M2_margin_6,(intercept only),True,,False,0.004155,True
+null,1006,M2_margin_8,(intercept only),True,,False,0.004155,True
+null,1006,M2_margin_10,(intercept only),True,,False,0.004155,True
+in_space,1006,M1_raw,x1*x2+x3^2,True,,False,0.041616,True
+in_space,1006,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1006,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.041616,True
+in_space,1006,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.041616,True
+in_space,1006,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.041616,True
+in_space,1006,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.041616,True
+null,1007,M2_raw,(intercept only),True,,False,0.010336,True
+null,1007,M2_margin_0,(intercept only),True,,False,0.010336,True
+null,1007,M2_margin_2,(intercept only),True,,False,0.010336,True
+null,1007,M2_margin_4,(intercept only),True,,False,0.010336,True
+null,1007,M2_margin_6,(intercept only),True,,False,0.010336,True
+null,1007,M2_margin_8,(intercept only),True,,False,0.010336,True
+null,1007,M2_margin_10,(intercept only),True,,False,0.010336,True
+in_space,1007,M1_raw,x1*x2+x3^2,True,,False,0.028894,True
+in_space,1007,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1007,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.028894,True
+in_space,1007,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.028894,True
+in_space,1007,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.028894,True
+in_space,1007,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.028894,True
+null,1008,M2_raw,sin(x2),False,sin(x2),False,0.02819,True
+null,1008,M2_margin_0,sin(x2),False,sin(x2),False,0.02819,True
+null,1008,M2_margin_2,(intercept only),True,,False,0.010365,True
+null,1008,M2_margin_4,(intercept only),True,,False,0.010365,True
+null,1008,M2_margin_6,(intercept only),True,,False,0.010365,True
+null,1008,M2_margin_8,(intercept only),True,,False,0.010365,True
+null,1008,M2_margin_10,(intercept only),True,,False,0.010365,True
+in_space,1008,M1_raw,x1*x2+x3^2,True,,False,0.040723,True
+in_space,1008,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.040723,True
+in_space,1008,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.040723,True
+in_space,1008,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.040723,True
+in_space,1008,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.040723,True
+in_space,1008,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.040723,True
+null,1009,M2_raw,sin(x2),False,sin(x2),False,0.046542,True
+null,1009,M2_margin_0,sin(x2),False,sin(x2),False,0.046542,True
+null,1009,M2_margin_2,sin(x2),False,sin(x2),False,0.046542,True
+null,1009,M2_margin_4,(intercept only),True,,False,0.011102,True
+null,1009,M2_margin_6,(intercept only),True,,False,0.011102,True
+null,1009,M2_margin_8,(intercept only),True,,False,0.011102,True
+null,1009,M2_margin_10,(intercept only),True,,False,0.011102,True
+in_space,1009,M1_raw,x1*x2+x3^2,True,,False,0.019455,True
+in_space,1009,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1009,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.019455,True
+in_space,1009,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.019455,True
+in_space,1009,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.019455,True
+in_space,1009,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.019455,True
+null,1010,M2_raw,x2^2,False,x2^2,False,0.038465,True
+null,1010,M2_margin_0,x2^2,False,x2^2,False,0.038465,True
+null,1010,M2_margin_2,(intercept only),True,,False,0.00246,True
+null,1010,M2_margin_4,(intercept only),True,,False,0.00246,True
+null,1010,M2_margin_6,(intercept only),True,,False,0.00246,True
+null,1010,M2_margin_8,(intercept only),True,,False,0.00246,True
+null,1010,M2_margin_10,(intercept only),True,,False,0.00246,True
+in_space,1010,M1_raw,x1*x2+x3^2,True,,False,0.004643,True
+in_space,1010,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.004643,True
+in_space,1010,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.004643,True
+in_space,1010,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.004643,True
+in_space,1010,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.004643,True
+in_space,1010,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.004643,True
+null,1011,M2_raw,x2*x3+x1^2,False,x1^2+x2*x3,False,0.030485,True
+null,1011,M2_margin_0,x2*x3+x1^2,False,x1^2+x2*x3,False,0.030485,True
+null,1011,M2_margin_2,(intercept only),True,,False,0.018001,True
+null,1011,M2_margin_4,(intercept only),True,,False,0.018001,True
+null,1011,M2_margin_6,(intercept only),True,,False,0.018001,True
+null,1011,M2_margin_8,(intercept only),True,,False,0.018001,True
+null,1011,M2_margin_10,(intercept only),True,,False,0.018001,True
+in_space,1011,M1_raw,x1*x2+x3^2,True,,False,0.034015,True
+in_space,1011,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.034015,True
+in_space,1011,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.034015,True
+in_space,1011,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.034015,True
+in_space,1011,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.034015,True
+in_space,1011,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.034015,True
+null,1012,M2_raw,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.065701,False
+null,1012,M2_margin_0,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.065701,False
+null,1012,M2_margin_2,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.065701,False
+null,1012,M2_margin_4,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.065701,False
+null,1012,M2_margin_6,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.065701,False
+null,1012,M2_margin_8,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.065701,False
+null,1012,M2_margin_10,(intercept only),True,,False,0.004774,True
+in_space,1012,M1_raw,x1*x2+x3^2,True,,False,0.035688,True
+in_space,1012,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1012,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.035688,True
+in_space,1012,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.035688,True
+in_space,1012,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.035688,True
+in_space,1012,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.035688,True
+null,1013,M2_raw,x1,False,x1,False,0.026121,True
+null,1013,M2_margin_0,x1,False,x1,False,0.026121,True
+null,1013,M2_margin_2,x1,False,x1,False,0.026121,True
+null,1013,M2_margin_4,(intercept only),True,,False,0.004708,True
+null,1013,M2_margin_6,(intercept only),True,,False,0.004708,True
+null,1013,M2_margin_8,(intercept only),True,,False,0.004708,True
+null,1013,M2_margin_10,(intercept only),True,,False,0.004708,True
+in_space,1013,M1_raw,x1*x2+x3^2,True,,False,0.032249,True
+in_space,1013,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.032249,True
+in_space,1013,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.032249,True
+in_space,1013,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.032249,True
+in_space,1013,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.032249,True
+in_space,1013,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.032249,True
+null,1014,M2_raw,x1^2,False,x1^2,False,0.024774,True
+null,1014,M2_margin_0,x1^2,False,x1^2,False,0.024774,True
+null,1014,M2_margin_2,(intercept only),True,,False,0.01555,True
+null,1014,M2_margin_4,(intercept only),True,,False,0.01555,True
+null,1014,M2_margin_6,(intercept only),True,,False,0.01555,True
+null,1014,M2_margin_8,(intercept only),True,,False,0.01555,True
+null,1014,M2_margin_10,(intercept only),True,,False,0.01555,True
+in_space,1014,M1_raw,x1*x2+x3^2,True,,False,0.035429,True
+in_space,1014,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.035429,True
+in_space,1014,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.035429,True
+in_space,1014,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.035429,True
+in_space,1014,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.035429,True
+in_space,1014,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.035429,True
+null,1015,M2_raw,(intercept only),True,,False,0.006623,True
+null,1015,M2_margin_0,(intercept only),True,,False,0.006623,True
+null,1015,M2_margin_2,(intercept only),True,,False,0.006623,True
+null,1015,M2_margin_4,(intercept only),True,,False,0.006623,True
+null,1015,M2_margin_6,(intercept only),True,,False,0.006623,True
+null,1015,M2_margin_8,(intercept only),True,,False,0.006623,True
+null,1015,M2_margin_10,(intercept only),True,,False,0.006623,True
+in_space,1015,M1_raw,x1*x2+x3^2,True,,False,0.025733,True
+in_space,1015,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.025733,True
+in_space,1015,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025733,True
+in_space,1015,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025733,True
+in_space,1015,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025733,True
+in_space,1015,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025733,True
+null,1016,M2_raw,(intercept only),True,,False,0.00888,True
+null,1016,M2_margin_0,(intercept only),True,,False,0.00888,True
+null,1016,M2_margin_2,(intercept only),True,,False,0.00888,True
+null,1016,M2_margin_4,(intercept only),True,,False,0.00888,True
+null,1016,M2_margin_6,(intercept only),True,,False,0.00888,True
+null,1016,M2_margin_8,(intercept only),True,,False,0.00888,True
+null,1016,M2_margin_10,(intercept only),True,,False,0.00888,True
+in_space,1016,M1_raw,x1*x2+x3^2,True,,False,0.035646,True
+in_space,1016,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.035646,True
+in_space,1016,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.035646,True
+in_space,1016,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.035646,True
+in_space,1016,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.035646,True
+in_space,1016,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.035646,True
+null,1017,M2_raw,x1*x3,False,x1*x3,False,0.033104,True
+null,1017,M2_margin_0,x1*x3,False,x1*x3,False,0.033104,True
+null,1017,M2_margin_2,(intercept only),True,,False,0.006691,True
+null,1017,M2_margin_4,(intercept only),True,,False,0.006691,True
+null,1017,M2_margin_6,(intercept only),True,,False,0.006691,True
+null,1017,M2_margin_8,(intercept only),True,,False,0.006691,True
+null,1017,M2_margin_10,(intercept only),True,,False,0.006691,True
+in_space,1017,M1_raw,x1*x2+x3^2,True,,False,0.051626,False
+in_space,1017,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.051626,False
+in_space,1017,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.051626,False
+in_space,1017,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.051626,False
+in_space,1017,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.051626,False
+in_space,1017,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.051626,False
+null,1018,M2_raw,(intercept only),True,,False,0.004707,True
+null,1018,M2_margin_0,(intercept only),True,,False,0.004707,True
+null,1018,M2_margin_2,(intercept only),True,,False,0.004707,True
+null,1018,M2_margin_4,(intercept only),True,,False,0.004707,True
+null,1018,M2_margin_6,(intercept only),True,,False,0.004707,True
+null,1018,M2_margin_8,(intercept only),True,,False,0.004707,True
+null,1018,M2_margin_10,(intercept only),True,,False,0.004707,True
+in_space,1018,M1_raw,x1*x2+x3^2,True,,False,0.081826,False
+in_space,1018,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.081826,False
+in_space,1018,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.081826,False
+in_space,1018,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.081826,False
+in_space,1018,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.081826,False
+in_space,1018,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.081826,False
+null,1019,M2_raw,x1*x2,False,x1*x2,False,0.032824,True
+null,1019,M2_margin_0,x1*x2,False,x1*x2,False,0.032824,True
+null,1019,M2_margin_2,x1*x2,False,x1*x2,False,0.032824,True
+null,1019,M2_margin_4,(intercept only),True,,False,0.005529,True
+null,1019,M2_margin_6,(intercept only),True,,False,0.005529,True
+null,1019,M2_margin_8,(intercept only),True,,False,0.005529,True
+null,1019,M2_margin_10,(intercept only),True,,False,0.005529,True
+in_space,1019,M1_raw,x1*x2+x3^2,True,,False,0.027398,True
+in_space,1019,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.027398,True
+in_space,1019,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.027398,True
+in_space,1019,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.027398,True
+in_space,1019,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.027398,True
+in_space,1019,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.027398,True
+null,1020,M2_raw,(intercept only),True,,False,0.023657,True
+null,1020,M2_margin_0,(intercept only),True,,False,0.023657,True
+null,1020,M2_margin_2,(intercept only),True,,False,0.023657,True
+null,1020,M2_margin_4,(intercept only),True,,False,0.023657,True
+null,1020,M2_margin_6,(intercept only),True,,False,0.023657,True
+null,1020,M2_margin_8,(intercept only),True,,False,0.023657,True
+null,1020,M2_margin_10,(intercept only),True,,False,0.023657,True
+in_space,1020,M1_raw,x1*x2+x3^2,True,,False,0.036114,True
+in_space,1020,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.036114,True
+in_space,1020,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.036114,True
+in_space,1020,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.036114,True
+in_space,1020,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.036114,True
+in_space,1020,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.036114,True
+null,1021,M2_raw,(intercept only),True,,False,0.003924,True
+null,1021,M2_margin_0,(intercept only),True,,False,0.003924,True
+null,1021,M2_margin_2,(intercept only),True,,False,0.003924,True
+null,1021,M2_margin_4,(intercept only),True,,False,0.003924,True
+null,1021,M2_margin_6,(intercept only),True,,False,0.003924,True
+null,1021,M2_margin_8,(intercept only),True,,False,0.003924,True
+null,1021,M2_margin_10,(intercept only),True,,False,0.003924,True
+in_space,1021,M1_raw,x1*x2+x3^2,True,,False,0.021724,True
+in_space,1021,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.021724,True
+in_space,1021,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.021724,True
+in_space,1021,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.021724,True
+in_space,1021,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.021724,True
+in_space,1021,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.021724,True
+null,1022,M2_raw,x1+x3^2,False,x1+x3^2,False,0.056314,False
+null,1022,M2_margin_0,x1+x3^2,False,x1+x3^2,False,0.056314,False
+null,1022,M2_margin_2,x1+x3^2,False,x1+x3^2,False,0.056314,False
+null,1022,M2_margin_4,x1+x3^2,False,x1+x3^2,False,0.056314,False
+null,1022,M2_margin_6,(intercept only),True,,False,0.019452,True
+null,1022,M2_margin_8,(intercept only),True,,False,0.019452,True
+null,1022,M2_margin_10,(intercept only),True,,False,0.019452,True
+in_space,1022,M1_raw,x1*x2+x3^2,True,,False,0.019939,True
+in_space,1022,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.019939,True
+in_space,1022,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.019939,True
+in_space,1022,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.019939,True
+in_space,1022,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.019939,True
+in_space,1022,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.019939,True
+null,1023,M2_raw,(intercept only),True,,False,0.032518,True
+null,1023,M2_margin_0,(intercept only),True,,False,0.032518,True
+null,1023,M2_margin_2,(intercept only),True,,False,0.032518,True
+null,1023,M2_margin_4,(intercept only),True,,False,0.032518,True
+null,1023,M2_margin_6,(intercept only),True,,False,0.032518,True
+null,1023,M2_margin_8,(intercept only),True,,False,0.032518,True
+null,1023,M2_margin_10,(intercept only),True,,False,0.032518,True
+in_space,1023,M1_raw,x1*x2+x3^2,True,,False,0.065139,False
+in_space,1023,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1023,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.065139,False
+in_space,1023,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.065139,False
+in_space,1023,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.065139,False
+in_space,1023,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.065139,False
+null,1024,M2_raw,x1*x2+sin(x1),False,sin(x1)+x1*x2,False,0.052641,False
+null,1024,M2_margin_0,x1*x2+sin(x1),False,sin(x1)+x1*x2,False,0.052641,False
+null,1024,M2_margin_2,x1*x2+sin(x1),False,sin(x1)+x1*x2,False,0.052641,False
+null,1024,M2_margin_4,(intercept only),True,,False,0.015069,True
+null,1024,M2_margin_6,(intercept only),True,,False,0.015069,True
+null,1024,M2_margin_8,(intercept only),True,,False,0.015069,True
+null,1024,M2_margin_10,(intercept only),True,,False,0.015069,True
+in_space,1024,M1_raw,x1*x2+x3^2,True,,False,0.024619,True
+in_space,1024,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1024,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.024619,True
+in_space,1024,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.024619,True
+in_space,1024,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.024619,True
+in_space,1024,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.024619,True
+null,1025,M2_raw,x1*x2+x2^2,False,x1*x2+x2^2,False,0.036266,True
+null,1025,M2_margin_0,x1*x2+x2^2,False,x1*x2+x2^2,False,0.036266,True
+null,1025,M2_margin_2,x1*x2+x2^2,False,x1*x2+x2^2,False,0.036266,True
+null,1025,M2_margin_4,x1*x2+x2^2,False,x1*x2+x2^2,False,0.036266,True
+null,1025,M2_margin_6,(intercept only),True,,False,0.008444,True
+null,1025,M2_margin_8,(intercept only),True,,False,0.008444,True
+null,1025,M2_margin_10,(intercept only),True,,False,0.008444,True
+in_space,1025,M1_raw,x1*x2+x3^2,True,,False,0.049612,True
+in_space,1025,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.049612,True
+in_space,1025,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.049612,True
+in_space,1025,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.049612,True
+in_space,1025,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.049612,True
+in_space,1025,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.049612,True
+null,1026,M2_raw,(intercept only),True,,False,0.001972,True
+null,1026,M2_margin_0,(intercept only),True,,False,0.001972,True
+null,1026,M2_margin_2,(intercept only),True,,False,0.001972,True
+null,1026,M2_margin_4,(intercept only),True,,False,0.001972,True
+null,1026,M2_margin_6,(intercept only),True,,False,0.001972,True
+null,1026,M2_margin_8,(intercept only),True,,False,0.001972,True
+null,1026,M2_margin_10,(intercept only),True,,False,0.001972,True
+in_space,1026,M1_raw,x1*x2+x3^2,True,,False,0.050452,False
+in_space,1026,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.050452,False
+in_space,1026,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.050452,False
+in_space,1026,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.050452,False
+in_space,1026,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.050452,False
+in_space,1026,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.050452,False
+null,1027,M2_raw,(intercept only),True,,False,0.024067,True
+null,1027,M2_margin_0,(intercept only),True,,False,0.024067,True
+null,1027,M2_margin_2,(intercept only),True,,False,0.024067,True
+null,1027,M2_margin_4,(intercept only),True,,False,0.024067,True
+null,1027,M2_margin_6,(intercept only),True,,False,0.024067,True
+null,1027,M2_margin_8,(intercept only),True,,False,0.024067,True
+null,1027,M2_margin_10,(intercept only),True,,False,0.024067,True
+in_space,1027,M1_raw,x1*x2+x3^2,True,,False,0.041303,True
+in_space,1027,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.041303,True
+in_space,1027,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.041303,True
+in_space,1027,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.041303,True
+in_space,1027,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.041303,True
+in_space,1027,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.041303,True
+null,1028,M2_raw,x2*x3+x3^2,False,x2*x3+x3^2,False,0.053057,False
+null,1028,M2_margin_0,x2*x3+x3^2,False,x2*x3+x3^2,False,0.053057,False
+null,1028,M2_margin_2,x2*x3+x3^2,False,x2*x3+x3^2,False,0.053057,False
+null,1028,M2_margin_4,x2*x3+x3^2,False,x2*x3+x3^2,False,0.053057,False
+null,1028,M2_margin_6,x2*x3+x3^2,False,x2*x3+x3^2,False,0.053057,False
+null,1028,M2_margin_8,(intercept only),True,,False,0.012287,True
+null,1028,M2_margin_10,(intercept only),True,,False,0.012287,True
+in_space,1028,M1_raw,x1*x2+x3^2,True,,False,0.082375,False
+in_space,1028,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.082375,False
+in_space,1028,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.082375,False
+in_space,1028,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.082375,False
+in_space,1028,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.082375,False
+in_space,1028,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.082375,False
+null,1029,M2_raw,x2+x1*x2,False,x1*x2+x2,False,0.042483,True
+null,1029,M2_margin_0,x2+x1*x2,False,x1*x2+x2,False,0.042483,True
+null,1029,M2_margin_2,(intercept only),True,,False,0.020662,True
+null,1029,M2_margin_4,(intercept only),True,,False,0.020662,True
+null,1029,M2_margin_6,(intercept only),True,,False,0.020662,True
+null,1029,M2_margin_8,(intercept only),True,,False,0.020662,True
+null,1029,M2_margin_10,(intercept only),True,,False,0.020662,True
+in_space,1029,M1_raw,x1*x2+x3^2,True,,False,0.026978,True
+in_space,1029,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1029,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.026978,True
+in_space,1029,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.026978,True
+in_space,1029,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.026978,True
+in_space,1029,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.026978,True
+null,1030,M2_raw,(intercept only),True,,False,0.001327,True
+null,1030,M2_margin_0,(intercept only),True,,False,0.001327,True
+null,1030,M2_margin_2,(intercept only),True,,False,0.001327,True
+null,1030,M2_margin_4,(intercept only),True,,False,0.001327,True
+null,1030,M2_margin_6,(intercept only),True,,False,0.001327,True
+null,1030,M2_margin_8,(intercept only),True,,False,0.001327,True
+null,1030,M2_margin_10,(intercept only),True,,False,0.001327,True
+in_space,1030,M1_raw,x1*x2+x3^2,True,,False,0.018959,True
+in_space,1030,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.018959,True
+in_space,1030,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.018959,True
+in_space,1030,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.018959,True
+in_space,1030,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.018959,True
+in_space,1030,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.018959,True
+null,1031,M2_raw,x1*x3+x3^2,False,x1*x3+x3^2,False,0.042867,True
+null,1031,M2_margin_0,x1*x3+x3^2,False,x1*x3+x3^2,False,0.042867,True
+null,1031,M2_margin_2,x1*x3+x3^2,False,x1*x3+x3^2,False,0.042867,True
+null,1031,M2_margin_4,(intercept only),True,,False,0.008634,True
+null,1031,M2_margin_6,(intercept only),True,,False,0.008634,True
+null,1031,M2_margin_8,(intercept only),True,,False,0.008634,True
+null,1031,M2_margin_10,(intercept only),True,,False,0.008634,True
+in_space,1031,M1_raw,x1*x2+x3^2,True,,False,0.054758,False
+in_space,1031,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.054758,False
+in_space,1031,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.054758,False
+in_space,1031,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.054758,False
+in_space,1031,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.054758,False
+in_space,1031,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.054758,False
+null,1032,M2_raw,x1,False,x1,False,0.041645,True
+null,1032,M2_margin_0,x1,False,x1,False,0.041645,True
+null,1032,M2_margin_2,x1,False,x1,False,0.041645,True
+null,1032,M2_margin_4,x1,False,x1,False,0.041645,True
+null,1032,M2_margin_6,x1,False,x1,False,0.041645,True
+null,1032,M2_margin_8,x1,False,x1,False,0.041645,True
+null,1032,M2_margin_10,x1,False,x1,False,0.041645,True
+in_space,1032,M1_raw,x1*x2+x3^2,True,,False,0.023273,True
+in_space,1032,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023273,True
+in_space,1032,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023273,True
+in_space,1032,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023273,True
+in_space,1032,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023273,True
+in_space,1032,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023273,True
+null,1033,M2_raw,x1*x3,False,x1*x3,False,0.028725,True
+null,1033,M2_margin_0,x1*x3,False,x1*x3,False,0.028725,True
+null,1033,M2_margin_2,x1*x3,False,x1*x3,False,0.028725,True
+null,1033,M2_margin_4,(intercept only),True,,False,0.01868,True
+null,1033,M2_margin_6,(intercept only),True,,False,0.01868,True
+null,1033,M2_margin_8,(intercept only),True,,False,0.01868,True
+null,1033,M2_margin_10,(intercept only),True,,False,0.01868,True
+in_space,1033,M1_raw,x1*x2+x3^2,True,,False,0.03277,True
+in_space,1033,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.03277,True
+in_space,1033,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.03277,True
+in_space,1033,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.03277,True
+in_space,1033,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.03277,True
+in_space,1033,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.03277,True
+null,1034,M2_raw,(intercept only),True,,False,0.01381,True
+null,1034,M2_margin_0,(intercept only),True,,False,0.01381,True
+null,1034,M2_margin_2,(intercept only),True,,False,0.01381,True
+null,1034,M2_margin_4,(intercept only),True,,False,0.01381,True
+null,1034,M2_margin_6,(intercept only),True,,False,0.01381,True
+null,1034,M2_margin_8,(intercept only),True,,False,0.01381,True
+null,1034,M2_margin_10,(intercept only),True,,False,0.01381,True
+in_space,1034,M1_raw,x1*x2+x3^2,True,,False,0.027815,True
+in_space,1034,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.027815,True
+in_space,1034,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.027815,True
+in_space,1034,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.027815,True
+in_space,1034,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.027815,True
+in_space,1034,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.027815,True
+null,1035,M2_raw,x2,False,x2,False,0.0295,True
+null,1035,M2_margin_0,x2,False,x2,False,0.0295,True
+null,1035,M2_margin_2,(intercept only),True,,False,0.00805,True
+null,1035,M2_margin_4,(intercept only),True,,False,0.00805,True
+null,1035,M2_margin_6,(intercept only),True,,False,0.00805,True
+null,1035,M2_margin_8,(intercept only),True,,False,0.00805,True
+null,1035,M2_margin_10,(intercept only),True,,False,0.00805,True
+in_space,1035,M1_raw,x1*x2+x3^2,True,,False,0.021912,True
+in_space,1035,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.021912,True
+in_space,1035,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.021912,True
+in_space,1035,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.021912,True
+in_space,1035,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.021912,True
+in_space,1035,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.021912,True
+null,1036,M2_raw,(intercept only),True,,False,0.006363,True
+null,1036,M2_margin_0,(intercept only),True,,False,0.006363,True
+null,1036,M2_margin_2,(intercept only),True,,False,0.006363,True
+null,1036,M2_margin_4,(intercept only),True,,False,0.006363,True
+null,1036,M2_margin_6,(intercept only),True,,False,0.006363,True
+null,1036,M2_margin_8,(intercept only),True,,False,0.006363,True
+null,1036,M2_margin_10,(intercept only),True,,False,0.006363,True
+in_space,1036,M1_raw,x1*x2+x3^2,True,,False,0.024951,True
+in_space,1036,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1036,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.024951,True
+in_space,1036,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.024951,True
+in_space,1036,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.024951,True
+in_space,1036,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.024951,True
+null,1037,M2_raw,(intercept only),True,,False,0.008279,True
+null,1037,M2_margin_0,(intercept only),True,,False,0.008279,True
+null,1037,M2_margin_2,(intercept only),True,,False,0.008279,True
+null,1037,M2_margin_4,(intercept only),True,,False,0.008279,True
+null,1037,M2_margin_6,(intercept only),True,,False,0.008279,True
+null,1037,M2_margin_8,(intercept only),True,,False,0.008279,True
+null,1037,M2_margin_10,(intercept only),True,,False,0.008279,True
+in_space,1037,M1_raw,x1*x2+x3^2,True,,False,0.015613,True
+in_space,1037,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.015613,True
+in_space,1037,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.015613,True
+in_space,1037,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.015613,True
+in_space,1037,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.015613,True
+in_space,1037,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.015613,True
+null,1038,M2_raw,(intercept only),True,,False,0.02227,True
+null,1038,M2_margin_0,(intercept only),True,,False,0.02227,True
+null,1038,M2_margin_2,(intercept only),True,,False,0.02227,True
+null,1038,M2_margin_4,(intercept only),True,,False,0.02227,True
+null,1038,M2_margin_6,(intercept only),True,,False,0.02227,True
+null,1038,M2_margin_8,(intercept only),True,,False,0.02227,True
+null,1038,M2_margin_10,(intercept only),True,,False,0.02227,True
+in_space,1038,M1_raw,x1*x2+x3^2,True,,False,0.025751,True
+in_space,1038,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1038,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025751,True
+in_space,1038,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025751,True
+in_space,1038,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025751,True
+in_space,1038,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025751,True
+null,1039,M2_raw,(intercept only),True,,False,0.003187,True
+null,1039,M2_margin_0,(intercept only),True,,False,0.003187,True
+null,1039,M2_margin_2,(intercept only),True,,False,0.003187,True
+null,1039,M2_margin_4,(intercept only),True,,False,0.003187,True
+null,1039,M2_margin_6,(intercept only),True,,False,0.003187,True
+null,1039,M2_margin_8,(intercept only),True,,False,0.003187,True
+null,1039,M2_margin_10,(intercept only),True,,False,0.003187,True
+in_space,1039,M1_raw,x1*x2+x3^2,True,,False,0.018431,True
+in_space,1039,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.018431,True
+in_space,1039,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.018431,True
+in_space,1039,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.018431,True
+in_space,1039,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.018431,True
+in_space,1039,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.018431,True
+null,1040,M2_raw,(intercept only),True,,False,0.019062,True
+null,1040,M2_margin_0,(intercept only),True,,False,0.019062,True
+null,1040,M2_margin_2,(intercept only),True,,False,0.019062,True
+null,1040,M2_margin_4,(intercept only),True,,False,0.019062,True
+null,1040,M2_margin_6,(intercept only),True,,False,0.019062,True
+null,1040,M2_margin_8,(intercept only),True,,False,0.019062,True
+null,1040,M2_margin_10,(intercept only),True,,False,0.019062,True
+in_space,1040,M1_raw,x1*x2+x3^2,True,,False,0.032947,True
+in_space,1040,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.032947,True
+in_space,1040,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.032947,True
+in_space,1040,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.032947,True
+in_space,1040,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.032947,True
+in_space,1040,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.032947,True
+null,1041,M2_raw,x1*x2,False,x1*x2,False,0.039343,True
+null,1041,M2_margin_0,x1*x2,False,x1*x2,False,0.039343,True
+null,1041,M2_margin_2,x1*x2,False,x1*x2,False,0.039343,True
+null,1041,M2_margin_4,x1*x2,False,x1*x2,False,0.039343,True
+null,1041,M2_margin_6,(intercept only),True,,False,0.003466,True
+null,1041,M2_margin_8,(intercept only),True,,False,0.003466,True
+null,1041,M2_margin_10,(intercept only),True,,False,0.003466,True
+in_space,1041,M1_raw,x1*x2+x3^2,True,,False,0.031936,True
+in_space,1041,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.031936,True
+in_space,1041,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.031936,True
+in_space,1041,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.031936,True
+in_space,1041,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.031936,True
+in_space,1041,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.031936,True
+null,1042,M2_raw,(intercept only),True,,False,0.004993,True
+null,1042,M2_margin_0,(intercept only),True,,False,0.004993,True
+null,1042,M2_margin_2,(intercept only),True,,False,0.004993,True
+null,1042,M2_margin_4,(intercept only),True,,False,0.004993,True
+null,1042,M2_margin_6,(intercept only),True,,False,0.004993,True
+null,1042,M2_margin_8,(intercept only),True,,False,0.004993,True
+null,1042,M2_margin_10,(intercept only),True,,False,0.004993,True
+in_space,1042,M1_raw,x1*x2+x3^2,True,,False,0.057722,False
+in_space,1042,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1042,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.057722,False
+in_space,1042,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.057722,False
+in_space,1042,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.057722,False
+in_space,1042,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.057722,False
+null,1043,M2_raw,x2^2+x3^2,False,x2^2+x3^2,False,0.039583,True
+null,1043,M2_margin_0,x2^2+x3^2,False,x2^2+x3^2,False,0.039583,True
+null,1043,M2_margin_2,x2^2+x3^2,False,x2^2+x3^2,False,0.039583,True
+null,1043,M2_margin_4,x2^2+x3^2,False,x2^2+x3^2,False,0.039583,True
+null,1043,M2_margin_6,(intercept only),True,,False,0.017302,True
+null,1043,M2_margin_8,(intercept only),True,,False,0.017302,True
+null,1043,M2_margin_10,(intercept only),True,,False,0.017302,True
+in_space,1043,M1_raw,x1*x2+x3^2,True,,False,0.054946,False
+in_space,1043,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.054946,False
+in_space,1043,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.054946,False
+in_space,1043,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.054946,False
+in_space,1043,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.054946,False
+in_space,1043,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.054946,False
+null,1044,M2_raw,(intercept only),True,,False,0.004746,True
+null,1044,M2_margin_0,(intercept only),True,,False,0.004746,True
+null,1044,M2_margin_2,(intercept only),True,,False,0.004746,True
+null,1044,M2_margin_4,(intercept only),True,,False,0.004746,True
+null,1044,M2_margin_6,(intercept only),True,,False,0.004746,True
+null,1044,M2_margin_8,(intercept only),True,,False,0.004746,True
+null,1044,M2_margin_10,(intercept only),True,,False,0.004746,True
+in_space,1044,M1_raw,x1*x2+x3^2,True,,False,0.025905,True
+in_space,1044,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.025905,True
+in_space,1044,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025905,True
+in_space,1044,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025905,True
+in_space,1044,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025905,True
+in_space,1044,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025905,True
+null,1045,M2_raw,(intercept only),True,,False,0.008445,True
+null,1045,M2_margin_0,(intercept only),True,,False,0.008445,True
+null,1045,M2_margin_2,(intercept only),True,,False,0.008445,True
+null,1045,M2_margin_4,(intercept only),True,,False,0.008445,True
+null,1045,M2_margin_6,(intercept only),True,,False,0.008445,True
+null,1045,M2_margin_8,(intercept only),True,,False,0.008445,True
+null,1045,M2_margin_10,(intercept only),True,,False,0.008445,True
+in_space,1045,M1_raw,x1*x2+x3^2,True,,False,0.009155,True
+in_space,1045,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.009155,True
+in_space,1045,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.009155,True
+in_space,1045,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.009155,True
+in_space,1045,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.009155,True
+in_space,1045,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.009155,True
+null,1046,M2_raw,(intercept only),True,,False,0.000353,True
+null,1046,M2_margin_0,(intercept only),True,,False,0.000353,True
+null,1046,M2_margin_2,(intercept only),True,,False,0.000353,True
+null,1046,M2_margin_4,(intercept only),True,,False,0.000353,True
+null,1046,M2_margin_6,(intercept only),True,,False,0.000353,True
+null,1046,M2_margin_8,(intercept only),True,,False,0.000353,True
+null,1046,M2_margin_10,(intercept only),True,,False,0.000353,True
+in_space,1046,M1_raw,x1*x2+x3^2,True,,False,0.018244,True
+in_space,1046,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.018244,True
+in_space,1046,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.018244,True
+in_space,1046,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.018244,True
+in_space,1046,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.018244,True
+in_space,1046,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.018244,True
+null,1047,M2_raw,x3^2,False,x3^2,False,0.025827,True
+null,1047,M2_margin_0,x3^2,False,x3^2,False,0.025827,True
+null,1047,M2_margin_2,x3^2,False,x3^2,False,0.025827,True
+null,1047,M2_margin_4,x3^2,False,x3^2,False,0.025827,True
+null,1047,M2_margin_6,(intercept only),True,,False,0.011898,True
+null,1047,M2_margin_8,(intercept only),True,,False,0.011898,True
+null,1047,M2_margin_10,(intercept only),True,,False,0.011898,True
+in_space,1047,M1_raw,x1*x2+x3^2,True,,False,0.024281,True
+in_space,1047,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.024281,True
+in_space,1047,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.024281,True
+in_space,1047,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.024281,True
+in_space,1047,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.024281,True
+in_space,1047,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.024281,True
+null,1048,M2_raw,x1,False,x1,False,0.059917,False
+null,1048,M2_margin_0,x1,False,x1,False,0.059917,False
+null,1048,M2_margin_2,(intercept only),True,,False,0.052777,False
+null,1048,M2_margin_4,(intercept only),True,,False,0.052777,False
+null,1048,M2_margin_6,(intercept only),True,,False,0.052777,False
+null,1048,M2_margin_8,(intercept only),True,,False,0.052777,False
+null,1048,M2_margin_10,(intercept only),True,,False,0.052777,False
+in_space,1048,M1_raw,x1*x2+x3^2,True,,False,0.057542,False
+in_space,1048,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.057542,False
+in_space,1048,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.057542,False
+in_space,1048,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.057542,False
+in_space,1048,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.057542,False
+in_space,1048,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.057542,False
+null,1049,M2_raw,x1*x3+sin(x2),False,sin(x2)+x1*x3,False,0.051035,False
+null,1049,M2_margin_0,x1*x3+sin(x2),False,sin(x2)+x1*x3,False,0.051035,False
+null,1049,M2_margin_2,x1*x3+sin(x2),False,sin(x2)+x1*x3,False,0.051035,False
+null,1049,M2_margin_4,x1*x3+sin(x2),False,sin(x2)+x1*x3,False,0.051035,False
+null,1049,M2_margin_6,x1*x3+sin(x2),False,sin(x2)+x1*x3,False,0.051035,False
+null,1049,M2_margin_8,(intercept only),True,,False,0.020001,True
+null,1049,M2_margin_10,(intercept only),True,,False,0.020001,True
+in_space,1049,M1_raw,x1*x2+x3^2,True,,False,0.033713,True
+in_space,1049,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.033713,True
+in_space,1049,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.033713,True
+in_space,1049,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.033713,True
+in_space,1049,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.033713,True
+in_space,1049,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.033713,True
+null,1050,M2_raw,sin(x2),False,sin(x2),False,0.042502,True
+null,1050,M2_margin_0,sin(x2),False,sin(x2),False,0.042502,True
+null,1050,M2_margin_2,sin(x2),False,sin(x2),False,0.042502,True
+null,1050,M2_margin_4,(intercept only),True,,False,0.00454,True
+null,1050,M2_margin_6,(intercept only),True,,False,0.00454,True
+null,1050,M2_margin_8,(intercept only),True,,False,0.00454,True
+null,1050,M2_margin_10,(intercept only),True,,False,0.00454,True
+in_space,1050,M1_raw,x1*x2+x3^2,True,,False,0.016056,True
+in_space,1050,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1050,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016056,True
+in_space,1050,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016056,True
+in_space,1050,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016056,True
+in_space,1050,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016056,True
+null,1051,M2_raw,(intercept only),True,,False,0.019858,True
+null,1051,M2_margin_0,(intercept only),True,,False,0.019858,True
+null,1051,M2_margin_2,(intercept only),True,,False,0.019858,True
+null,1051,M2_margin_4,(intercept only),True,,False,0.019858,True
+null,1051,M2_margin_6,(intercept only),True,,False,0.019858,True
+null,1051,M2_margin_8,(intercept only),True,,False,0.019858,True
+null,1051,M2_margin_10,(intercept only),True,,False,0.019858,True
+in_space,1051,M1_raw,x1*x2+x3^2,True,,False,0.023759,True
+in_space,1051,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023759,True
+in_space,1051,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023759,True
+in_space,1051,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023759,True
+in_space,1051,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023759,True
+in_space,1051,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023759,True
+null,1052,M2_raw,x1*x3,False,x1*x3,False,0.021235,True
+null,1052,M2_margin_0,x1*x3,False,x1*x3,False,0.021235,True
+null,1052,M2_margin_2,(intercept only),True,,False,0.002883,True
+null,1052,M2_margin_4,(intercept only),True,,False,0.002883,True
+null,1052,M2_margin_6,(intercept only),True,,False,0.002883,True
+null,1052,M2_margin_8,(intercept only),True,,False,0.002883,True
+null,1052,M2_margin_10,(intercept only),True,,False,0.002883,True
+in_space,1052,M1_raw,x1*x2+x3^2,True,,False,0.014944,True
+in_space,1052,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.014944,True
+in_space,1052,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.014944,True
+in_space,1052,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.014944,True
+in_space,1052,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.014944,True
+in_space,1052,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.014944,True
+null,1053,M2_raw,(intercept only),True,,False,0.01737,True
+null,1053,M2_margin_0,(intercept only),True,,False,0.01737,True
+null,1053,M2_margin_2,(intercept only),True,,False,0.01737,True
+null,1053,M2_margin_4,(intercept only),True,,False,0.01737,True
+null,1053,M2_margin_6,(intercept only),True,,False,0.01737,True
+null,1053,M2_margin_8,(intercept only),True,,False,0.01737,True
+null,1053,M2_margin_10,(intercept only),True,,False,0.01737,True
+in_space,1053,M1_raw,x1*x2+x3^2,True,,False,0.029351,True
+in_space,1053,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.029351,True
+in_space,1053,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.029351,True
+in_space,1053,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.029351,True
+in_space,1053,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.029351,True
+in_space,1053,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.029351,True
+null,1054,M2_raw,x1*x3,False,x1*x3,False,0.037145,True
+null,1054,M2_margin_0,x1*x3,False,x1*x3,False,0.037145,True
+null,1054,M2_margin_2,x1*x3,False,x1*x3,False,0.037145,True
+null,1054,M2_margin_4,x1*x3,False,x1*x3,False,0.037145,True
+null,1054,M2_margin_6,x1*x3,False,x1*x3,False,0.037145,True
+null,1054,M2_margin_8,(intercept only),True,,False,0.010595,True
+null,1054,M2_margin_10,(intercept only),True,,False,0.010595,True
+in_space,1054,M1_raw,x1*x2+x3^2,True,,False,0.023216,True
+in_space,1054,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1054,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023216,True
+in_space,1054,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023216,True
+in_space,1054,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023216,True
+in_space,1054,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023216,True
+null,1055,M2_raw,(intercept only),True,,False,0.022683,True
+null,1055,M2_margin_0,(intercept only),True,,False,0.022683,True
+null,1055,M2_margin_2,(intercept only),True,,False,0.022683,True
+null,1055,M2_margin_4,(intercept only),True,,False,0.022683,True
+null,1055,M2_margin_6,(intercept only),True,,False,0.022683,True
+null,1055,M2_margin_8,(intercept only),True,,False,0.022683,True
+null,1055,M2_margin_10,(intercept only),True,,False,0.022683,True
+in_space,1055,M1_raw,x1*x2+x3^2,True,,False,0.044574,True
+in_space,1055,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1055,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.044574,True
+in_space,1055,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.044574,True
+in_space,1055,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.044574,True
+in_space,1055,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.044574,True
+null,1056,M2_raw,(intercept only),True,,False,0.035235,True
+null,1056,M2_margin_0,(intercept only),True,,False,0.035235,True
+null,1056,M2_margin_2,(intercept only),True,,False,0.035235,True
+null,1056,M2_margin_4,(intercept only),True,,False,0.035235,True
+null,1056,M2_margin_6,(intercept only),True,,False,0.035235,True
+null,1056,M2_margin_8,(intercept only),True,,False,0.035235,True
+null,1056,M2_margin_10,(intercept only),True,,False,0.035235,True
+in_space,1056,M1_raw,x1*x2+x3^2,True,,False,0.044516,True
+in_space,1056,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1056,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.044516,True
+in_space,1056,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.044516,True
+in_space,1056,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.044516,True
+in_space,1056,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.044516,True
+null,1057,M2_raw,x1+x1*x2,False,x1+x1*x2,False,0.035075,True
+null,1057,M2_margin_0,x1+x1*x2,False,x1+x1*x2,False,0.035075,True
+null,1057,M2_margin_2,x1+x1*x2,False,x1+x1*x2,False,0.035075,True
+null,1057,M2_margin_4,(intercept only),True,,False,0.003457,True
+null,1057,M2_margin_6,(intercept only),True,,False,0.003457,True
+null,1057,M2_margin_8,(intercept only),True,,False,0.003457,True
+null,1057,M2_margin_10,(intercept only),True,,False,0.003457,True
+in_space,1057,M1_raw,x1*x2+x3^2,True,,False,0.016188,True
+in_space,1057,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1057,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016188,True
+in_space,1057,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016188,True
+in_space,1057,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016188,True
+in_space,1057,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016188,True
+null,1058,M2_raw,sin(x1),False,sin(x1),False,0.033936,True
+null,1058,M2_margin_0,sin(x1),False,sin(x1),False,0.033936,True
+null,1058,M2_margin_2,(intercept only),True,,False,0.022184,True
+null,1058,M2_margin_4,(intercept only),True,,False,0.022184,True
+null,1058,M2_margin_6,(intercept only),True,,False,0.022184,True
+null,1058,M2_margin_8,(intercept only),True,,False,0.022184,True
+null,1058,M2_margin_10,(intercept only),True,,False,0.022184,True
+in_space,1058,M1_raw,x1*x2+x3^2,True,,False,0.046785,True
+in_space,1058,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.046785,True
+in_space,1058,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.046785,True
+in_space,1058,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.046785,True
+in_space,1058,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.046785,True
+in_space,1058,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.046785,True
+null,1059,M2_raw,x1+sin(x1),False,sin(x1)+x1,False,0.049517,True
+null,1059,M2_margin_0,x1+sin(x1),False,sin(x1)+x1,False,0.049517,True
+null,1059,M2_margin_2,x1+sin(x1),False,sin(x1)+x1,False,0.049517,True
+null,1059,M2_margin_4,x1+sin(x1),False,sin(x1)+x1,False,0.049517,True
+null,1059,M2_margin_6,(intercept only),True,,False,0.021532,True
+null,1059,M2_margin_8,(intercept only),True,,False,0.021532,True
+null,1059,M2_margin_10,(intercept only),True,,False,0.021532,True
+in_space,1059,M1_raw,x1*x2+x3^2,True,,False,0.033916,True
+in_space,1059,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1059,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.033916,True
+in_space,1059,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.033916,True
+in_space,1059,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.033916,True
+in_space,1059,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.033916,True
+null,1060,M2_raw,(intercept only),True,,False,0.000918,True
+null,1060,M2_margin_0,(intercept only),True,,False,0.000918,True
+null,1060,M2_margin_2,(intercept only),True,,False,0.000918,True
+null,1060,M2_margin_4,(intercept only),True,,False,0.000918,True
+null,1060,M2_margin_6,(intercept only),True,,False,0.000918,True
+null,1060,M2_margin_8,(intercept only),True,,False,0.000918,True
+null,1060,M2_margin_10,(intercept only),True,,False,0.000918,True
+in_space,1060,M1_raw,x1*x2+x3^2,True,,False,0.029617,True
+in_space,1060,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.029617,True
+in_space,1060,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.029617,True
+in_space,1060,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.029617,True
+in_space,1060,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.029617,True
+in_space,1060,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.029617,True
+null,1061,M2_raw,(intercept only),True,,False,0.000417,True
+null,1061,M2_margin_0,(intercept only),True,,False,0.000417,True
+null,1061,M2_margin_2,(intercept only),True,,False,0.000417,True
+null,1061,M2_margin_4,(intercept only),True,,False,0.000417,True
+null,1061,M2_margin_6,(intercept only),True,,False,0.000417,True
+null,1061,M2_margin_8,(intercept only),True,,False,0.000417,True
+null,1061,M2_margin_10,(intercept only),True,,False,0.000417,True
+in_space,1061,M1_raw,x1*x2+x3^2,True,,False,0.016546,True
+in_space,1061,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.016546,True
+in_space,1061,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016546,True
+in_space,1061,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016546,True
+in_space,1061,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016546,True
+in_space,1061,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016546,True
+null,1062,M2_raw,(intercept only),True,,False,0.016914,True
+null,1062,M2_margin_0,(intercept only),True,,False,0.016914,True
+null,1062,M2_margin_2,(intercept only),True,,False,0.016914,True
+null,1062,M2_margin_4,(intercept only),True,,False,0.016914,True
+null,1062,M2_margin_6,(intercept only),True,,False,0.016914,True
+null,1062,M2_margin_8,(intercept only),True,,False,0.016914,True
+null,1062,M2_margin_10,(intercept only),True,,False,0.016914,True
+in_space,1062,M1_raw,x1*x2+x3^2,True,,False,0.023835,True
+in_space,1062,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023835,True
+in_space,1062,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023835,True
+in_space,1062,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023835,True
+in_space,1062,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023835,True
+in_space,1062,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023835,True
+null,1063,M2_raw,sin(x3),False,sin(x3),False,0.060462,False
+null,1063,M2_margin_0,sin(x3),False,sin(x3),False,0.060462,False
+null,1063,M2_margin_2,sin(x3),False,sin(x3),False,0.060462,False
+null,1063,M2_margin_4,(intercept only),True,,False,0.033673,True
+null,1063,M2_margin_6,(intercept only),True,,False,0.033673,True
+null,1063,M2_margin_8,(intercept only),True,,False,0.033673,True
+null,1063,M2_margin_10,(intercept only),True,,False,0.033673,True
+in_space,1063,M1_raw,x1*x2+x3^2,True,,False,0.054834,False
+in_space,1063,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1063,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.054834,False
+in_space,1063,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.054834,False
+in_space,1063,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.054834,False
+in_space,1063,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.054834,False
+null,1064,M2_raw,x1*x2+x3^2,False,x1*x2+x3^2,False,0.054651,False
+null,1064,M2_margin_0,x1*x2+x3^2,False,x1*x2+x3^2,False,0.054651,False
+null,1064,M2_margin_2,x1*x2+x3^2,False,x1*x2+x3^2,False,0.054651,False
+null,1064,M2_margin_4,(intercept only),True,,False,0.003911,True
+null,1064,M2_margin_6,(intercept only),True,,False,0.003911,True
+null,1064,M2_margin_8,(intercept only),True,,False,0.003911,True
+null,1064,M2_margin_10,(intercept only),True,,False,0.003911,True
+in_space,1064,M1_raw,x1*x2+x3^2,True,,False,0.045496,True
+in_space,1064,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.045496,True
+in_space,1064,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.045496,True
+in_space,1064,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.045496,True
+in_space,1064,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.045496,True
+in_space,1064,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.045496,True
+null,1065,M2_raw,x3+x3^2,False,x3+x3^2,False,0.041267,True
+null,1065,M2_margin_0,x3+x3^2,False,x3+x3^2,False,0.041267,True
+null,1065,M2_margin_2,x3+x3^2,False,x3+x3^2,False,0.041267,True
+null,1065,M2_margin_4,x3+x3^2,False,x3+x3^2,False,0.041267,True
+null,1065,M2_margin_6,(intercept only),True,,False,0.009574,True
+null,1065,M2_margin_8,(intercept only),True,,False,0.009574,True
+null,1065,M2_margin_10,(intercept only),True,,False,0.009574,True
+in_space,1065,M1_raw,x1*x2+x3^2,True,,False,0.012304,True
+in_space,1065,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.012304,True
+in_space,1065,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.012304,True
+in_space,1065,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.012304,True
+in_space,1065,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.012304,True
+in_space,1065,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.012304,True
+null,1066,M2_raw,(intercept only),True,,False,0.002607,True
+null,1066,M2_margin_0,(intercept only),True,,False,0.002607,True
+null,1066,M2_margin_2,(intercept only),True,,False,0.002607,True
+null,1066,M2_margin_4,(intercept only),True,,False,0.002607,True
+null,1066,M2_margin_6,(intercept only),True,,False,0.002607,True
+null,1066,M2_margin_8,(intercept only),True,,False,0.002607,True
+null,1066,M2_margin_10,(intercept only),True,,False,0.002607,True
+in_space,1066,M1_raw,x1*x2+x3^2,True,,False,0.016312,True
+in_space,1066,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.016312,True
+in_space,1066,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016312,True
+in_space,1066,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016312,True
+in_space,1066,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016312,True
+in_space,1066,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016312,True
+null,1067,M2_raw,x3+sin(x2),False,sin(x2)+x3,False,0.046721,True
+null,1067,M2_margin_0,x3+sin(x2),False,sin(x2)+x3,False,0.046721,True
+null,1067,M2_margin_2,x3+sin(x2),False,sin(x2)+x3,False,0.046721,True
+null,1067,M2_margin_4,x3+sin(x2),False,sin(x2)+x3,False,0.046721,True
+null,1067,M2_margin_6,x3+sin(x2),False,sin(x2)+x3,False,0.046721,True
+null,1067,M2_margin_8,(intercept only),True,,False,0.003687,True
+null,1067,M2_margin_10,(intercept only),True,,False,0.003687,True
+in_space,1067,M1_raw,x1*x2+x3^2,True,,False,0.041387,True
+in_space,1067,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.041387,True
+in_space,1067,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.041387,True
+in_space,1067,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.041387,True
+in_space,1067,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.041387,True
+in_space,1067,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.041387,True
+null,1068,M2_raw,x3,False,x3,False,0.042129,True
+null,1068,M2_margin_0,x3,False,x3,False,0.042129,True
+null,1068,M2_margin_2,x3,False,x3,False,0.042129,True
+null,1068,M2_margin_4,(intercept only),True,,False,0.008878,True
+null,1068,M2_margin_6,(intercept only),True,,False,0.008878,True
+null,1068,M2_margin_8,(intercept only),True,,False,0.008878,True
+null,1068,M2_margin_10,(intercept only),True,,False,0.008878,True
+in_space,1068,M1_raw,x1*x2+x3^2,True,,False,0.024294,True
+in_space,1068,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1068,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.024294,True
+in_space,1068,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.024294,True
+in_space,1068,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.024294,True
+in_space,1068,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.024294,True
+null,1069,M2_raw,(intercept only),True,,False,0.004234,True
+null,1069,M2_margin_0,(intercept only),True,,False,0.004234,True
+null,1069,M2_margin_2,(intercept only),True,,False,0.004234,True
+null,1069,M2_margin_4,(intercept only),True,,False,0.004234,True
+null,1069,M2_margin_6,(intercept only),True,,False,0.004234,True
+null,1069,M2_margin_8,(intercept only),True,,False,0.004234,True
+null,1069,M2_margin_10,(intercept only),True,,False,0.004234,True
+in_space,1069,M1_raw,x1*x2+x3^2,True,,False,0.026091,True
+in_space,1069,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.026091,True
+in_space,1069,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.026091,True
+in_space,1069,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.026091,True
+in_space,1069,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.026091,True
+in_space,1069,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.026091,True
+null,1070,M2_raw,(intercept only),True,,False,0.025262,True
+null,1070,M2_margin_0,(intercept only),True,,False,0.025262,True
+null,1070,M2_margin_2,(intercept only),True,,False,0.025262,True
+null,1070,M2_margin_4,(intercept only),True,,False,0.025262,True
+null,1070,M2_margin_6,(intercept only),True,,False,0.025262,True
+null,1070,M2_margin_8,(intercept only),True,,False,0.025262,True
+null,1070,M2_margin_10,(intercept only),True,,False,0.025262,True
+in_space,1070,M1_raw,x1*x2+x3^2,True,,False,0.034694,True
+in_space,1070,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.034694,True
+in_space,1070,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.034694,True
+in_space,1070,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.034694,True
+in_space,1070,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.034694,True
+in_space,1070,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.034694,True
+null,1071,M2_raw,x3^2,False,x3^2,False,0.047658,True
+null,1071,M2_margin_0,x3^2,False,x3^2,False,0.047658,True
+null,1071,M2_margin_2,(intercept only),True,,False,0.024455,True
+null,1071,M2_margin_4,(intercept only),True,,False,0.024455,True
+null,1071,M2_margin_6,(intercept only),True,,False,0.024455,True
+null,1071,M2_margin_8,(intercept only),True,,False,0.024455,True
+null,1071,M2_margin_10,(intercept only),True,,False,0.024455,True
+in_space,1071,M1_raw,x1*x2+x3^2,True,,False,0.03189,True
+in_space,1071,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.03189,True
+in_space,1071,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.03189,True
+in_space,1071,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.03189,True
+in_space,1071,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.03189,True
+in_space,1071,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.03189,True
+null,1072,M2_raw,(intercept only),True,,False,0.021426,True
+null,1072,M2_margin_0,(intercept only),True,,False,0.021426,True
+null,1072,M2_margin_2,(intercept only),True,,False,0.021426,True
+null,1072,M2_margin_4,(intercept only),True,,False,0.021426,True
+null,1072,M2_margin_6,(intercept only),True,,False,0.021426,True
+null,1072,M2_margin_8,(intercept only),True,,False,0.021426,True
+null,1072,M2_margin_10,(intercept only),True,,False,0.021426,True
+in_space,1072,M1_raw,x1*x2+x3^2,True,,False,0.050565,False
+in_space,1072,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1072,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.050565,False
+in_space,1072,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.050565,False
+in_space,1072,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.050565,False
+in_space,1072,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.050565,False
+null,1073,M2_raw,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.038429,True
+null,1073,M2_margin_0,x1^2+sin(x1),False,sin(x1)+x1^2,False,0.038429,True
+null,1073,M2_margin_2,(intercept only),True,,False,0.025822,True
+null,1073,M2_margin_4,(intercept only),True,,False,0.025822,True
+null,1073,M2_margin_6,(intercept only),True,,False,0.025822,True
+null,1073,M2_margin_8,(intercept only),True,,False,0.025822,True
+null,1073,M2_margin_10,(intercept only),True,,False,0.025822,True
+in_space,1073,M1_raw,x1*x2+x3^2,True,,False,0.051453,False
+in_space,1073,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.051453,False
+in_space,1073,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.051453,False
+in_space,1073,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.051453,False
+in_space,1073,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.051453,False
+in_space,1073,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.051453,False
+null,1074,M2_raw,x3+sin(x3),False,sin(x3)+x3,False,0.047316,True
+null,1074,M2_margin_0,x3+sin(x3),False,sin(x3)+x3,False,0.047316,True
+null,1074,M2_margin_2,x3+sin(x3),False,sin(x3)+x3,False,0.047316,True
+null,1074,M2_margin_4,x3+sin(x3),False,sin(x3)+x3,False,0.047316,True
+null,1074,M2_margin_6,x3+sin(x3),False,sin(x3)+x3,False,0.047316,True
+null,1074,M2_margin_8,x3+sin(x3),False,sin(x3)+x3,False,0.047316,True
+null,1074,M2_margin_10,(intercept only),True,,False,0.017708,True
+in_space,1074,M1_raw,x1*x2+x3^2,True,,False,0.020118,True
+in_space,1074,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1074,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.020118,True
+in_space,1074,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.020118,True
+in_space,1074,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.020118,True
+in_space,1074,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.020118,True
+null,1075,M2_raw,x2^2+x3^2,False,x2^2+x3^2,False,0.039188,True
+null,1075,M2_margin_0,x2^2+x3^2,False,x2^2+x3^2,False,0.039188,True
+null,1075,M2_margin_2,(intercept only),True,,False,0.008929,True
+null,1075,M2_margin_4,(intercept only),True,,False,0.008929,True
+null,1075,M2_margin_6,(intercept only),True,,False,0.008929,True
+null,1075,M2_margin_8,(intercept only),True,,False,0.008929,True
+null,1075,M2_margin_10,(intercept only),True,,False,0.008929,True
+in_space,1075,M1_raw,x1*x2+x3^2,True,,False,0.016663,True
+in_space,1075,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1075,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016663,True
+in_space,1075,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016663,True
+in_space,1075,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016663,True
+in_space,1075,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016663,True
+null,1076,M2_raw,sin(x1),False,sin(x1),False,0.040256,True
+null,1076,M2_margin_0,sin(x1),False,sin(x1),False,0.040256,True
+null,1076,M2_margin_2,sin(x1),False,sin(x1),False,0.040256,True
+null,1076,M2_margin_4,(intercept only),True,,False,0.000257,True
+null,1076,M2_margin_6,(intercept only),True,,False,0.000257,True
+null,1076,M2_margin_8,(intercept only),True,,False,0.000257,True
+null,1076,M2_margin_10,(intercept only),True,,False,0.000257,True
+in_space,1076,M1_raw,x1*x2+x3^2,True,,False,0.034345,True
+in_space,1076,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.034345,True
+in_space,1076,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.034345,True
+in_space,1076,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.034345,True
+in_space,1076,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.034345,True
+in_space,1076,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.034345,True
+null,1077,M2_raw,(intercept only),True,,False,0.0174,True
+null,1077,M2_margin_0,(intercept only),True,,False,0.0174,True
+null,1077,M2_margin_2,(intercept only),True,,False,0.0174,True
+null,1077,M2_margin_4,(intercept only),True,,False,0.0174,True
+null,1077,M2_margin_6,(intercept only),True,,False,0.0174,True
+null,1077,M2_margin_8,(intercept only),True,,False,0.0174,True
+null,1077,M2_margin_10,(intercept only),True,,False,0.0174,True
+in_space,1077,M1_raw,x1*x2+x3^2,True,,False,0.030637,True
+in_space,1077,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1077,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.030637,True
+in_space,1077,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.030637,True
+in_space,1077,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.030637,True
+in_space,1077,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.030637,True
+null,1078,M2_raw,x1*x2,False,x1*x2,False,0.037323,True
+null,1078,M2_margin_0,x1*x2,False,x1*x2,False,0.037323,True
+null,1078,M2_margin_2,x1*x2,False,x1*x2,False,0.037323,True
+null,1078,M2_margin_4,x1*x2,False,x1*x2,False,0.037323,True
+null,1078,M2_margin_6,(intercept only),True,,False,0.021584,True
+null,1078,M2_margin_8,(intercept only),True,,False,0.021584,True
+null,1078,M2_margin_10,(intercept only),True,,False,0.021584,True
+in_space,1078,M1_raw,x1*x2+x3^2,True,,False,0.048666,True
+in_space,1078,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1078,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.048666,True
+in_space,1078,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.048666,True
+in_space,1078,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.048666,True
+in_space,1078,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.048666,True
+null,1079,M2_raw,x1+x1*x3,False,x1+x1*x3,False,0.043236,True
+null,1079,M2_margin_0,x1+x1*x3,False,x1+x1*x3,False,0.043236,True
+null,1079,M2_margin_2,(intercept only),True,,False,0.023952,True
+null,1079,M2_margin_4,(intercept only),True,,False,0.023952,True
+null,1079,M2_margin_6,(intercept only),True,,False,0.023952,True
+null,1079,M2_margin_8,(intercept only),True,,False,0.023952,True
+null,1079,M2_margin_10,(intercept only),True,,False,0.023952,True
+in_space,1079,M1_raw,x1*x2+x3^2,True,,False,0.053019,False
+in_space,1079,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1079,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.053019,False
+in_space,1079,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.053019,False
+in_space,1079,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.053019,False
+in_space,1079,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.053019,False
+null,1080,M2_raw,(intercept only),True,,False,0.011379,True
+null,1080,M2_margin_0,(intercept only),True,,False,0.011379,True
+null,1080,M2_margin_2,(intercept only),True,,False,0.011379,True
+null,1080,M2_margin_4,(intercept only),True,,False,0.011379,True
+null,1080,M2_margin_6,(intercept only),True,,False,0.011379,True
+null,1080,M2_margin_8,(intercept only),True,,False,0.011379,True
+null,1080,M2_margin_10,(intercept only),True,,False,0.011379,True
+in_space,1080,M1_raw,x1*x2+x3^2,True,,False,0.049467,True
+in_space,1080,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.049467,True
+in_space,1080,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.049467,True
+in_space,1080,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.049467,True
+in_space,1080,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.049467,True
+in_space,1080,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.049467,True
+null,1081,M2_raw,sin(x2),False,sin(x2),False,0.058644,False
+null,1081,M2_margin_0,sin(x2),False,sin(x2),False,0.058644,False
+null,1081,M2_margin_2,sin(x2),False,sin(x2),False,0.058644,False
+null,1081,M2_margin_4,sin(x2),False,sin(x2),False,0.058644,False
+null,1081,M2_margin_6,(intercept only),True,,False,0.019785,True
+null,1081,M2_margin_8,(intercept only),True,,False,0.019785,True
+null,1081,M2_margin_10,(intercept only),True,,False,0.019785,True
+in_space,1081,M1_raw,x1*x2+x3^2,True,,False,0.039068,True
+in_space,1081,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1081,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.039068,True
+in_space,1081,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.039068,True
+in_space,1081,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.039068,True
+in_space,1081,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.039068,True
+null,1082,M2_raw,sin(x1),False,sin(x1),False,0.028323,True
+null,1082,M2_margin_0,sin(x1),False,sin(x1),False,0.028323,True
+null,1082,M2_margin_2,(intercept only),True,,False,0.007237,True
+null,1082,M2_margin_4,(intercept only),True,,False,0.007237,True
+null,1082,M2_margin_6,(intercept only),True,,False,0.007237,True
+null,1082,M2_margin_8,(intercept only),True,,False,0.007237,True
+null,1082,M2_margin_10,(intercept only),True,,False,0.007237,True
+in_space,1082,M1_raw,x1*x2+x3^2,True,,False,0.022983,True
+in_space,1082,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.022983,True
+in_space,1082,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.022983,True
+in_space,1082,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.022983,True
+in_space,1082,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.022983,True
+in_space,1082,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.022983,True
+null,1083,M2_raw,(intercept only),True,,False,0.010348,True
+null,1083,M2_margin_0,(intercept only),True,,False,0.010348,True
+null,1083,M2_margin_2,(intercept only),True,,False,0.010348,True
+null,1083,M2_margin_4,(intercept only),True,,False,0.010348,True
+null,1083,M2_margin_6,(intercept only),True,,False,0.010348,True
+null,1083,M2_margin_8,(intercept only),True,,False,0.010348,True
+null,1083,M2_margin_10,(intercept only),True,,False,0.010348,True
+in_space,1083,M1_raw,x1*x2+x3^2,True,,False,0.055216,False
+in_space,1083,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.055216,False
+in_space,1083,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.055216,False
+in_space,1083,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.055216,False
+in_space,1083,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.055216,False
+in_space,1083,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.055216,False
+null,1084,M2_raw,x1*x3+x2*x3,False,x1*x3+x2*x3,False,0.034794,True
+null,1084,M2_margin_0,x1*x3+x2*x3,False,x1*x3+x2*x3,False,0.034794,True
+null,1084,M2_margin_2,x1*x3+x2*x3,False,x1*x3+x2*x3,False,0.034794,True
+null,1084,M2_margin_4,(intercept only),True,,False,0.001257,True
+null,1084,M2_margin_6,(intercept only),True,,False,0.001257,True
+null,1084,M2_margin_8,(intercept only),True,,False,0.001257,True
+null,1084,M2_margin_10,(intercept only),True,,False,0.001257,True
+in_space,1084,M1_raw,x1*x2+x3^2,True,,False,0.026211,True
+in_space,1084,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1084,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.026211,True
+in_space,1084,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.026211,True
+in_space,1084,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.026211,True
+in_space,1084,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.026211,True
+null,1085,M2_raw,(intercept only),True,,False,0.010087,True
+null,1085,M2_margin_0,(intercept only),True,,False,0.010087,True
+null,1085,M2_margin_2,(intercept only),True,,False,0.010087,True
+null,1085,M2_margin_4,(intercept only),True,,False,0.010087,True
+null,1085,M2_margin_6,(intercept only),True,,False,0.010087,True
+null,1085,M2_margin_8,(intercept only),True,,False,0.010087,True
+null,1085,M2_margin_10,(intercept only),True,,False,0.010087,True
+in_space,1085,M1_raw,x1*x2+x3^2,True,,False,0.026545,True
+in_space,1085,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.026545,True
+in_space,1085,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.026545,True
+in_space,1085,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.026545,True
+in_space,1085,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.026545,True
+in_space,1085,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.026545,True
+null,1086,M2_raw,x1*x3,False,x1*x3,False,0.025532,True
+null,1086,M2_margin_0,x1*x3,False,x1*x3,False,0.025532,True
+null,1086,M2_margin_2,x1*x3,False,x1*x3,False,0.025532,True
+null,1086,M2_margin_4,(intercept only),True,,False,0.005579,True
+null,1086,M2_margin_6,(intercept only),True,,False,0.005579,True
+null,1086,M2_margin_8,(intercept only),True,,False,0.005579,True
+null,1086,M2_margin_10,(intercept only),True,,False,0.005579,True
+in_space,1086,M1_raw,x1*x2+x3^2,True,,False,0.029223,True
+in_space,1086,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.029223,True
+in_space,1086,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.029223,True
+in_space,1086,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.029223,True
+in_space,1086,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.029223,True
+in_space,1086,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.029223,True
+null,1087,M2_raw,(intercept only),True,,False,0.003284,True
+null,1087,M2_margin_0,(intercept only),True,,False,0.003284,True
+null,1087,M2_margin_2,(intercept only),True,,False,0.003284,True
+null,1087,M2_margin_4,(intercept only),True,,False,0.003284,True
+null,1087,M2_margin_6,(intercept only),True,,False,0.003284,True
+null,1087,M2_margin_8,(intercept only),True,,False,0.003284,True
+null,1087,M2_margin_10,(intercept only),True,,False,0.003284,True
+in_space,1087,M1_raw,x1*x2+x3^2,True,,False,0.011604,True
+in_space,1087,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1087,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.011604,True
+in_space,1087,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.011604,True
+in_space,1087,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.011604,True
+in_space,1087,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.011604,True
+null,1088,M2_raw,sin(x1),False,sin(x1),False,0.028092,True
+null,1088,M2_margin_0,sin(x1),False,sin(x1),False,0.028092,True
+null,1088,M2_margin_2,(intercept only),True,,False,0.010625,True
+null,1088,M2_margin_4,(intercept only),True,,False,0.010625,True
+null,1088,M2_margin_6,(intercept only),True,,False,0.010625,True
+null,1088,M2_margin_8,(intercept only),True,,False,0.010625,True
+null,1088,M2_margin_10,(intercept only),True,,False,0.010625,True
+in_space,1088,M1_raw,x1*x2+x3^2,True,,False,0.020055,True
+in_space,1088,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.020055,True
+in_space,1088,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.020055,True
+in_space,1088,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.020055,True
+in_space,1088,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.020055,True
+in_space,1088,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.020055,True
+null,1089,M2_raw,(intercept only),True,,False,0.043027,True
+null,1089,M2_margin_0,(intercept only),True,,False,0.043027,True
+null,1089,M2_margin_2,(intercept only),True,,False,0.043027,True
+null,1089,M2_margin_4,(intercept only),True,,False,0.043027,True
+null,1089,M2_margin_6,(intercept only),True,,False,0.043027,True
+null,1089,M2_margin_8,(intercept only),True,,False,0.043027,True
+null,1089,M2_margin_10,(intercept only),True,,False,0.043027,True
+in_space,1089,M1_raw,x1*x2+x3^2,True,,False,0.059227,False
+in_space,1089,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1089,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.059227,False
+in_space,1089,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.059227,False
+in_space,1089,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.059227,False
+in_space,1089,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.059227,False
+null,1090,M2_raw,(intercept only),True,,False,0.001373,True
+null,1090,M2_margin_0,(intercept only),True,,False,0.001373,True
+null,1090,M2_margin_2,(intercept only),True,,False,0.001373,True
+null,1090,M2_margin_4,(intercept only),True,,False,0.001373,True
+null,1090,M2_margin_6,(intercept only),True,,False,0.001373,True
+null,1090,M2_margin_8,(intercept only),True,,False,0.001373,True
+null,1090,M2_margin_10,(intercept only),True,,False,0.001373,True
+in_space,1090,M1_raw,x1*x2+x3^2,True,,False,0.023253,True
+in_space,1090,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023253,True
+in_space,1090,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023253,True
+in_space,1090,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023253,True
+in_space,1090,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023253,True
+in_space,1090,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023253,True
+null,1091,M2_raw,(intercept only),True,,False,0.003552,True
+null,1091,M2_margin_0,(intercept only),True,,False,0.003552,True
+null,1091,M2_margin_2,(intercept only),True,,False,0.003552,True
+null,1091,M2_margin_4,(intercept only),True,,False,0.003552,True
+null,1091,M2_margin_6,(intercept only),True,,False,0.003552,True
+null,1091,M2_margin_8,(intercept only),True,,False,0.003552,True
+null,1091,M2_margin_10,(intercept only),True,,False,0.003552,True
+in_space,1091,M1_raw,x1*x2+x3^2,True,,False,0.019138,True
+in_space,1091,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.019138,True
+in_space,1091,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.019138,True
+in_space,1091,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.019138,True
+in_space,1091,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.019138,True
+in_space,1091,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.019138,True
+null,1092,M2_raw,x1*x2+x1^2,False,x1*x2+x1^2,False,0.048506,True
+null,1092,M2_margin_0,x1*x2+x1^2,False,x1*x2+x1^2,False,0.048506,True
+null,1092,M2_margin_2,x1*x2+x1^2,False,x1*x2+x1^2,False,0.048506,True
+null,1092,M2_margin_4,x1*x2+x1^2,False,x1*x2+x1^2,False,0.048506,True
+null,1092,M2_margin_6,(intercept only),True,,False,0.010685,True
+null,1092,M2_margin_8,(intercept only),True,,False,0.010685,True
+null,1092,M2_margin_10,(intercept only),True,,False,0.010685,True
+in_space,1092,M1_raw,x1*x2+x3^2,True,,False,0.036869,True
+in_space,1092,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1092,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.036869,True
+in_space,1092,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.036869,True
+in_space,1092,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.036869,True
+in_space,1092,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.036869,True
+null,1093,M2_raw,x1*x2,False,x1*x2,False,0.038794,True
+null,1093,M2_margin_0,x1*x2,False,x1*x2,False,0.038794,True
+null,1093,M2_margin_2,x1*x2,False,x1*x2,False,0.038794,True
+null,1093,M2_margin_4,x1*x2,False,x1*x2,False,0.038794,True
+null,1093,M2_margin_6,x1*x2,False,x1*x2,False,0.038794,True
+null,1093,M2_margin_8,(intercept only),True,,False,0.017532,True
+null,1093,M2_margin_10,(intercept only),True,,False,0.017532,True
+in_space,1093,M1_raw,x1*x2+x3^2,True,,False,0.053088,False
+in_space,1093,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.053088,False
+in_space,1093,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.053088,False
+in_space,1093,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.053088,False
+in_space,1093,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.053088,False
+in_space,1093,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.053088,False
+null,1094,M2_raw,x1*x2,False,x1*x2,False,0.024407,True
+null,1094,M2_margin_0,x1*x2,False,x1*x2,False,0.024407,True
+null,1094,M2_margin_2,x1*x2,False,x1*x2,False,0.024407,True
+null,1094,M2_margin_4,(intercept only),True,,False,0.001932,True
+null,1094,M2_margin_6,(intercept only),True,,False,0.001932,True
+null,1094,M2_margin_8,(intercept only),True,,False,0.001932,True
+null,1094,M2_margin_10,(intercept only),True,,False,0.001932,True
+in_space,1094,M1_raw,x1*x2+x3^2,True,,False,0.013852,True
+in_space,1094,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.013852,True
+in_space,1094,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.013852,True
+in_space,1094,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.013852,True
+in_space,1094,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.013852,True
+in_space,1094,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.013852,True
+null,1095,M2_raw,sin(x2),False,sin(x2),False,0.043714,True
+null,1095,M2_margin_0,sin(x2),False,sin(x2),False,0.043714,True
+null,1095,M2_margin_2,(intercept only),True,,False,0.003982,True
+null,1095,M2_margin_4,(intercept only),True,,False,0.003982,True
+null,1095,M2_margin_6,(intercept only),True,,False,0.003982,True
+null,1095,M2_margin_8,(intercept only),True,,False,0.003982,True
+null,1095,M2_margin_10,(intercept only),True,,False,0.003982,True
+in_space,1095,M1_raw,x1*x2+x3^2,True,,False,0.013723,True
+in_space,1095,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1095,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.013723,True
+in_space,1095,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.013723,True
+in_space,1095,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.013723,True
+in_space,1095,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.013723,True
+null,1096,M2_raw,(intercept only),True,,False,0.01062,True
+null,1096,M2_margin_0,(intercept only),True,,False,0.01062,True
+null,1096,M2_margin_2,(intercept only),True,,False,0.01062,True
+null,1096,M2_margin_4,(intercept only),True,,False,0.01062,True
+null,1096,M2_margin_6,(intercept only),True,,False,0.01062,True
+null,1096,M2_margin_8,(intercept only),True,,False,0.01062,True
+null,1096,M2_margin_10,(intercept only),True,,False,0.01062,True
+in_space,1096,M1_raw,x1*x2+x3^2,True,,False,0.028601,True
+in_space,1096,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.028601,True
+in_space,1096,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.028601,True
+in_space,1096,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.028601,True
+in_space,1096,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.028601,True
+in_space,1096,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.028601,True
+null,1097,M2_raw,x2*x3+sin(x2),False,sin(x2)+x2*x3,False,0.026836,True
+null,1097,M2_margin_0,x2*x3+sin(x2),False,sin(x2)+x2*x3,False,0.026836,True
+null,1097,M2_margin_2,(intercept only),True,,False,0.004182,True
+null,1097,M2_margin_4,(intercept only),True,,False,0.004182,True
+null,1097,M2_margin_6,(intercept only),True,,False,0.004182,True
+null,1097,M2_margin_8,(intercept only),True,,False,0.004182,True
+null,1097,M2_margin_10,(intercept only),True,,False,0.004182,True
+in_space,1097,M1_raw,x1*x2+x3^2,True,,False,0.038084,True
+in_space,1097,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.038084,True
+in_space,1097,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.038084,True
+in_space,1097,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.038084,True
+in_space,1097,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.038084,True
+in_space,1097,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.038084,True
+null,1098,M2_raw,x1*x2,False,x1*x2,False,0.039953,True
+null,1098,M2_margin_0,x1*x2,False,x1*x2,False,0.039953,True
+null,1098,M2_margin_2,x1*x2,False,x1*x2,False,0.039953,True
+null,1098,M2_margin_4,x1*x2,False,x1*x2,False,0.039953,True
+null,1098,M2_margin_6,(intercept only),True,,False,0.00627,True
+null,1098,M2_margin_8,(intercept only),True,,False,0.00627,True
+null,1098,M2_margin_10,(intercept only),True,,False,0.00627,True
+in_space,1098,M1_raw,x1*x2+x3^2,True,,False,0.021392,True
+in_space,1098,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1098,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.021392,True
+in_space,1098,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.021392,True
+in_space,1098,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.021392,True
+in_space,1098,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.021392,True
+null,1099,M2_raw,x3,False,x3,False,0.030825,True
+null,1099,M2_margin_0,x3,False,x3,False,0.030825,True
+null,1099,M2_margin_2,(intercept only),True,,False,0.021818,True
+null,1099,M2_margin_4,(intercept only),True,,False,0.021818,True
+null,1099,M2_margin_6,(intercept only),True,,False,0.021818,True
+null,1099,M2_margin_8,(intercept only),True,,False,0.021818,True
+null,1099,M2_margin_10,(intercept only),True,,False,0.021818,True
+in_space,1099,M1_raw,x1*x2+x3^2,True,,False,0.024689,True
+in_space,1099,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.024689,True
+in_space,1099,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.024689,True
+in_space,1099,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.024689,True
+in_space,1099,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.024689,True
+in_space,1099,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.024689,True
+null,1100,M2_raw,(intercept only),True,,False,0.014154,True
+null,1100,M2_margin_0,(intercept only),True,,False,0.014154,True
+null,1100,M2_margin_2,(intercept only),True,,False,0.014154,True
+null,1100,M2_margin_4,(intercept only),True,,False,0.014154,True
+null,1100,M2_margin_6,(intercept only),True,,False,0.014154,True
+null,1100,M2_margin_8,(intercept only),True,,False,0.014154,True
+null,1100,M2_margin_10,(intercept only),True,,False,0.014154,True
+in_space,1100,M1_raw,x1*x2+x3^2,True,,False,0.016954,True
+in_space,1100,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1100,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016954,True
+in_space,1100,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016954,True
+in_space,1100,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016954,True
+in_space,1100,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016954,True
+null,1101,M2_raw,(intercept only),True,,False,0.027395,True
+null,1101,M2_margin_0,(intercept only),True,,False,0.027395,True
+null,1101,M2_margin_2,(intercept only),True,,False,0.027395,True
+null,1101,M2_margin_4,(intercept only),True,,False,0.027395,True
+null,1101,M2_margin_6,(intercept only),True,,False,0.027395,True
+null,1101,M2_margin_8,(intercept only),True,,False,0.027395,True
+null,1101,M2_margin_10,(intercept only),True,,False,0.027395,True
+in_space,1101,M1_raw,x1*x2+x3^2,True,,False,0.05717,False
+in_space,1101,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1101,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.05717,False
+in_space,1101,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.05717,False
+in_space,1101,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.05717,False
+in_space,1101,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.05717,False
+null,1102,M2_raw,(intercept only),True,,False,0.010089,True
+null,1102,M2_margin_0,(intercept only),True,,False,0.010089,True
+null,1102,M2_margin_2,(intercept only),True,,False,0.010089,True
+null,1102,M2_margin_4,(intercept only),True,,False,0.010089,True
+null,1102,M2_margin_6,(intercept only),True,,False,0.010089,True
+null,1102,M2_margin_8,(intercept only),True,,False,0.010089,True
+null,1102,M2_margin_10,(intercept only),True,,False,0.010089,True
+in_space,1102,M1_raw,x1*x2+x3^2,True,,False,0.013441,True
+in_space,1102,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1102,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.013441,True
+in_space,1102,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.013441,True
+in_space,1102,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.013441,True
+in_space,1102,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.013441,True
+null,1103,M2_raw,(intercept only),True,,False,0.025401,True
+null,1103,M2_margin_0,(intercept only),True,,False,0.025401,True
+null,1103,M2_margin_2,(intercept only),True,,False,0.025401,True
+null,1103,M2_margin_4,(intercept only),True,,False,0.025401,True
+null,1103,M2_margin_6,(intercept only),True,,False,0.025401,True
+null,1103,M2_margin_8,(intercept only),True,,False,0.025401,True
+null,1103,M2_margin_10,(intercept only),True,,False,0.025401,True
+in_space,1103,M1_raw,x1*x2+x3^2,True,,False,0.02556,True
+in_space,1103,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1103,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.02556,True
+in_space,1103,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.02556,True
+in_space,1103,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.02556,True
+in_space,1103,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.02556,True
+null,1104,M2_raw,x2,False,x2,False,0.046278,True
+null,1104,M2_margin_0,x2,False,x2,False,0.046278,True
+null,1104,M2_margin_2,x2,False,x2,False,0.046278,True
+null,1104,M2_margin_4,(intercept only),True,,False,0.02451,True
+null,1104,M2_margin_6,(intercept only),True,,False,0.02451,True
+null,1104,M2_margin_8,(intercept only),True,,False,0.02451,True
+null,1104,M2_margin_10,(intercept only),True,,False,0.02451,True
+in_space,1104,M1_raw,x1*x2+x3^2,True,,False,0.040073,True
+in_space,1104,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1104,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.040073,True
+in_space,1104,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.040073,True
+in_space,1104,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.040073,True
+in_space,1104,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.040073,True
+null,1105,M2_raw,(intercept only),True,,False,0.018722,True
+null,1105,M2_margin_0,(intercept only),True,,False,0.018722,True
+null,1105,M2_margin_2,(intercept only),True,,False,0.018722,True
+null,1105,M2_margin_4,(intercept only),True,,False,0.018722,True
+null,1105,M2_margin_6,(intercept only),True,,False,0.018722,True
+null,1105,M2_margin_8,(intercept only),True,,False,0.018722,True
+null,1105,M2_margin_10,(intercept only),True,,False,0.018722,True
+in_space,1105,M1_raw,x1*x2+x3^2,True,,False,0.023967,True
+in_space,1105,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023967,True
+in_space,1105,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023967,True
+in_space,1105,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023967,True
+in_space,1105,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023967,True
+in_space,1105,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023967,True
+null,1106,M2_raw,x1*x2+sin(x3),False,sin(x3)+x1*x2,False,0.06119,False
+null,1106,M2_margin_0,x1*x2+sin(x3),False,sin(x3)+x1*x2,False,0.06119,False
+null,1106,M2_margin_2,x1*x2+sin(x3),False,sin(x3)+x1*x2,False,0.06119,False
+null,1106,M2_margin_4,x1*x2+sin(x3),False,sin(x3)+x1*x2,False,0.06119,False
+null,1106,M2_margin_6,(intercept only),True,,False,0.024872,True
+null,1106,M2_margin_8,(intercept only),True,,False,0.024872,True
+null,1106,M2_margin_10,(intercept only),True,,False,0.024872,True
+in_space,1106,M1_raw,x1*x2+x3^2,True,,False,0.043146,True
+in_space,1106,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1106,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.043146,True
+in_space,1106,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.043146,True
+in_space,1106,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.043146,True
+in_space,1106,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.043146,True
+null,1107,M2_raw,x3^2,False,x3^2,False,0.056098,False
+null,1107,M2_margin_0,x3^2,False,x3^2,False,0.056098,False
+null,1107,M2_margin_2,x3^2,False,x3^2,False,0.056098,False
+null,1107,M2_margin_4,x3^2,False,x3^2,False,0.056098,False
+null,1107,M2_margin_6,(intercept only),True,,False,0.001626,True
+null,1107,M2_margin_8,(intercept only),True,,False,0.001626,True
+null,1107,M2_margin_10,(intercept only),True,,False,0.001626,True
+in_space,1107,M1_raw,x1*x2+x3^2,True,,False,0.042523,True
+in_space,1107,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.042523,True
+in_space,1107,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.042523,True
+in_space,1107,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.042523,True
+in_space,1107,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.042523,True
+in_space,1107,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.042523,True
+null,1108,M2_raw,x1^2,False,x1^2,False,0.03398,True
+null,1108,M2_margin_0,x1^2,False,x1^2,False,0.03398,True
+null,1108,M2_margin_2,x1^2,False,x1^2,False,0.03398,True
+null,1108,M2_margin_4,(intercept only),True,,False,0.018635,True
+null,1108,M2_margin_6,(intercept only),True,,False,0.018635,True
+null,1108,M2_margin_8,(intercept only),True,,False,0.018635,True
+null,1108,M2_margin_10,(intercept only),True,,False,0.018635,True
+in_space,1108,M1_raw,x1*x2+x3^2,True,,False,0.030796,True
+in_space,1108,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.030796,True
+in_space,1108,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.030796,True
+in_space,1108,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.030796,True
+in_space,1108,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.030796,True
+in_space,1108,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.030796,True
+null,1109,M2_raw,(intercept only),True,,False,0.011482,True
+null,1109,M2_margin_0,(intercept only),True,,False,0.011482,True
+null,1109,M2_margin_2,(intercept only),True,,False,0.011482,True
+null,1109,M2_margin_4,(intercept only),True,,False,0.011482,True
+null,1109,M2_margin_6,(intercept only),True,,False,0.011482,True
+null,1109,M2_margin_8,(intercept only),True,,False,0.011482,True
+null,1109,M2_margin_10,(intercept only),True,,False,0.011482,True
+in_space,1109,M1_raw,x1*x2+x3^2,True,,False,0.01335,True
+in_space,1109,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1109,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.01335,True
+in_space,1109,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.01335,True
+in_space,1109,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.01335,True
+in_space,1109,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.01335,True
+null,1110,M2_raw,x2^2,False,x2^2,False,0.029869,True
+null,1110,M2_margin_0,x2^2,False,x2^2,False,0.029869,True
+null,1110,M2_margin_2,x2^2,False,x2^2,False,0.029869,True
+null,1110,M2_margin_4,(intercept only),True,,False,0.005695,True
+null,1110,M2_margin_6,(intercept only),True,,False,0.005695,True
+null,1110,M2_margin_8,(intercept only),True,,False,0.005695,True
+null,1110,M2_margin_10,(intercept only),True,,False,0.005695,True
+in_space,1110,M1_raw,x1*x2+x3^2,True,,False,0.025284,True
+in_space,1110,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.025284,True
+in_space,1110,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025284,True
+in_space,1110,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025284,True
+in_space,1110,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025284,True
+in_space,1110,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025284,True
+null,1111,M2_raw,x2^2,False,x2^2,False,0.031986,True
+null,1111,M2_margin_0,x2^2,False,x2^2,False,0.031986,True
+null,1111,M2_margin_2,x2^2,False,x2^2,False,0.031986,True
+null,1111,M2_margin_4,(intercept only),True,,False,0.01411,True
+null,1111,M2_margin_6,(intercept only),True,,False,0.01411,True
+null,1111,M2_margin_8,(intercept only),True,,False,0.01411,True
+null,1111,M2_margin_10,(intercept only),True,,False,0.01411,True
+in_space,1111,M1_raw,x1*x2+x3^2,True,,False,0.029487,True
+in_space,1111,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.029487,True
+in_space,1111,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.029487,True
+in_space,1111,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.029487,True
+in_space,1111,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.029487,True
+in_space,1111,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.029487,True
+null,1112,M2_raw,(intercept only),True,,False,0.004813,True
+null,1112,M2_margin_0,(intercept only),True,,False,0.004813,True
+null,1112,M2_margin_2,(intercept only),True,,False,0.004813,True
+null,1112,M2_margin_4,(intercept only),True,,False,0.004813,True
+null,1112,M2_margin_6,(intercept only),True,,False,0.004813,True
+null,1112,M2_margin_8,(intercept only),True,,False,0.004813,True
+null,1112,M2_margin_10,(intercept only),True,,False,0.004813,True
+in_space,1112,M1_raw,x1*x2+x3^2,True,,False,0.016739,True
+in_space,1112,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1112,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016739,True
+in_space,1112,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016739,True
+in_space,1112,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016739,True
+in_space,1112,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016739,True
+null,1113,M2_raw,x1,False,x1,False,0.031602,True
+null,1113,M2_margin_0,x1,False,x1,False,0.031602,True
+null,1113,M2_margin_2,(intercept only),True,,False,0.023502,True
+null,1113,M2_margin_4,(intercept only),True,,False,0.023502,True
+null,1113,M2_margin_6,(intercept only),True,,False,0.023502,True
+null,1113,M2_margin_8,(intercept only),True,,False,0.023502,True
+null,1113,M2_margin_10,(intercept only),True,,False,0.023502,True
+in_space,1113,M1_raw,x1*x2+x3^2,True,,False,0.034021,True
+in_space,1113,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.034021,True
+in_space,1113,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.034021,True
+in_space,1113,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.034021,True
+in_space,1113,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.034021,True
+in_space,1113,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.034021,True
+null,1114,M2_raw,x1*x3+sin(x1),False,sin(x1)+x1*x3,False,0.056149,False
+null,1114,M2_margin_0,x1*x3+sin(x1),False,sin(x1)+x1*x3,False,0.056149,False
+null,1114,M2_margin_2,x1*x3+sin(x1),False,sin(x1)+x1*x3,False,0.056149,False
+null,1114,M2_margin_4,x1*x3+sin(x1),False,sin(x1)+x1*x3,False,0.056149,False
+null,1114,M2_margin_6,x1*x3+sin(x1),False,sin(x1)+x1*x3,False,0.056149,False
+null,1114,M2_margin_8,(intercept only),True,,False,0.017155,True
+null,1114,M2_margin_10,(intercept only),True,,False,0.017155,True
+in_space,1114,M1_raw,x1*x2+x3^2,True,,False,0.021128,True
+in_space,1114,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1114,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.021128,True
+in_space,1114,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.021128,True
+in_space,1114,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.021128,True
+in_space,1114,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.021128,True
+null,1115,M2_raw,x2*x3+x3^2,False,x2*x3+x3^2,False,0.035527,True
+null,1115,M2_margin_0,x2*x3+x3^2,False,x2*x3+x3^2,False,0.035527,True
+null,1115,M2_margin_2,x2*x3+x3^2,False,x2*x3+x3^2,False,0.035527,True
+null,1115,M2_margin_4,x2*x3+x3^2,False,x2*x3+x3^2,False,0.035527,True
+null,1115,M2_margin_6,x2*x3+x3^2,False,x2*x3+x3^2,False,0.035527,True
+null,1115,M2_margin_8,(intercept only),True,,False,0.02694,True
+null,1115,M2_margin_10,(intercept only),True,,False,0.02694,True
+in_space,1115,M1_raw,x1*x2+x3^2,True,,False,0.028039,True
+in_space,1115,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.028039,True
+in_space,1115,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.028039,True
+in_space,1115,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.028039,True
+in_space,1115,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.028039,True
+in_space,1115,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.028039,True
+null,1116,M2_raw,(intercept only),True,,False,0.024148,True
+null,1116,M2_margin_0,(intercept only),True,,False,0.024148,True
+null,1116,M2_margin_2,(intercept only),True,,False,0.024148,True
+null,1116,M2_margin_4,(intercept only),True,,False,0.024148,True
+null,1116,M2_margin_6,(intercept only),True,,False,0.024148,True
+null,1116,M2_margin_8,(intercept only),True,,False,0.024148,True
+null,1116,M2_margin_10,(intercept only),True,,False,0.024148,True
+in_space,1116,M1_raw,x1*x2+x3^2,True,,False,0.02903,True
+in_space,1116,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1116,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.02903,True
+in_space,1116,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.02903,True
+in_space,1116,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.02903,True
+in_space,1116,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.02903,True
+null,1117,M2_raw,(intercept only),True,,False,0.034803,True
+null,1117,M2_margin_0,(intercept only),True,,False,0.034803,True
+null,1117,M2_margin_2,(intercept only),True,,False,0.034803,True
+null,1117,M2_margin_4,(intercept only),True,,False,0.034803,True
+null,1117,M2_margin_6,(intercept only),True,,False,0.034803,True
+null,1117,M2_margin_8,(intercept only),True,,False,0.034803,True
+null,1117,M2_margin_10,(intercept only),True,,False,0.034803,True
+in_space,1117,M1_raw,x1*x2+x3^2,True,,False,0.035377,True
+in_space,1117,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.035377,True
+in_space,1117,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.035377,True
+in_space,1117,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.035377,True
+in_space,1117,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.035377,True
+in_space,1117,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.035377,True
+null,1118,M2_raw,sin(x1),False,sin(x1),False,0.053636,False
+null,1118,M2_margin_0,sin(x1),False,sin(x1),False,0.053636,False
+null,1118,M2_margin_2,(intercept only),True,,False,0.039302,True
+null,1118,M2_margin_4,(intercept only),True,,False,0.039302,True
+null,1118,M2_margin_6,(intercept only),True,,False,0.039302,True
+null,1118,M2_margin_8,(intercept only),True,,False,0.039302,True
+null,1118,M2_margin_10,(intercept only),True,,False,0.039302,True
+in_space,1118,M1_raw,x1*x2+x3^2,True,,False,0.045891,True
+in_space,1118,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.045891,True
+in_space,1118,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.045891,True
+in_space,1118,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.045891,True
+in_space,1118,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.045891,True
+in_space,1118,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.045891,True
+null,1119,M2_raw,sin(x2),False,sin(x2),False,0.029442,True
+null,1119,M2_margin_0,sin(x2),False,sin(x2),False,0.029442,True
+null,1119,M2_margin_2,(intercept only),True,,False,0.010707,True
+null,1119,M2_margin_4,(intercept only),True,,False,0.010707,True
+null,1119,M2_margin_6,(intercept only),True,,False,0.010707,True
+null,1119,M2_margin_8,(intercept only),True,,False,0.010707,True
+null,1119,M2_margin_10,(intercept only),True,,False,0.010707,True
+in_space,1119,M1_raw,x1*x2+x3^2,True,,False,0.032849,True
+in_space,1119,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.032849,True
+in_space,1119,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.032849,True
+in_space,1119,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.032849,True
+in_space,1119,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.032849,True
+in_space,1119,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.032849,True
+null,1120,M2_raw,(intercept only),True,,False,0.001921,True
+null,1120,M2_margin_0,(intercept only),True,,False,0.001921,True
+null,1120,M2_margin_2,(intercept only),True,,False,0.001921,True
+null,1120,M2_margin_4,(intercept only),True,,False,0.001921,True
+null,1120,M2_margin_6,(intercept only),True,,False,0.001921,True
+null,1120,M2_margin_8,(intercept only),True,,False,0.001921,True
+null,1120,M2_margin_10,(intercept only),True,,False,0.001921,True
+in_space,1120,M1_raw,x1*x2+x3^2,True,,False,0.027219,True
+in_space,1120,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.027219,True
+in_space,1120,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.027219,True
+in_space,1120,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.027219,True
+in_space,1120,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.027219,True
+in_space,1120,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.027219,True
+null,1121,M2_raw,(intercept only),True,,False,0.010825,True
+null,1121,M2_margin_0,(intercept only),True,,False,0.010825,True
+null,1121,M2_margin_2,(intercept only),True,,False,0.010825,True
+null,1121,M2_margin_4,(intercept only),True,,False,0.010825,True
+null,1121,M2_margin_6,(intercept only),True,,False,0.010825,True
+null,1121,M2_margin_8,(intercept only),True,,False,0.010825,True
+null,1121,M2_margin_10,(intercept only),True,,False,0.010825,True
+in_space,1121,M1_raw,x1*x2+x3^2,True,,False,0.018813,True
+in_space,1121,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.018813,True
+in_space,1121,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.018813,True
+in_space,1121,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.018813,True
+in_space,1121,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.018813,True
+in_space,1121,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.018813,True
+null,1122,M2_raw,x3^2,False,x3^2,False,0.048781,True
+null,1122,M2_margin_0,x3^2,False,x3^2,False,0.048781,True
+null,1122,M2_margin_2,x3^2,False,x3^2,False,0.048781,True
+null,1122,M2_margin_4,x3^2,False,x3^2,False,0.048781,True
+null,1122,M2_margin_6,x3^2,False,x3^2,False,0.048781,True
+null,1122,M2_margin_8,x3^2,False,x3^2,False,0.048781,True
+null,1122,M2_margin_10,x3^2,False,x3^2,False,0.048781,True
+in_space,1122,M1_raw,x1*x2+x3^2,True,,False,0.035238,True
+in_space,1122,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.035238,True
+in_space,1122,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.035238,True
+in_space,1122,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.035238,True
+in_space,1122,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.035238,True
+in_space,1122,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.035238,True
+null,1123,M2_raw,x1*x3+x2^2,False,x1*x3+x2^2,False,0.050015,False
+null,1123,M2_margin_0,x1*x3+x2^2,False,x1*x3+x2^2,False,0.050015,False
+null,1123,M2_margin_2,x1*x3+x2^2,False,x1*x3+x2^2,False,0.050015,False
+null,1123,M2_margin_4,x1*x3+x2^2,False,x1*x3+x2^2,False,0.050015,False
+null,1123,M2_margin_6,(intercept only),True,,False,0.023555,True
+null,1123,M2_margin_8,(intercept only),True,,False,0.023555,True
+null,1123,M2_margin_10,(intercept only),True,,False,0.023555,True
+in_space,1123,M1_raw,x1*x2+x3^2,True,,False,0.049419,True
+in_space,1123,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.049419,True
+in_space,1123,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.049419,True
+in_space,1123,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.049419,True
+in_space,1123,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.049419,True
+in_space,1123,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.049419,True
+null,1124,M2_raw,x3,False,x3,False,0.029806,True
+null,1124,M2_margin_0,x3,False,x3,False,0.029806,True
+null,1124,M2_margin_2,(intercept only),True,,False,0.011944,True
+null,1124,M2_margin_4,(intercept only),True,,False,0.011944,True
+null,1124,M2_margin_6,(intercept only),True,,False,0.011944,True
+null,1124,M2_margin_8,(intercept only),True,,False,0.011944,True
+null,1124,M2_margin_10,(intercept only),True,,False,0.011944,True
+in_space,1124,M1_raw,x1*x2+x3^2,True,,False,0.032775,True
+in_space,1124,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.032775,True
+in_space,1124,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.032775,True
+in_space,1124,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.032775,True
+in_space,1124,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.032775,True
+in_space,1124,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.032775,True
+null,1125,M2_raw,x1^2,False,x1^2,False,0.038118,True
+null,1125,M2_margin_0,x1^2,False,x1^2,False,0.038118,True
+null,1125,M2_margin_2,(intercept only),True,,False,0.016841,True
+null,1125,M2_margin_4,(intercept only),True,,False,0.016841,True
+null,1125,M2_margin_6,(intercept only),True,,False,0.016841,True
+null,1125,M2_margin_8,(intercept only),True,,False,0.016841,True
+null,1125,M2_margin_10,(intercept only),True,,False,0.016841,True
+in_space,1125,M1_raw,x1*x2+x3^2,True,,False,0.02856,True
+in_space,1125,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.02856,True
+in_space,1125,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.02856,True
+in_space,1125,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.02856,True
+in_space,1125,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.02856,True
+in_space,1125,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.02856,True
+null,1126,M2_raw,(intercept only),True,,False,0.017904,True
+null,1126,M2_margin_0,(intercept only),True,,False,0.017904,True
+null,1126,M2_margin_2,(intercept only),True,,False,0.017904,True
+null,1126,M2_margin_4,(intercept only),True,,False,0.017904,True
+null,1126,M2_margin_6,(intercept only),True,,False,0.017904,True
+null,1126,M2_margin_8,(intercept only),True,,False,0.017904,True
+null,1126,M2_margin_10,(intercept only),True,,False,0.017904,True
+in_space,1126,M1_raw,x1*x2+x3^2,True,,False,0.033003,True
+in_space,1126,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.033003,True
+in_space,1126,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.033003,True
+in_space,1126,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.033003,True
+in_space,1126,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.033003,True
+in_space,1126,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.033003,True
+null,1127,M2_raw,x2+sin(x1),False,sin(x1)+x2,False,0.062037,False
+null,1127,M2_margin_0,x2+sin(x1),False,sin(x1)+x2,False,0.062037,False
+null,1127,M2_margin_2,x2+sin(x1),False,sin(x1)+x2,False,0.062037,False
+null,1127,M2_margin_4,x2+sin(x1),False,sin(x1)+x2,False,0.062037,False
+null,1127,M2_margin_6,x2+sin(x1),False,sin(x1)+x2,False,0.062037,False
+null,1127,M2_margin_8,x2+sin(x1),False,sin(x1)+x2,False,0.062037,False
+null,1127,M2_margin_10,x2+sin(x1),False,sin(x1)+x2,False,0.062037,False
+in_space,1127,M1_raw,x1*x2+x3^2,True,,False,0.04189,True
+in_space,1127,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.04189,True
+in_space,1127,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.04189,True
+in_space,1127,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.04189,True
+in_space,1127,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.04189,True
+in_space,1127,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.04189,True
+null,1128,M2_raw,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.047725,True
+null,1128,M2_margin_0,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.047725,True
+null,1128,M2_margin_2,x1^2+sin(x3),False,sin(x3)+x1^2,False,0.047725,True
+null,1128,M2_margin_4,(intercept only),True,,False,0.01231,True
+null,1128,M2_margin_6,(intercept only),True,,False,0.01231,True
+null,1128,M2_margin_8,(intercept only),True,,False,0.01231,True
+null,1128,M2_margin_10,(intercept only),True,,False,0.01231,True
+in_space,1128,M1_raw,x1*x2+x3^2,True,,False,0.014619,True
+in_space,1128,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.014619,True
+in_space,1128,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.014619,True
+in_space,1128,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.014619,True
+in_space,1128,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.014619,True
+in_space,1128,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.014619,True
+null,1129,M2_raw,x2+sin(x2),False,sin(x2)+x2,False,0.034039,True
+null,1129,M2_margin_0,x2+sin(x2),False,sin(x2)+x2,False,0.034039,True
+null,1129,M2_margin_2,x2+sin(x2),False,sin(x2)+x2,False,0.034039,True
+null,1129,M2_margin_4,(intercept only),True,,False,0.024201,True
+null,1129,M2_margin_6,(intercept only),True,,False,0.024201,True
+null,1129,M2_margin_8,(intercept only),True,,False,0.024201,True
+null,1129,M2_margin_10,(intercept only),True,,False,0.024201,True
+in_space,1129,M1_raw,x1*x2+x3^2,True,,False,0.026514,True
+in_space,1129,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.026514,True
+in_space,1129,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.026514,True
+in_space,1129,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.026514,True
+in_space,1129,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.026514,True
+in_space,1129,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.026514,True
+null,1130,M2_raw,x2*x3,False,x2*x3,False,0.029201,True
+null,1130,M2_margin_0,x2*x3,False,x2*x3,False,0.029201,True
+null,1130,M2_margin_2,x2*x3,False,x2*x3,False,0.029201,True
+null,1130,M2_margin_4,(intercept only),True,,False,0.005026,True
+null,1130,M2_margin_6,(intercept only),True,,False,0.005026,True
+null,1130,M2_margin_8,(intercept only),True,,False,0.005026,True
+null,1130,M2_margin_10,(intercept only),True,,False,0.005026,True
+in_space,1130,M1_raw,x1*x2+x3^2,True,,False,0.042604,True
+in_space,1130,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.042604,True
+in_space,1130,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.042604,True
+in_space,1130,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.042604,True
+in_space,1130,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.042604,True
+in_space,1130,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.042604,True
+null,1131,M2_raw,(intercept only),True,,False,0.04126,True
+null,1131,M2_margin_0,(intercept only),True,,False,0.04126,True
+null,1131,M2_margin_2,(intercept only),True,,False,0.04126,True
+null,1131,M2_margin_4,(intercept only),True,,False,0.04126,True
+null,1131,M2_margin_6,(intercept only),True,,False,0.04126,True
+null,1131,M2_margin_8,(intercept only),True,,False,0.04126,True
+null,1131,M2_margin_10,(intercept only),True,,False,0.04126,True
+in_space,1131,M1_raw,x1*x2+x3^2,True,,False,0.04677,True
+in_space,1131,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.04677,True
+in_space,1131,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.04677,True
+in_space,1131,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.04677,True
+in_space,1131,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.04677,True
+in_space,1131,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.04677,True
+null,1132,M2_raw,sin(x2),False,sin(x2),False,0.057073,False
+null,1132,M2_margin_0,sin(x2),False,sin(x2),False,0.057073,False
+null,1132,M2_margin_2,sin(x2),False,sin(x2),False,0.057073,False
+null,1132,M2_margin_4,sin(x2),False,sin(x2),False,0.057073,False
+null,1132,M2_margin_6,sin(x2),False,sin(x2),False,0.057073,False
+null,1132,M2_margin_8,sin(x2),False,sin(x2),False,0.057073,False
+null,1132,M2_margin_10,sin(x2),False,sin(x2),False,0.057073,False
+in_space,1132,M1_raw,x1*x2+x3^2,True,,False,0.020485,True
+in_space,1132,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.020485,True
+in_space,1132,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.020485,True
+in_space,1132,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.020485,True
+in_space,1132,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.020485,True
+in_space,1132,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.020485,True
+null,1133,M2_raw,x3,False,x3,False,0.047197,True
+null,1133,M2_margin_0,x3,False,x3,False,0.047197,True
+null,1133,M2_margin_2,x3,False,x3,False,0.047197,True
+null,1133,M2_margin_4,x3,False,x3,False,0.047197,True
+null,1133,M2_margin_6,x3,False,x3,False,0.047197,True
+null,1133,M2_margin_8,x3,False,x3,False,0.047197,True
+null,1133,M2_margin_10,(intercept only),True,,False,0.008475,True
+in_space,1133,M1_raw,x1*x2+x3^2,True,,False,0.05405,False
+in_space,1133,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.05405,False
+in_space,1133,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.05405,False
+in_space,1133,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.05405,False
+in_space,1133,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.05405,False
+in_space,1133,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.05405,False
+null,1134,M2_raw,(intercept only),True,,False,0.011216,True
+null,1134,M2_margin_0,(intercept only),True,,False,0.011216,True
+null,1134,M2_margin_2,(intercept only),True,,False,0.011216,True
+null,1134,M2_margin_4,(intercept only),True,,False,0.011216,True
+null,1134,M2_margin_6,(intercept only),True,,False,0.011216,True
+null,1134,M2_margin_8,(intercept only),True,,False,0.011216,True
+null,1134,M2_margin_10,(intercept only),True,,False,0.011216,True
+in_space,1134,M1_raw,x1*x2+x3^2,True,,False,0.023309,True
+in_space,1134,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023309,True
+in_space,1134,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023309,True
+in_space,1134,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023309,True
+in_space,1134,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023309,True
+in_space,1134,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023309,True
+null,1135,M2_raw,x1*x2+x2^2,False,x1*x2+x2^2,False,0.052768,False
+null,1135,M2_margin_0,x1*x2+x2^2,False,x1*x2+x2^2,False,0.052768,False
+null,1135,M2_margin_2,(intercept only),True,,False,0.018384,True
+null,1135,M2_margin_4,(intercept only),True,,False,0.018384,True
+null,1135,M2_margin_6,(intercept only),True,,False,0.018384,True
+null,1135,M2_margin_8,(intercept only),True,,False,0.018384,True
+null,1135,M2_margin_10,(intercept only),True,,False,0.018384,True
+in_space,1135,M1_raw,x1*x2+x3^2,True,,False,0.018928,True
+in_space,1135,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1135,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.018928,True
+in_space,1135,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.018928,True
+in_space,1135,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.018928,True
+in_space,1135,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.018928,True
+null,1136,M2_raw,(intercept only),True,,False,0.022478,True
+null,1136,M2_margin_0,(intercept only),True,,False,0.022478,True
+null,1136,M2_margin_2,(intercept only),True,,False,0.022478,True
+null,1136,M2_margin_4,(intercept only),True,,False,0.022478,True
+null,1136,M2_margin_6,(intercept only),True,,False,0.022478,True
+null,1136,M2_margin_8,(intercept only),True,,False,0.022478,True
+null,1136,M2_margin_10,(intercept only),True,,False,0.022478,True
+in_space,1136,M1_raw,x1*x2+x3^2,True,,False,0.02486,True
+in_space,1136,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1136,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.02486,True
+in_space,1136,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.02486,True
+in_space,1136,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.02486,True
+in_space,1136,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.02486,True
+null,1137,M2_raw,(intercept only),True,,False,0.022997,True
+null,1137,M2_margin_0,(intercept only),True,,False,0.022997,True
+null,1137,M2_margin_2,(intercept only),True,,False,0.022997,True
+null,1137,M2_margin_4,(intercept only),True,,False,0.022997,True
+null,1137,M2_margin_6,(intercept only),True,,False,0.022997,True
+null,1137,M2_margin_8,(intercept only),True,,False,0.022997,True
+null,1137,M2_margin_10,(intercept only),True,,False,0.022997,True
+in_space,1137,M1_raw,x1*x2+x3^2,True,,False,0.042685,True
+in_space,1137,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1137,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.042685,True
+in_space,1137,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.042685,True
+in_space,1137,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.042685,True
+in_space,1137,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.042685,True
+null,1138,M2_raw,x2,False,x2,False,0.031863,True
+null,1138,M2_margin_0,x2,False,x2,False,0.031863,True
+null,1138,M2_margin_2,x2,False,x2,False,0.031863,True
+null,1138,M2_margin_4,(intercept only),True,,False,0.002222,True
+null,1138,M2_margin_6,(intercept only),True,,False,0.002222,True
+null,1138,M2_margin_8,(intercept only),True,,False,0.002222,True
+null,1138,M2_margin_10,(intercept only),True,,False,0.002222,True
+in_space,1138,M1_raw,x1*x2+x3^2,True,,False,0.027355,True
+in_space,1138,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.027355,True
+in_space,1138,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.027355,True
+in_space,1138,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.027355,True
+in_space,1138,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.027355,True
+in_space,1138,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.027355,True
+null,1139,M2_raw,sin(x2),False,sin(x2),False,0.034111,True
+null,1139,M2_margin_0,sin(x2),False,sin(x2),False,0.034111,True
+null,1139,M2_margin_2,(intercept only),True,,False,0.002086,True
+null,1139,M2_margin_4,(intercept only),True,,False,0.002086,True
+null,1139,M2_margin_6,(intercept only),True,,False,0.002086,True
+null,1139,M2_margin_8,(intercept only),True,,False,0.002086,True
+null,1139,M2_margin_10,(intercept only),True,,False,0.002086,True
+in_space,1139,M1_raw,x1*x2+x3^2,True,,False,0.034085,True
+in_space,1139,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1139,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.034085,True
+in_space,1139,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.034085,True
+in_space,1139,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.034085,True
+in_space,1139,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.034085,True
+null,1140,M2_raw,x3^2,False,x3^2,False,0.037938,True
+null,1140,M2_margin_0,x3^2,False,x3^2,False,0.037938,True
+null,1140,M2_margin_2,(intercept only),True,,False,0.007811,True
+null,1140,M2_margin_4,(intercept only),True,,False,0.007811,True
+null,1140,M2_margin_6,(intercept only),True,,False,0.007811,True
+null,1140,M2_margin_8,(intercept only),True,,False,0.007811,True
+null,1140,M2_margin_10,(intercept only),True,,False,0.007811,True
+in_space,1140,M1_raw,x1*x2+x3^2,True,,False,0.008242,True
+in_space,1140,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.008242,True
+in_space,1140,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.008242,True
+in_space,1140,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.008242,True
+in_space,1140,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.008242,True
+in_space,1140,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.008242,True
+null,1141,M2_raw,x1+x2^2,False,x1+x2^2,False,0.055604,False
+null,1141,M2_margin_0,x1+x2^2,False,x1+x2^2,False,0.055604,False
+null,1141,M2_margin_2,(intercept only),True,,False,0.030717,True
+null,1141,M2_margin_4,(intercept only),True,,False,0.030717,True
+null,1141,M2_margin_6,(intercept only),True,,False,0.030717,True
+null,1141,M2_margin_8,(intercept only),True,,False,0.030717,True
+null,1141,M2_margin_10,(intercept only),True,,False,0.030717,True
+in_space,1141,M1_raw,x1*x2+x3^2,True,,False,0.047914,True
+in_space,1141,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.047914,True
+in_space,1141,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.047914,True
+in_space,1141,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.047914,True
+in_space,1141,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.047914,True
+in_space,1141,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.047914,True
+null,1142,M2_raw,(intercept only),True,,False,0.010115,True
+null,1142,M2_margin_0,(intercept only),True,,False,0.010115,True
+null,1142,M2_margin_2,(intercept only),True,,False,0.010115,True
+null,1142,M2_margin_4,(intercept only),True,,False,0.010115,True
+null,1142,M2_margin_6,(intercept only),True,,False,0.010115,True
+null,1142,M2_margin_8,(intercept only),True,,False,0.010115,True
+null,1142,M2_margin_10,(intercept only),True,,False,0.010115,True
+in_space,1142,M1_raw,x1*x2+x3^2,True,,False,0.039504,True
+in_space,1142,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.039504,True
+in_space,1142,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.039504,True
+in_space,1142,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.039504,True
+in_space,1142,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.039504,True
+in_space,1142,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.039504,True
+null,1143,M2_raw,(intercept only),True,,False,0.005562,True
+null,1143,M2_margin_0,(intercept only),True,,False,0.005562,True
+null,1143,M2_margin_2,(intercept only),True,,False,0.005562,True
+null,1143,M2_margin_4,(intercept only),True,,False,0.005562,True
+null,1143,M2_margin_6,(intercept only),True,,False,0.005562,True
+null,1143,M2_margin_8,(intercept only),True,,False,0.005562,True
+null,1143,M2_margin_10,(intercept only),True,,False,0.005562,True
+in_space,1143,M1_raw,x1*x2+x3^2,True,,False,0.023593,True
+in_space,1143,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1143,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023593,True
+in_space,1143,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023593,True
+in_space,1143,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023593,True
+in_space,1143,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023593,True
+null,1144,M2_raw,x1^2,False,x1^2,False,0.046369,True
+null,1144,M2_margin_0,x1^2,False,x1^2,False,0.046369,True
+null,1144,M2_margin_2,x1^2,False,x1^2,False,0.046369,True
+null,1144,M2_margin_4,x1^2,False,x1^2,False,0.046369,True
+null,1144,M2_margin_6,(intercept only),True,,False,0.023915,True
+null,1144,M2_margin_8,(intercept only),True,,False,0.023915,True
+null,1144,M2_margin_10,(intercept only),True,,False,0.023915,True
+in_space,1144,M1_raw,x1*x2+x3^2,True,,False,0.044736,True
+in_space,1144,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.044736,True
+in_space,1144,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.044736,True
+in_space,1144,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.044736,True
+in_space,1144,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.044736,True
+in_space,1144,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.044736,True
+null,1145,M2_raw,x1*x2,False,x1*x2,False,0.033089,True
+null,1145,M2_margin_0,x1*x2,False,x1*x2,False,0.033089,True
+null,1145,M2_margin_2,x1*x2,False,x1*x2,False,0.033089,True
+null,1145,M2_margin_4,x1*x2,False,x1*x2,False,0.033089,True
+null,1145,M2_margin_6,(intercept only),True,,False,0.005984,True
+null,1145,M2_margin_8,(intercept only),True,,False,0.005984,True
+null,1145,M2_margin_10,(intercept only),True,,False,0.005984,True
+in_space,1145,M1_raw,x1*x2+x3^2,True,,False,0.013171,True
+in_space,1145,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1145,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.013171,True
+in_space,1145,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.013171,True
+in_space,1145,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.013171,True
+in_space,1145,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.013171,True
+null,1146,M2_raw,x1*x2+x2*x3,False,x1*x2+x2*x3,False,0.036818,True
+null,1146,M2_margin_0,x1*x2+x2*x3,False,x1*x2+x2*x3,False,0.036818,True
+null,1146,M2_margin_2,x1*x2+x2*x3,False,x1*x2+x2*x3,False,0.036818,True
+null,1146,M2_margin_4,(intercept only),True,,False,0.008275,True
+null,1146,M2_margin_6,(intercept only),True,,False,0.008275,True
+null,1146,M2_margin_8,(intercept only),True,,False,0.008275,True
+null,1146,M2_margin_10,(intercept only),True,,False,0.008275,True
+in_space,1146,M1_raw,x1*x2+x3^2,True,,False,0.027537,True
+in_space,1146,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1146,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.027537,True
+in_space,1146,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.027537,True
+in_space,1146,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.027537,True
+in_space,1146,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.027537,True
+null,1147,M2_raw,(intercept only),True,,False,0.011254,True
+null,1147,M2_margin_0,(intercept only),True,,False,0.011254,True
+null,1147,M2_margin_2,(intercept only),True,,False,0.011254,True
+null,1147,M2_margin_4,(intercept only),True,,False,0.011254,True
+null,1147,M2_margin_6,(intercept only),True,,False,0.011254,True
+null,1147,M2_margin_8,(intercept only),True,,False,0.011254,True
+null,1147,M2_margin_10,(intercept only),True,,False,0.011254,True
+in_space,1147,M1_raw,x1*x2+x3^2,True,,False,0.042825,True
+in_space,1147,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.042825,True
+in_space,1147,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.042825,True
+in_space,1147,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.042825,True
+in_space,1147,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.042825,True
+in_space,1147,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.042825,True
+null,1148,M2_raw,x3^2,False,x3^2,False,0.047259,True
+null,1148,M2_margin_0,x3^2,False,x3^2,False,0.047259,True
+null,1148,M2_margin_2,x3^2,False,x3^2,False,0.047259,True
+null,1148,M2_margin_4,x3^2,False,x3^2,False,0.047259,True
+null,1148,M2_margin_6,(intercept only),True,,False,0.003837,True
+null,1148,M2_margin_8,(intercept only),True,,False,0.003837,True
+null,1148,M2_margin_10,(intercept only),True,,False,0.003837,True
+in_space,1148,M1_raw,x1*x2+x3^2,True,,False,0.021042,True
+in_space,1148,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.021042,True
+in_space,1148,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.021042,True
+in_space,1148,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.021042,True
+in_space,1148,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.021042,True
+in_space,1148,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.021042,True
+null,1149,M2_raw,(intercept only),True,,False,0.006237,True
+null,1149,M2_margin_0,(intercept only),True,,False,0.006237,True
+null,1149,M2_margin_2,(intercept only),True,,False,0.006237,True
+null,1149,M2_margin_4,(intercept only),True,,False,0.006237,True
+null,1149,M2_margin_6,(intercept only),True,,False,0.006237,True
+null,1149,M2_margin_8,(intercept only),True,,False,0.006237,True
+null,1149,M2_margin_10,(intercept only),True,,False,0.006237,True
+in_space,1149,M1_raw,x1*x2+x3^2,True,,False,0.014112,True
+in_space,1149,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1149,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.014112,True
+in_space,1149,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.014112,True
+in_space,1149,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.014112,True
+in_space,1149,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.014112,True
+null,1150,M2_raw,(intercept only),True,,False,0.007016,True
+null,1150,M2_margin_0,(intercept only),True,,False,0.007016,True
+null,1150,M2_margin_2,(intercept only),True,,False,0.007016,True
+null,1150,M2_margin_4,(intercept only),True,,False,0.007016,True
+null,1150,M2_margin_6,(intercept only),True,,False,0.007016,True
+null,1150,M2_margin_8,(intercept only),True,,False,0.007016,True
+null,1150,M2_margin_10,(intercept only),True,,False,0.007016,True
+in_space,1150,M1_raw,x1*x2+x3^2,True,,False,0.025861,True
+in_space,1150,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.025861,True
+in_space,1150,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025861,True
+in_space,1150,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025861,True
+in_space,1150,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025861,True
+in_space,1150,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025861,True
+null,1151,M2_raw,x3+x3^2,False,x3+x3^2,False,0.056243,False
+null,1151,M2_margin_0,x3+x3^2,False,x3+x3^2,False,0.056243,False
+null,1151,M2_margin_2,(intercept only),True,,False,0.024373,True
+null,1151,M2_margin_4,(intercept only),True,,False,0.024373,True
+null,1151,M2_margin_6,(intercept only),True,,False,0.024373,True
+null,1151,M2_margin_8,(intercept only),True,,False,0.024373,True
+null,1151,M2_margin_10,(intercept only),True,,False,0.024373,True
+in_space,1151,M1_raw,x1*x2+x3^2,True,,False,0.024531,True
+in_space,1151,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1151,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.024531,True
+in_space,1151,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.024531,True
+in_space,1151,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.024531,True
+in_space,1151,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.024531,True
+null,1152,M2_raw,(intercept only),True,,False,0.039653,True
+null,1152,M2_margin_0,(intercept only),True,,False,0.039653,True
+null,1152,M2_margin_2,(intercept only),True,,False,0.039653,True
+null,1152,M2_margin_4,(intercept only),True,,False,0.039653,True
+null,1152,M2_margin_6,(intercept only),True,,False,0.039653,True
+null,1152,M2_margin_8,(intercept only),True,,False,0.039653,True
+null,1152,M2_margin_10,(intercept only),True,,False,0.039653,True
+in_space,1152,M1_raw,x1*x2+x3^2,True,,False,0.047633,True
+in_space,1152,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1152,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.047633,True
+in_space,1152,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.047633,True
+in_space,1152,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.047633,True
+in_space,1152,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.047633,True
+null,1153,M2_raw,(intercept only),True,,False,0.012025,True
+null,1153,M2_margin_0,(intercept only),True,,False,0.012025,True
+null,1153,M2_margin_2,(intercept only),True,,False,0.012025,True
+null,1153,M2_margin_4,(intercept only),True,,False,0.012025,True
+null,1153,M2_margin_6,(intercept only),True,,False,0.012025,True
+null,1153,M2_margin_8,(intercept only),True,,False,0.012025,True
+null,1153,M2_margin_10,(intercept only),True,,False,0.012025,True
+in_space,1153,M1_raw,x1*x2+x3^2,True,,False,0.029071,True
+in_space,1153,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1153,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.029071,True
+in_space,1153,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.029071,True
+in_space,1153,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.029071,True
+in_space,1153,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.029071,True
+null,1154,M2_raw,x1*x2+sin(x2),False,sin(x2)+x1*x2,False,0.048288,True
+null,1154,M2_margin_0,x1*x2+sin(x2),False,sin(x2)+x1*x2,False,0.048288,True
+null,1154,M2_margin_2,x1*x2+sin(x2),False,sin(x2)+x1*x2,False,0.048288,True
+null,1154,M2_margin_4,x1*x2+sin(x2),False,sin(x2)+x1*x2,False,0.048288,True
+null,1154,M2_margin_6,x1*x2+sin(x2),False,sin(x2)+x1*x2,False,0.048288,True
+null,1154,M2_margin_8,x1*x2+sin(x2),False,sin(x2)+x1*x2,False,0.048288,True
+null,1154,M2_margin_10,x1*x2+sin(x2),False,sin(x2)+x1*x2,False,0.048288,True
+in_space,1154,M1_raw,x1*x2+x3^2,True,,False,0.035692,True
+in_space,1154,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.035692,True
+in_space,1154,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.035692,True
+in_space,1154,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.035692,True
+in_space,1154,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.035692,True
+in_space,1154,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.035692,True
+null,1155,M2_raw,x2,False,x2,False,0.043244,True
+null,1155,M2_margin_0,x2,False,x2,False,0.043244,True
+null,1155,M2_margin_2,(intercept only),True,,False,0.026603,True
+null,1155,M2_margin_4,(intercept only),True,,False,0.026603,True
+null,1155,M2_margin_6,(intercept only),True,,False,0.026603,True
+null,1155,M2_margin_8,(intercept only),True,,False,0.026603,True
+null,1155,M2_margin_10,(intercept only),True,,False,0.026603,True
+in_space,1155,M1_raw,x1*x2+x3^2,True,,False,0.043923,True
+in_space,1155,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1155,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.043923,True
+in_space,1155,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.043923,True
+in_space,1155,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.043923,True
+in_space,1155,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.043923,True
+null,1156,M2_raw,x3,False,x3,False,0.035562,True
+null,1156,M2_margin_0,x3,False,x3,False,0.035562,True
+null,1156,M2_margin_2,(intercept only),True,,False,0.026212,True
+null,1156,M2_margin_4,(intercept only),True,,False,0.026212,True
+null,1156,M2_margin_6,(intercept only),True,,False,0.026212,True
+null,1156,M2_margin_8,(intercept only),True,,False,0.026212,True
+null,1156,M2_margin_10,(intercept only),True,,False,0.026212,True
+in_space,1156,M1_raw,x1*x2+x3^2,True,,False,0.026859,True
+in_space,1156,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.026859,True
+in_space,1156,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.026859,True
+in_space,1156,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.026859,True
+in_space,1156,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.026859,True
+in_space,1156,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.026859,True
+null,1157,M2_raw,x2^2,False,x2^2,False,0.031468,True
+null,1157,M2_margin_0,x2^2,False,x2^2,False,0.031468,True
+null,1157,M2_margin_2,(intercept only),True,,False,0.032811,True
+null,1157,M2_margin_4,(intercept only),True,,False,0.032811,True
+null,1157,M2_margin_6,(intercept only),True,,False,0.032811,True
+null,1157,M2_margin_8,(intercept only),True,,False,0.032811,True
+null,1157,M2_margin_10,(intercept only),True,,False,0.032811,True
+in_space,1157,M1_raw,x1*x2+x3^2,True,,False,0.039866,True
+in_space,1157,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.039866,True
+in_space,1157,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.039866,True
+in_space,1157,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.039866,True
+in_space,1157,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.039866,True
+in_space,1157,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.039866,True
+null,1158,M2_raw,(intercept only),True,,False,0.022243,True
+null,1158,M2_margin_0,(intercept only),True,,False,0.022243,True
+null,1158,M2_margin_2,(intercept only),True,,False,0.022243,True
+null,1158,M2_margin_4,(intercept only),True,,False,0.022243,True
+null,1158,M2_margin_6,(intercept only),True,,False,0.022243,True
+null,1158,M2_margin_8,(intercept only),True,,False,0.022243,True
+null,1158,M2_margin_10,(intercept only),True,,False,0.022243,True
+in_space,1158,M1_raw,x1*x2+x3^2,True,,False,0.041067,True
+in_space,1158,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.041067,True
+in_space,1158,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.041067,True
+in_space,1158,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.041067,True
+in_space,1158,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.041067,True
+in_space,1158,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.041067,True
+null,1159,M2_raw,x1*x2,False,x1*x2,False,0.023536,True
+null,1159,M2_margin_0,x1*x2,False,x1*x2,False,0.023536,True
+null,1159,M2_margin_2,(intercept only),True,,False,0.015513,True
+null,1159,M2_margin_4,(intercept only),True,,False,0.015513,True
+null,1159,M2_margin_6,(intercept only),True,,False,0.015513,True
+null,1159,M2_margin_8,(intercept only),True,,False,0.015513,True
+null,1159,M2_margin_10,(intercept only),True,,False,0.015513,True
+in_space,1159,M1_raw,x1*x2+x3^2,True,,False,0.063633,False
+in_space,1159,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.063633,False
+in_space,1159,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.063633,False
+in_space,1159,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.063633,False
+in_space,1159,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.063633,False
+in_space,1159,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.063633,False
+null,1160,M2_raw,(intercept only),True,,False,0.014195,True
+null,1160,M2_margin_0,(intercept only),True,,False,0.014195,True
+null,1160,M2_margin_2,(intercept only),True,,False,0.014195,True
+null,1160,M2_margin_4,(intercept only),True,,False,0.014195,True
+null,1160,M2_margin_6,(intercept only),True,,False,0.014195,True
+null,1160,M2_margin_8,(intercept only),True,,False,0.014195,True
+null,1160,M2_margin_10,(intercept only),True,,False,0.014195,True
+in_space,1160,M1_raw,x1*x2+x3^2,True,,False,0.025426,True
+in_space,1160,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1160,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025426,True
+in_space,1160,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025426,True
+in_space,1160,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025426,True
+in_space,1160,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025426,True
+null,1161,M2_raw,(intercept only),True,,False,0.023283,True
+null,1161,M2_margin_0,(intercept only),True,,False,0.023283,True
+null,1161,M2_margin_2,(intercept only),True,,False,0.023283,True
+null,1161,M2_margin_4,(intercept only),True,,False,0.023283,True
+null,1161,M2_margin_6,(intercept only),True,,False,0.023283,True
+null,1161,M2_margin_8,(intercept only),True,,False,0.023283,True
+null,1161,M2_margin_10,(intercept only),True,,False,0.023283,True
+in_space,1161,M1_raw,x1*x2+x3^2,True,,False,0.049524,True
+in_space,1161,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.049524,True
+in_space,1161,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.049524,True
+in_space,1161,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.049524,True
+in_space,1161,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.049524,True
+in_space,1161,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.049524,True
+null,1162,M2_raw,x1*x2+x1^2,False,x1*x2+x1^2,False,0.053648,False
+null,1162,M2_margin_0,x1*x2+x1^2,False,x1*x2+x1^2,False,0.053648,False
+null,1162,M2_margin_2,x1*x2+x1^2,False,x1*x2+x1^2,False,0.053648,False
+null,1162,M2_margin_4,x1*x2+x1^2,False,x1*x2+x1^2,False,0.053648,False
+null,1162,M2_margin_6,x1*x2+x1^2,False,x1*x2+x1^2,False,0.053648,False
+null,1162,M2_margin_8,(intercept only),True,,False,0.019185,True
+null,1162,M2_margin_10,(intercept only),True,,False,0.019185,True
+in_space,1162,M1_raw,x1*x2+x3^2,True,,False,0.056856,False
+in_space,1162,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.056856,False
+in_space,1162,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.056856,False
+in_space,1162,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.056856,False
+in_space,1162,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.056856,False
+in_space,1162,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.056856,False
+null,1163,M2_raw,(intercept only),True,,False,0.000694,True
+null,1163,M2_margin_0,(intercept only),True,,False,0.000694,True
+null,1163,M2_margin_2,(intercept only),True,,False,0.000694,True
+null,1163,M2_margin_4,(intercept only),True,,False,0.000694,True
+null,1163,M2_margin_6,(intercept only),True,,False,0.000694,True
+null,1163,M2_margin_8,(intercept only),True,,False,0.000694,True
+null,1163,M2_margin_10,(intercept only),True,,False,0.000694,True
+in_space,1163,M1_raw,x1*x2+x3^2,True,,False,0.06022,False
+in_space,1163,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.06022,False
+in_space,1163,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.06022,False
+in_space,1163,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.06022,False
+in_space,1163,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.06022,False
+in_space,1163,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.06022,False
+null,1164,M2_raw,x3^2,False,x3^2,False,0.032666,True
+null,1164,M2_margin_0,x3^2,False,x3^2,False,0.032666,True
+null,1164,M2_margin_2,(intercept only),True,,False,0.005964,True
+null,1164,M2_margin_4,(intercept only),True,,False,0.005964,True
+null,1164,M2_margin_6,(intercept only),True,,False,0.005964,True
+null,1164,M2_margin_8,(intercept only),True,,False,0.005964,True
+null,1164,M2_margin_10,(intercept only),True,,False,0.005964,True
+in_space,1164,M1_raw,x1*x2+x3^2,True,,False,0.016183,True
+in_space,1164,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.016183,True
+in_space,1164,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016183,True
+in_space,1164,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016183,True
+in_space,1164,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016183,True
+in_space,1164,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016183,True
+null,1165,M2_raw,(intercept only),True,,False,0.031742,True
+null,1165,M2_margin_0,(intercept only),True,,False,0.031742,True
+null,1165,M2_margin_2,(intercept only),True,,False,0.031742,True
+null,1165,M2_margin_4,(intercept only),True,,False,0.031742,True
+null,1165,M2_margin_6,(intercept only),True,,False,0.031742,True
+null,1165,M2_margin_8,(intercept only),True,,False,0.031742,True
+null,1165,M2_margin_10,(intercept only),True,,False,0.031742,True
+in_space,1165,M1_raw,x1*x2+x3^2,True,,False,0.038203,True
+in_space,1165,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.038203,True
+in_space,1165,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.038203,True
+in_space,1165,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.038203,True
+in_space,1165,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.038203,True
+in_space,1165,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.038203,True
+null,1166,M2_raw,(intercept only),True,,False,0.01049,True
+null,1166,M2_margin_0,(intercept only),True,,False,0.01049,True
+null,1166,M2_margin_2,(intercept only),True,,False,0.01049,True
+null,1166,M2_margin_4,(intercept only),True,,False,0.01049,True
+null,1166,M2_margin_6,(intercept only),True,,False,0.01049,True
+null,1166,M2_margin_8,(intercept only),True,,False,0.01049,True
+null,1166,M2_margin_10,(intercept only),True,,False,0.01049,True
+in_space,1166,M1_raw,x1*x2+x3^2,True,,False,0.014047,True
+in_space,1166,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1166,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.014047,True
+in_space,1166,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.014047,True
+in_space,1166,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.014047,True
+in_space,1166,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.014047,True
+null,1167,M2_raw,(intercept only),True,,False,0.017241,True
+null,1167,M2_margin_0,(intercept only),True,,False,0.017241,True
+null,1167,M2_margin_2,(intercept only),True,,False,0.017241,True
+null,1167,M2_margin_4,(intercept only),True,,False,0.017241,True
+null,1167,M2_margin_6,(intercept only),True,,False,0.017241,True
+null,1167,M2_margin_8,(intercept only),True,,False,0.017241,True
+null,1167,M2_margin_10,(intercept only),True,,False,0.017241,True
+in_space,1167,M1_raw,x1*x2+x3^2,True,,False,0.046192,True
+in_space,1167,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1167,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.046192,True
+in_space,1167,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.046192,True
+in_space,1167,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.046192,True
+in_space,1167,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.046192,True
+null,1168,M2_raw,(intercept only),True,,False,0.005564,True
+null,1168,M2_margin_0,(intercept only),True,,False,0.005564,True
+null,1168,M2_margin_2,(intercept only),True,,False,0.005564,True
+null,1168,M2_margin_4,(intercept only),True,,False,0.005564,True
+null,1168,M2_margin_6,(intercept only),True,,False,0.005564,True
+null,1168,M2_margin_8,(intercept only),True,,False,0.005564,True
+null,1168,M2_margin_10,(intercept only),True,,False,0.005564,True
+in_space,1168,M1_raw,x1*x2+x3^2,True,,False,0.012692,True
+in_space,1168,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.012692,True
+in_space,1168,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.012692,True
+in_space,1168,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.012692,True
+in_space,1168,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.012692,True
+in_space,1168,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.012692,True
+null,1169,M2_raw,sin(x1),False,sin(x1),False,0.032528,True
+null,1169,M2_margin_0,sin(x1),False,sin(x1),False,0.032528,True
+null,1169,M2_margin_2,(intercept only),True,,False,0.022366,True
+null,1169,M2_margin_4,(intercept only),True,,False,0.022366,True
+null,1169,M2_margin_6,(intercept only),True,,False,0.022366,True
+null,1169,M2_margin_8,(intercept only),True,,False,0.022366,True
+null,1169,M2_margin_10,(intercept only),True,,False,0.022366,True
+in_space,1169,M1_raw,x1*x2+x3^2,True,,False,0.025264,True
+in_space,1169,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.025264,True
+in_space,1169,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025264,True
+in_space,1169,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025264,True
+in_space,1169,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025264,True
+in_space,1169,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025264,True
+null,1170,M2_raw,(intercept only),True,,False,0.03086,True
+null,1170,M2_margin_0,(intercept only),True,,False,0.03086,True
+null,1170,M2_margin_2,(intercept only),True,,False,0.03086,True
+null,1170,M2_margin_4,(intercept only),True,,False,0.03086,True
+null,1170,M2_margin_6,(intercept only),True,,False,0.03086,True
+null,1170,M2_margin_8,(intercept only),True,,False,0.03086,True
+null,1170,M2_margin_10,(intercept only),True,,False,0.03086,True
+in_space,1170,M1_raw,x1*x2+x3^2,True,,False,0.071296,False
+in_space,1170,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1170,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.071296,False
+in_space,1170,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.071296,False
+in_space,1170,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.071296,False
+in_space,1170,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.071296,False
+null,1171,M2_raw,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.058047,False
+null,1171,M2_margin_0,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.058047,False
+null,1171,M2_margin_2,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.058047,False
+null,1171,M2_margin_4,(intercept only),True,,False,0.009166,True
+null,1171,M2_margin_6,(intercept only),True,,False,0.009166,True
+null,1171,M2_margin_8,(intercept only),True,,False,0.009166,True
+null,1171,M2_margin_10,(intercept only),True,,False,0.009166,True
+in_space,1171,M1_raw,x1*x2+x3^2,True,,False,0.044626,True
+in_space,1171,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1171,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.044626,True
+in_space,1171,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.044626,True
+in_space,1171,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.044626,True
+in_space,1171,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.044626,True
+null,1172,M2_raw,(intercept only),True,,False,0.003959,True
+null,1172,M2_margin_0,(intercept only),True,,False,0.003959,True
+null,1172,M2_margin_2,(intercept only),True,,False,0.003959,True
+null,1172,M2_margin_4,(intercept only),True,,False,0.003959,True
+null,1172,M2_margin_6,(intercept only),True,,False,0.003959,True
+null,1172,M2_margin_8,(intercept only),True,,False,0.003959,True
+null,1172,M2_margin_10,(intercept only),True,,False,0.003959,True
+in_space,1172,M1_raw,x1*x2+x3^2,True,,False,0.015154,True
+in_space,1172,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1172,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.015154,True
+in_space,1172,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.015154,True
+in_space,1172,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.015154,True
+in_space,1172,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.015154,True
+null,1173,M2_raw,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.05304,False
+null,1173,M2_margin_0,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.05304,False
+null,1173,M2_margin_2,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.05304,False
+null,1173,M2_margin_4,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.05304,False
+null,1173,M2_margin_6,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.05304,False
+null,1173,M2_margin_8,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.05304,False
+null,1173,M2_margin_10,x2^2+sin(x3),False,sin(x3)+x2^2,False,0.05304,False
+in_space,1173,M1_raw,x1*x2+x3^2,True,,False,0.03565,True
+in_space,1173,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.03565,True
+in_space,1173,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.03565,True
+in_space,1173,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.03565,True
+in_space,1173,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.03565,True
+in_space,1173,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.03565,True
+null,1174,M2_raw,x3^2,False,x3^2,False,0.058407,False
+null,1174,M2_margin_0,x3^2,False,x3^2,False,0.058407,False
+null,1174,M2_margin_2,x3^2,False,x3^2,False,0.058407,False
+null,1174,M2_margin_4,(intercept only),True,,False,0.001292,True
+null,1174,M2_margin_6,(intercept only),True,,False,0.001292,True
+null,1174,M2_margin_8,(intercept only),True,,False,0.001292,True
+null,1174,M2_margin_10,(intercept only),True,,False,0.001292,True
+in_space,1174,M1_raw,x1*x2+x3^2,True,,False,0.021205,True
+in_space,1174,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1174,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.021205,True
+in_space,1174,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.021205,True
+in_space,1174,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.021205,True
+in_space,1174,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.021205,True
+null,1175,M2_raw,x3+x2*x3,False,x2*x3+x3,False,0.038698,True
+null,1175,M2_margin_0,x3+x2*x3,False,x2*x3+x3,False,0.038698,True
+null,1175,M2_margin_2,x3+x2*x3,False,x2*x3+x3,False,0.038698,True
+null,1175,M2_margin_4,x3+x2*x3,False,x2*x3+x3,False,0.038698,True
+null,1175,M2_margin_6,(intercept only),True,,False,0.005017,True
+null,1175,M2_margin_8,(intercept only),True,,False,0.005017,True
+null,1175,M2_margin_10,(intercept only),True,,False,0.005017,True
+in_space,1175,M1_raw,x1*x2+x3^2,True,,False,0.046656,True
+in_space,1175,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1175,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.046656,True
+in_space,1175,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.046656,True
+in_space,1175,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.046656,True
+in_space,1175,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.046656,True
+null,1176,M2_raw,(intercept only),True,,False,0.036467,True
+null,1176,M2_margin_0,(intercept only),True,,False,0.036467,True
+null,1176,M2_margin_2,(intercept only),True,,False,0.036467,True
+null,1176,M2_margin_4,(intercept only),True,,False,0.036467,True
+null,1176,M2_margin_6,(intercept only),True,,False,0.036467,True
+null,1176,M2_margin_8,(intercept only),True,,False,0.036467,True
+null,1176,M2_margin_10,(intercept only),True,,False,0.036467,True
+in_space,1176,M1_raw,x1*x2+x3^2,True,,False,0.063081,False
+in_space,1176,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.063081,False
+in_space,1176,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.063081,False
+in_space,1176,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.063081,False
+in_space,1176,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.063081,False
+in_space,1176,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.063081,False
+null,1177,M2_raw,(intercept only),True,,False,0.018843,True
+null,1177,M2_margin_0,(intercept only),True,,False,0.018843,True
+null,1177,M2_margin_2,(intercept only),True,,False,0.018843,True
+null,1177,M2_margin_4,(intercept only),True,,False,0.018843,True
+null,1177,M2_margin_6,(intercept only),True,,False,0.018843,True
+null,1177,M2_margin_8,(intercept only),True,,False,0.018843,True
+null,1177,M2_margin_10,(intercept only),True,,False,0.018843,True
+in_space,1177,M1_raw,x1*x2+x3^2,True,,False,0.025161,True
+in_space,1177,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1177,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025161,True
+in_space,1177,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025161,True
+in_space,1177,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025161,True
+in_space,1177,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025161,True
+null,1178,M2_raw,(intercept only),True,,False,0.004529,True
+null,1178,M2_margin_0,(intercept only),True,,False,0.004529,True
+null,1178,M2_margin_2,(intercept only),True,,False,0.004529,True
+null,1178,M2_margin_4,(intercept only),True,,False,0.004529,True
+null,1178,M2_margin_6,(intercept only),True,,False,0.004529,True
+null,1178,M2_margin_8,(intercept only),True,,False,0.004529,True
+null,1178,M2_margin_10,(intercept only),True,,False,0.004529,True
+in_space,1178,M1_raw,x1*x2+x3^2,True,,False,0.019064,True
+in_space,1178,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.019064,True
+in_space,1178,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.019064,True
+in_space,1178,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.019064,True
+in_space,1178,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.019064,True
+in_space,1178,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.019064,True
+null,1179,M2_raw,x1,False,x1,False,0.039051,True
+null,1179,M2_margin_0,x1,False,x1,False,0.039051,True
+null,1179,M2_margin_2,x1,False,x1,False,0.039051,True
+null,1179,M2_margin_4,x1,False,x1,False,0.039051,True
+null,1179,M2_margin_6,x1,False,x1,False,0.039051,True
+null,1179,M2_margin_8,(intercept only),True,,False,0.013739,True
+null,1179,M2_margin_10,(intercept only),True,,False,0.013739,True
+in_space,1179,M1_raw,x1*x2+x3^2,True,,False,0.029544,True
+in_space,1179,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.029544,True
+in_space,1179,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.029544,True
+in_space,1179,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.029544,True
+in_space,1179,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.029544,True
+in_space,1179,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.029544,True
+null,1180,M2_raw,(intercept only),True,,False,0.015437,True
+null,1180,M2_margin_0,(intercept only),True,,False,0.015437,True
+null,1180,M2_margin_2,(intercept only),True,,False,0.015437,True
+null,1180,M2_margin_4,(intercept only),True,,False,0.015437,True
+null,1180,M2_margin_6,(intercept only),True,,False,0.015437,True
+null,1180,M2_margin_8,(intercept only),True,,False,0.015437,True
+null,1180,M2_margin_10,(intercept only),True,,False,0.015437,True
+in_space,1180,M1_raw,x1*x2+x3^2,True,,False,0.022752,True
+in_space,1180,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.022752,True
+in_space,1180,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.022752,True
+in_space,1180,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.022752,True
+in_space,1180,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.022752,True
+in_space,1180,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.022752,True
+null,1181,M2_raw,(intercept only),True,,False,0.0219,True
+null,1181,M2_margin_0,(intercept only),True,,False,0.0219,True
+null,1181,M2_margin_2,(intercept only),True,,False,0.0219,True
+null,1181,M2_margin_4,(intercept only),True,,False,0.0219,True
+null,1181,M2_margin_6,(intercept only),True,,False,0.0219,True
+null,1181,M2_margin_8,(intercept only),True,,False,0.0219,True
+null,1181,M2_margin_10,(intercept only),True,,False,0.0219,True
+in_space,1181,M1_raw,x1*x2+x3^2,True,,False,0.020757,True
+in_space,1181,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.020757,True
+in_space,1181,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.020757,True
+in_space,1181,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.020757,True
+in_space,1181,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.020757,True
+in_space,1181,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.020757,True
+null,1182,M2_raw,x1*x3,False,x1*x3,False,0.024672,True
+null,1182,M2_margin_0,x1*x3,False,x1*x3,False,0.024672,True
+null,1182,M2_margin_2,(intercept only),True,,False,0.018695,True
+null,1182,M2_margin_4,(intercept only),True,,False,0.018695,True
+null,1182,M2_margin_6,(intercept only),True,,False,0.018695,True
+null,1182,M2_margin_8,(intercept only),True,,False,0.018695,True
+null,1182,M2_margin_10,(intercept only),True,,False,0.018695,True
+in_space,1182,M1_raw,x1*x2+x3^2,True,,False,0.016846,True
+in_space,1182,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.016846,True
+in_space,1182,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.016846,True
+in_space,1182,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.016846,True
+in_space,1182,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.016846,True
+in_space,1182,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.016846,True
+null,1183,M2_raw,x3,False,x3,False,0.02396,True
+null,1183,M2_margin_0,x3,False,x3,False,0.02396,True
+null,1183,M2_margin_2,(intercept only),True,,False,0.00575,True
+null,1183,M2_margin_4,(intercept only),True,,False,0.00575,True
+null,1183,M2_margin_6,(intercept only),True,,False,0.00575,True
+null,1183,M2_margin_8,(intercept only),True,,False,0.00575,True
+null,1183,M2_margin_10,(intercept only),True,,False,0.00575,True
+in_space,1183,M1_raw,x1*x2+x3^2,True,,False,0.033308,True
+in_space,1183,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.033308,True
+in_space,1183,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.033308,True
+in_space,1183,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.033308,True
+in_space,1183,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.033308,True
+in_space,1183,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.033308,True
+null,1184,M2_raw,(intercept only),True,,False,0.001541,True
+null,1184,M2_margin_0,(intercept only),True,,False,0.001541,True
+null,1184,M2_margin_2,(intercept only),True,,False,0.001541,True
+null,1184,M2_margin_4,(intercept only),True,,False,0.001541,True
+null,1184,M2_margin_6,(intercept only),True,,False,0.001541,True
+null,1184,M2_margin_8,(intercept only),True,,False,0.001541,True
+null,1184,M2_margin_10,(intercept only),True,,False,0.001541,True
+in_space,1184,M1_raw,x1*x2+x3^2,True,,False,0.04983,True
+in_space,1184,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.04983,True
+in_space,1184,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.04983,True
+in_space,1184,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.04983,True
+in_space,1184,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.04983,True
+in_space,1184,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.04983,True
+null,1185,M2_raw,(intercept only),True,,False,0.000557,True
+null,1185,M2_margin_0,(intercept only),True,,False,0.000557,True
+null,1185,M2_margin_2,(intercept only),True,,False,0.000557,True
+null,1185,M2_margin_4,(intercept only),True,,False,0.000557,True
+null,1185,M2_margin_6,(intercept only),True,,False,0.000557,True
+null,1185,M2_margin_8,(intercept only),True,,False,0.000557,True
+null,1185,M2_margin_10,(intercept only),True,,False,0.000557,True
+in_space,1185,M1_raw,x1*x2+x3^2,True,,False,0.014255,True
+in_space,1185,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1185,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.014255,True
+in_space,1185,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.014255,True
+in_space,1185,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.014255,True
+in_space,1185,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.014255,True
+null,1186,M2_raw,x1^2+x3^2,False,x1^2+x3^2,False,0.049098,True
+null,1186,M2_margin_0,x1^2+x3^2,False,x1^2+x3^2,False,0.049098,True
+null,1186,M2_margin_2,x1^2+x3^2,False,x1^2+x3^2,False,0.049098,True
+null,1186,M2_margin_4,x1^2+x3^2,False,x1^2+x3^2,False,0.049098,True
+null,1186,M2_margin_6,x1^2+x3^2,False,x1^2+x3^2,False,0.049098,True
+null,1186,M2_margin_8,x1^2+x3^2,False,x1^2+x3^2,False,0.049098,True
+null,1186,M2_margin_10,(intercept only),True,,False,0.001528,True
+in_space,1186,M1_raw,x1*x2+x3^2,True,,False,0.014177,True
+in_space,1186,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.014177,True
+in_space,1186,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.014177,True
+in_space,1186,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.014177,True
+in_space,1186,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.014177,True
+in_space,1186,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.014177,True
+null,1187,M2_raw,x3+x3^2,False,x3+x3^2,False,0.067106,False
+null,1187,M2_margin_0,x3+x3^2,False,x3+x3^2,False,0.067106,False
+null,1187,M2_margin_2,(intercept only),True,,False,0.036854,True
+null,1187,M2_margin_4,(intercept only),True,,False,0.036854,True
+null,1187,M2_margin_6,(intercept only),True,,False,0.036854,True
+null,1187,M2_margin_8,(intercept only),True,,False,0.036854,True
+null,1187,M2_margin_10,(intercept only),True,,False,0.036854,True
+in_space,1187,M1_raw,x1*x2+x3^2,True,,False,0.07862,False
+in_space,1187,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.07862,False
+in_space,1187,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.07862,False
+in_space,1187,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.07862,False
+in_space,1187,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.07862,False
+in_space,1187,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.07862,False
+null,1188,M2_raw,x1+sin(x2),False,sin(x2)+x1,False,0.047066,True
+null,1188,M2_margin_0,x1+sin(x2),False,sin(x2)+x1,False,0.047066,True
+null,1188,M2_margin_2,x1+sin(x2),False,sin(x2)+x1,False,0.047066,True
+null,1188,M2_margin_4,(intercept only),True,,False,0.020539,True
+null,1188,M2_margin_6,(intercept only),True,,False,0.020539,True
+null,1188,M2_margin_8,(intercept only),True,,False,0.020539,True
+null,1188,M2_margin_10,(intercept only),True,,False,0.020539,True
+in_space,1188,M1_raw,x1*x2+x3^2,True,,False,0.05097,False
+in_space,1188,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.05097,False
+in_space,1188,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.05097,False
+in_space,1188,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.05097,False
+in_space,1188,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.05097,False
+in_space,1188,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.05097,False
+null,1189,M2_raw,x3,False,x3,False,0.045104,True
+null,1189,M2_margin_0,x3,False,x3,False,0.045104,True
+null,1189,M2_margin_2,x3,False,x3,False,0.045104,True
+null,1189,M2_margin_4,x3,False,x3,False,0.045104,True
+null,1189,M2_margin_6,(intercept only),True,,False,0.010327,True
+null,1189,M2_margin_8,(intercept only),True,,False,0.010327,True
+null,1189,M2_margin_10,(intercept only),True,,False,0.010327,True
+in_space,1189,M1_raw,x1*x2+x3^2,True,,False,0.041213,True
+in_space,1189,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1189,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.041213,True
+in_space,1189,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.041213,True
+in_space,1189,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.041213,True
+in_space,1189,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.041213,True
+null,1190,M2_raw,(intercept only),True,,False,0.009276,True
+null,1190,M2_margin_0,(intercept only),True,,False,0.009276,True
+null,1190,M2_margin_2,(intercept only),True,,False,0.009276,True
+null,1190,M2_margin_4,(intercept only),True,,False,0.009276,True
+null,1190,M2_margin_6,(intercept only),True,,False,0.009276,True
+null,1190,M2_margin_8,(intercept only),True,,False,0.009276,True
+null,1190,M2_margin_10,(intercept only),True,,False,0.009276,True
+in_space,1190,M1_raw,x1*x2+x3^2,True,,False,0.03229,True
+in_space,1190,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.03229,True
+in_space,1190,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.03229,True
+in_space,1190,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.03229,True
+in_space,1190,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.03229,True
+in_space,1190,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.03229,True
+null,1191,M2_raw,(intercept only),True,,False,0.015103,True
+null,1191,M2_margin_0,(intercept only),True,,False,0.015103,True
+null,1191,M2_margin_2,(intercept only),True,,False,0.015103,True
+null,1191,M2_margin_4,(intercept only),True,,False,0.015103,True
+null,1191,M2_margin_6,(intercept only),True,,False,0.015103,True
+null,1191,M2_margin_8,(intercept only),True,,False,0.015103,True
+null,1191,M2_margin_10,(intercept only),True,,False,0.015103,True
+in_space,1191,M1_raw,x1*x2+x3^2,True,,False,0.015552,True
+in_space,1191,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.015552,True
+in_space,1191,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.015552,True
+in_space,1191,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.015552,True
+in_space,1191,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.015552,True
+in_space,1191,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.015552,True
+null,1192,M2_raw,(intercept only),True,,False,0.020286,True
+null,1192,M2_margin_0,(intercept only),True,,False,0.020286,True
+null,1192,M2_margin_2,(intercept only),True,,False,0.020286,True
+null,1192,M2_margin_4,(intercept only),True,,False,0.020286,True
+null,1192,M2_margin_6,(intercept only),True,,False,0.020286,True
+null,1192,M2_margin_8,(intercept only),True,,False,0.020286,True
+null,1192,M2_margin_10,(intercept only),True,,False,0.020286,True
+in_space,1192,M1_raw,x1*x2+x3^2,True,,False,0.02862,True
+in_space,1192,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.02862,True
+in_space,1192,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.02862,True
+in_space,1192,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.02862,True
+in_space,1192,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.02862,True
+in_space,1192,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.02862,True
+null,1193,M2_raw,x2^2,False,x2^2,False,0.036549,True
+null,1193,M2_margin_0,x2^2,False,x2^2,False,0.036549,True
+null,1193,M2_margin_2,(intercept only),True,,False,0.006904,True
+null,1193,M2_margin_4,(intercept only),True,,False,0.006904,True
+null,1193,M2_margin_6,(intercept only),True,,False,0.006904,True
+null,1193,M2_margin_8,(intercept only),True,,False,0.006904,True
+null,1193,M2_margin_10,(intercept only),True,,False,0.006904,True
+in_space,1193,M1_raw,x1*x2+x3^2,True,,False,0.025038,True
+in_space,1193,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1193,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.025038,True
+in_space,1193,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.025038,True
+in_space,1193,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.025038,True
+in_space,1193,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.025038,True
+null,1194,M2_raw,(intercept only),True,,False,0.046898,True
+null,1194,M2_margin_0,(intercept only),True,,False,0.046898,True
+null,1194,M2_margin_2,(intercept only),True,,False,0.046898,True
+null,1194,M2_margin_4,(intercept only),True,,False,0.046898,True
+null,1194,M2_margin_6,(intercept only),True,,False,0.046898,True
+null,1194,M2_margin_8,(intercept only),True,,False,0.046898,True
+null,1194,M2_margin_10,(intercept only),True,,False,0.046898,True
+in_space,1194,M1_raw,x1*x2+x3^2,True,,False,0.064282,False
+in_space,1194,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1194,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.064282,False
+in_space,1194,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.064282,False
+in_space,1194,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.064282,False
+in_space,1194,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.064282,False
+null,1195,M2_raw,x2*x3+x2^2,False,x2*x3+x2^2,False,0.030803,True
+null,1195,M2_margin_0,x2*x3+x2^2,False,x2*x3+x2^2,False,0.030803,True
+null,1195,M2_margin_2,x2*x3+x2^2,False,x2*x3+x2^2,False,0.030803,True
+null,1195,M2_margin_4,(intercept only),True,,False,0.030072,True
+null,1195,M2_margin_6,(intercept only),True,,False,0.030072,True
+null,1195,M2_margin_8,(intercept only),True,,False,0.030072,True
+null,1195,M2_margin_10,(intercept only),True,,False,0.030072,True
+in_space,1195,M1_raw,x1*x2+x3^2,True,,False,0.03345,True
+in_space,1195,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.03345,True
+in_space,1195,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.03345,True
+in_space,1195,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.03345,True
+in_space,1195,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.03345,True
+in_space,1195,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.03345,True
+null,1196,M2_raw,x1,False,x1,False,0.054188,False
+null,1196,M2_margin_0,x1,False,x1,False,0.054188,False
+null,1196,M2_margin_2,x1,False,x1,False,0.054188,False
+null,1196,M2_margin_4,x1,False,x1,False,0.054188,False
+null,1196,M2_margin_6,x1,False,x1,False,0.054188,False
+null,1196,M2_margin_8,(intercept only),True,,False,0.030173,True
+null,1196,M2_margin_10,(intercept only),True,,False,0.030173,True
+in_space,1196,M1_raw,x1*x2+x3^2,True,,False,0.040038,True
+in_space,1196,M1_abstain_0.10,UNEXPLAINED,False,,True,,False
+in_space,1196,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.040038,True
+in_space,1196,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.040038,True
+in_space,1196,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.040038,True
+in_space,1196,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.040038,True
+null,1197,M2_raw,x3+sin(x3),False,sin(x3)+x3,False,0.039665,True
+null,1197,M2_margin_0,x3+sin(x3),False,sin(x3)+x3,False,0.039665,True
+null,1197,M2_margin_2,(intercept only),True,,False,0.010764,True
+null,1197,M2_margin_4,(intercept only),True,,False,0.010764,True
+null,1197,M2_margin_6,(intercept only),True,,False,0.010764,True
+null,1197,M2_margin_8,(intercept only),True,,False,0.010764,True
+null,1197,M2_margin_10,(intercept only),True,,False,0.010764,True
+in_space,1197,M1_raw,x1*x2+x3^2,True,,False,0.03437,True
+in_space,1197,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.03437,True
+in_space,1197,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.03437,True
+in_space,1197,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.03437,True
+in_space,1197,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.03437,True
+in_space,1197,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.03437,True
+null,1198,M2_raw,x3^2,False,x3^2,False,0.050091,False
+null,1198,M2_margin_0,x3^2,False,x3^2,False,0.050091,False
+null,1198,M2_margin_2,x3^2,False,x3^2,False,0.050091,False
+null,1198,M2_margin_4,(intercept only),True,,False,0.014949,True
+null,1198,M2_margin_6,(intercept only),True,,False,0.014949,True
+null,1198,M2_margin_8,(intercept only),True,,False,0.014949,True
+null,1198,M2_margin_10,(intercept only),True,,False,0.014949,True
+in_space,1198,M1_raw,x1*x2+x3^2,True,,False,0.023021,True
+in_space,1198,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023021,True
+in_space,1198,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023021,True
+in_space,1198,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023021,True
+in_space,1198,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023021,True
+in_space,1198,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023021,True
+null,1199,M2_raw,x2*x3+sin(x3),False,sin(x3)+x2*x3,False,0.040336,True
+null,1199,M2_margin_0,x2*x3+sin(x3),False,sin(x3)+x2*x3,False,0.040336,True
+null,1199,M2_margin_2,(intercept only),True,,False,0.022961,True
+null,1199,M2_margin_4,(intercept only),True,,False,0.022961,True
+null,1199,M2_margin_6,(intercept only),True,,False,0.022961,True
+null,1199,M2_margin_8,(intercept only),True,,False,0.022961,True
+null,1199,M2_margin_10,(intercept only),True,,False,0.022961,True
+in_space,1199,M1_raw,x1*x2+x3^2,True,,False,0.023703,True
+in_space,1199,M1_abstain_0.10,x1*x2+x3^2,True,,False,0.023703,True
+in_space,1199,M1_abstain_0.15,x1*x2+x3^2,True,,False,0.023703,True
+in_space,1199,M1_abstain_0.20,x1*x2+x3^2,True,,False,0.023703,True
+in_space,1199,M1_abstain_0.25,x1*x2+x3^2,True,,False,0.023703,True
+in_space,1199,M1_abstain_0.30,x1*x2+x3^2,True,,False,0.023703,True

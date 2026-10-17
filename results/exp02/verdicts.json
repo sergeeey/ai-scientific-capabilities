@@ -1,0 +1,28 @@
+{
+  "A_active_vs_fixed": {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "mean_diff": 0.0,
+    "supported": false
+  },
+  "B_plain_bic_null_fdr": {
+    "M1_raw": 0.625,
+    "M2_raw": 0.565,
+    "problem_confirmed": true
+  },
+  "C_margin_rule": {
+    "in_space_exact": 1.0,
+    "null_fdr": 0.015,
+    "procedure": "M2_margin_10",
+    "supported": true
+  },
+  "D_abstention": {
+    "in_space_abstain": 0.0,
+    "needs_expansion_abstain": 1.0,
+    "null_abstain": 0.0,
+    "procedure": "M1_abstain_0.15",
+    "supported": true
+  }
+}
