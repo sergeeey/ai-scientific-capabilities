@@ -11,7 +11,6 @@ No LLM is involved: these are deterministic algorithmic stand-ins for the three
 mechanisms named in the research question.
 """
 
-import random
 from dataclasses import dataclass, field
 
 from aisci.features import BASE_LIB, BOUNDS, DIM, FULL_LIB

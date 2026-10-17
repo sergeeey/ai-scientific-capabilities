@@ -59,6 +59,37 @@ Command: `python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results`.
 - The document cites external work (FIRE-Bench, SciAgentArena, "Into the Unknown", figures 135 and 114, date 13.10.2026). **These are [UNKNOWN]: not opened, not verified.** They are listed in `ROADMAP.md` under "to verify" and must not be used as facts until checked against the primary sources.
 - No code was changed in this step.
 
+## 2026-10-17 — Foundation v0.1
+**Verdict: accepted with stated limits.** Not accepted as "isolation solved".
+
+Probed before changing (not assumed from file layout):
+- `Oracle._law` was a public-by-convention attribute: `oracle._law((1,2,0))` returned the law (3.0 for in_space). **Real leak, now closed** (law in a closure; test `test_guard_oracle_has_no_law_attribute`).
+- Still reachable in-process: law through the `measure` closure; `importlib.import_module("aisci.hidden_laws")`. **Open residuals, documented and tested** (`test_residual_closure_exposes_law_in_process`, `test_residual_import_path_open_in_process`). A future change that silently closes or opens them will show up in the tests.
+
+Changes:
+- `Oracle` has a hard budget cap (`BudgetExceeded`). `calls` is now a property; the constructor stays backward compatible.
+- `run_metadata.json`: run_id (hash of config), command, versions, git commit and dirty flag, code and artifact SHA-256.
+- `evidence_ledger.jsonl`: 270 measurement entries (one per run, cite runs.csv hash) and derived entries (counts, medians, input ids). `docs/claims.json`: 7 claims; 5 supported or falsified with checks (C-05 checks the hash of the committed file), 2 unverified with no checks.
+- New tests in `tests/test_foundation.py` (17 tests). Together with the 9 exp01 tests, all 26 pass locally.
+
+Reproduction check:
+- Current code produces `runs.csv` byte-identical to committed exp01 (sha256 `8731f8bc…2185`). Verified by hashing, and by `test_reproduces_committed_exp01_byte_for_byte`.
+- `summary.md` gained a header line with run_id and the runs.csv hash. Its table is unchanged. This is an intentional format change, not a result change.
+
+Deviations and bugs found during the work (recorded, not hidden):
+1. **Hash bug, fixed.** `run.py` hashed the ledger text, but on Windows the text-mode write changes `\n` to `\r\n`, so the metadata hash did not match the file. Now the hash is taken from the written file. The first test run caught this.
+2. **Regex test changed to AST.** `test_core.py::test_agents_cannot_import_hidden_laws` used a text regex. It failed on a docstring that mentions `hidden_laws`, which is not an import. Replaced by an AST import check, which is what the test is meant to verify. The guard itself was not weakened.
+3. **Agent-side list fixed.** `ledger.py` imports `LAWS` to label entries, so it is runner-side, not agent-side. It is excluded from the agent-side list. An earlier draft included it by mistake.
+4. The `recovered` endpoint and the exp01 verdicts were not changed. This work changes plumbing, not conclusions.
+
+Not verified:
+- Isolation against an adversarial or LLM agent. Requires a process boundary. Not built (out of Foundation scope, no LLM approved).
+- Claim C-07 (external benchmarks) stays `unverified`.
+- Reproducibility across machines and Python versions: only this machine (Python 3.13.2, Windows) was checked.
+
+## 2026-10-17 — exp02 plan drafted (not started)
+- `docs/EXP02_PLAN.md`: questions A–D, competing hypotheses, calibration seeds 1000–1199 disjoint from test seeds 0–199, refutation criteria written before any run. Exp02 does not start until its pre-registration is frozen.
+
 ## Open decisions for the user
 - The project's research question (LLM vs algorithm) needs an LLM. Approval is needed before any paid API is used, and the task says not to use one without approval. Until then the LLM part is NOT-VERIFIED.
 - Whether to keep the folder as a standalone repo or move it into a larger workspace.

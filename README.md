@@ -17,12 +17,33 @@ src/aisci/features.py      agent-side hypothesis spaces: BASE_LIB (H0), EXPANSIO
 src/aisci/fit.py           stdlib least squares, subset search, BIC
 src/aisci/agents.py        the three mechanisms (M1, M2, M3)
 src/aisci/checker.py       independent scorer: fixed test grid, uses the true law
-src/aisci/run.py           runner, writes results/runs.csv and results/summary.md
-tests/test_core.py         9 checks: fit, isolation, budget, scoring, scenario control, reproducibility
+src/aisci/provenance.py    config/versions/git/SHA-256 helpers (stdlib)
+src/aisci/ledger.py        Evidence Ledger entries: measurement and derived (runner-side)
+src/aisci/run.py           runner: runs.csv, summary.md, run_metadata.json, evidence_ledger.jsonl
+tests/test_core.py         exp01 checks: fit, scoring, budget, scenario control, reproducibility
+tests/test_foundation.py  Foundation v0.1: metadata, hard budget cap, byte-identical reproduction,
+                          isolation guards and documented residuals, ledger and claim traceability
 docs/PREREG_exp01.md       pre-registration (written before the first run)
-docs/RESEARCH_LOG.md       decisions, deviations, falsified predictions, next experiment
-results/                   outputs of the reported run
+docs/claims.json           claims with status; each check resolves to a ledger entry
+docs/ROADMAP.md            ten questions, three stages, target architecture
+docs/RESEARCH_LOG.md       decisions, deviations, falsified predictions
+docs/EXP02_PLAN.md         draft plan for exp02 (not started)
+results/                   exp01 artifacts: runs.csv, summary.md, run_metadata.json, evidence_ledger.jsonl
 ```
+
+## Foundation v0.1 — what is and is not done
+Done and tested:
+- Every run writes `run_metadata.json`: config, seeds, budget, algorithm names, Python and pytest versions, git commit and dirty state for `src/tests/docs`, SHA-256 of each code file and each output artifact.
+- `Oracle` has a **hard budget cap**: the 31st call to a 30-call budget raises `BudgetExceeded`.
+- `runs.csv` from the current code is **byte-identical** to the committed exp01 file (sha256 `8731f8bc…2185`). exp01 is reproduced.
+- `evidence_ledger.jsonl` has measurement entries (one per run, citing the runs.csv hash) and derived entries (counts and medians, listing their input entry ids). `docs/claims.json` cites ledger entries by law, mechanism and metric; tests check each one.
+- Claims that are not verified are labelled `unverified` with no checks.
+
+**Isolation is soft, and this is a real limit.** Found by probing the code before changing it:
+- Fixed: the old `Oracle._law` attribute gave the hidden law to any caller. The law now sits in a closure, and `oracle._law` does not exist (`tests/test_foundation.py::test_guard_oracle_has_no_law_attribute`).
+- Still open in-process (documented residuals, tested so they cannot change silently): the law can be read from the `measure` closure, and any code can `importlib.import_module("aisci.hidden_laws")`. The holdout labels are reachable the same way. Closing these needs a process boundary. This is enough for synthetic algorithms. It is **not enough for an LLM agent**, which must run in a separate process before exp02 uses any model.
+
+Not done: exp02, any LLM run, the cost and human-effort parts of Q10, and cross-run validation of older results (none exist).
 
 ## The three mechanisms (all get the same budget of 30 measurements)
 | id | mechanism | what it does |
@@ -45,7 +66,7 @@ set PYTHONPATH=src
 python -m pytest tests -q
 python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results
 ```
-(Use `PYTHONPATH=src` in bash: `PYTHONPATH=src python -m aisci.run ...`.)
+(Use `PYTHONPATH=src` in bash: `PYTHONPATH=src python -m aisci.run ...`.) Running the command again rewrites `results/`. `runs.csv` must keep sha256 `8731f8bc…2185`. `summary.md` and `evidence_ledger.jsonl` are deterministic from the same inputs. `run_metadata.json` changes with the git commit and the dirty flag, so it is not byte-compared.
 Seeds are fixed (0..29). Noise and design streams are seeded per run.
 
 ## Results (exp01, 30 seeds, sigma 0.1, budget 30)

@@ -1,0 +1,76 @@
+{
+  "_schema": "Each claim has a status and checks. A check names a ledger entry id and the law, mechanism, metric and value it must have (or an exact field for measurement entries). tests/test_foundation.py verifies every check against results/evidence_ledger.jsonl. 'unverified' claims carry no checks and must not be used as findings.",
+  "claims": [
+    {
+      "id": "C-01",
+      "prediction": "P2a",
+      "statement": "On needs_expansion, M1 and M2 never recover the law (0/30 runs).",
+      "status": "supported",
+      "checks": [
+        {"id": "D-0020", "law": "needs_expansion", "mechanism": "M1_fixed_search", "metric": "recovered_count", "value": 0},
+        {"id": "D-0026", "law": "needs_expansion", "mechanism": "M2_active_fixed_space", "metric": "recovered_count", "value": 0}
+      ],
+      "caveat": "Expected by construction: tanh is not in the base space H0 (control test in tests/test_core.py)."
+    },
+    {
+      "id": "C-02",
+      "prediction": "P2b",
+      "statement": "On needs_expansion, M3 expands the library in 30/30 runs and selects the exact true terms in 30/30 runs.",
+      "status": "supported",
+      "checks": [
+        {"id": "D-0033", "law": "needs_expansion", "mechanism": "M3_expand", "metric": "expansion_count", "value": 30},
+        {"id": "D-0031", "law": "needs_expansion", "mechanism": "M3_expand", "metric": "exact_terms_count", "value": 30}
+      ],
+      "caveat": "The expansion library EXPANSION_LIB was written to contain the true operator. This shows the mechanism works when the operator is pre-specified. It does not show open-ended discovery."
+    },
+    {
+      "id": "C-03",
+      "prediction": "P1",
+      "statement": "On in_space, the recovered-count difference between M2 and M1 is 2 of 30 runs (below the pre-registered MCID of 0.2, i.e. 6 runs).",
+      "status": "supported",
+      "checks": [
+        {"id": "D-0008", "law": "in_space", "mechanism": "M2_active_fixed_space", "metric": "recovered_count", "value": 29},
+        {"id": "D-0002", "law": "in_space", "mechanism": "M1_fixed_search", "metric": "recovered_count", "value": 27}
+      ],
+      "caveat": "Single 30-seed comparison. Not a power calculation. Says only that the observed difference is below the pre-registered MCID."
+    },
+    {
+      "id": "C-04",
+      "prediction": "P3",
+      "statement": "On the null law, false terms are selected in at most 5% of runs for each mechanism.",
+      "status": "falsified",
+      "checks": [
+        {"id": "D-0040", "law": "null", "mechanism": "M1_fixed_search", "metric": "false_term_runs", "value": 17},
+        {"id": "D-0046", "law": "null", "mechanism": "M2_active_fixed_space", "metric": "false_term_runs", "value": 18},
+        {"id": "D-0052", "law": "null", "mechanism": "M3_expand", "metric": "false_term_runs", "value": 19}
+      ],
+      "caveat": "Counts are out of 30 runs per mechanism (57-63%). BIC selection over subsets does not control false discoveries at n=30."
+    },
+    {
+      "id": "C-05",
+      "prediction": "reproducibility",
+      "statement": "The exp01 runs.csv is reproduced byte-for-byte by the current code, and the ledger's measurement entries cite that file's SHA-256.",
+      "status": "supported",
+      "checks": [
+        {"id": "M-0001", "field": "source_sha256", "value": "8731f8bc8232d099dc5bf57b73bf7976b57236373c90042e25c08fe347a12185"}
+      ],
+      "caveat": "Verified by tests/test_foundation.py::test_reproduces_committed_exp01 and by hashing the file on disk."
+    },
+    {
+      "id": "C-06",
+      "prediction": "LLM question",
+      "statement": "LLM agents can (or cannot) discover laws better than the algorithmic mechanisms at equal budget.",
+      "status": "unverified",
+      "checks": [],
+      "caveat": "No LLM was queried. Requires API approval. Not a finding."
+    },
+    {
+      "id": "C-07",
+      "prediction": "external literature",
+      "statement": "External benchmarks report that most AI-agent research outputs fail provenance checks (figures from the strategy document).",
+      "status": "unverified",
+      "checks": [],
+      "caveat": "Primary sources not opened (see docs/ROADMAP.md, section 'to verify'). Must not be cited as fact."
+    }
+  ]
+}

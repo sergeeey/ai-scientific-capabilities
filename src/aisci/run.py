@@ -1,19 +1,29 @@
 """Runner: every mechanism x every law x fixed seeds, at one shared measurement budget.
 
-Usage (from project root):
-    set PYTHONPATH=src
-    python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results
+Usage (from project root, bash):
+    PYTHONPATH=src python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results
+
+Writes into --out:
+    runs.csv              one row per run (format unchanged since exp01)
+    summary.md            human-readable table; cites run_id and runs.csv SHA-256
+    run_metadata.json     config, seeds, budget, algorithms, versions, git commit, artifact hashes
+    evidence_ledger.jsonl machine-readable trace: measurement and derived entries
 """
 
 import argparse
 import csv
+import io
+import json
 import os
 import random
 import statistics
+import sys
 
+from aisci import checker, ledger, provenance
 from aisci.agents import MECHANISMS
 from aisci.checker import score
 from aisci.environment import Oracle
+from aisci.features import BOUNDS, DIM
 from aisci.hidden_laws import LAWS
 
 FIELDS = [
@@ -29,11 +39,14 @@ FIELDS = [
     "false_terms",
 ]
 
+REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+
 
 def run_one(law_name, mech_name, seed, budget, sigma):
     law = LAWS[law_name]
-    oracle = Oracle(law.fn, sigma=sigma, seed=seed)  # noise stream: fixed per seed
-    rng = random.Random(seed * 1000 + sorted(MECHANISMS).index(mech_name))  # design stream
+    # Noise stream seeded per seed; design stream seeded per (seed, mechanism).
+    oracle = Oracle(law.fn, sigma=sigma, seed=seed, budget=budget)
+    rng = random.Random(seed * 1000 + sorted(MECHANISMS).index(mech_name))
     res = MECHANISMS[mech_name](oracle, budget, rng)
     if oracle.calls != budget:
         raise RuntimeError(f"budget violated: {oracle.calls} != {budget}")
@@ -61,6 +74,30 @@ def run_all(seeds, budget, sigma):
     return rows
 
 
+def runs_csv_text(rows):
+    buf = io.StringIO(newline="")
+    w = csv.DictWriter(buf, fieldnames=FIELDS)
+    w.writeheader()
+    w.writerows(rows)
+    return buf.getvalue()
+
+
+def config_for(seeds, budget, sigma):
+    return {
+        "laws": list(LAWS),
+        "mechanisms": sorted(MECHANISMS),
+        "seeds": seeds,
+        "seed_range": [0, seeds - 1],
+        "budget": budget,
+        "sigma": sigma,
+        "domain_bounds": list(BOUNDS),
+        "dim": DIM,
+        "test_seed": checker.TEST_SEED,
+        "n_test": checker.N_TEST,
+        "recovery_rmse": checker.RECOVERY_RMSE,
+    }
+
+
 def summarize(rows):
     lines = [
         "| law | mechanism | recovered | exact terms | median test RMSE | expansions | null: any false term |",
@@ -83,26 +120,67 @@ def summarize(rows):
     return "\n".join(lines)
 
 
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--seeds", type=int, default=30)
     ap.add_argument("--budget", type=int, default=30)
     ap.add_argument("--sigma", type=float, default=0.1)
     ap.add_argument("--out", default="results")
-    a = ap.parse_args()
+    a = ap.parse_args(argv)
     os.makedirs(a.out, exist_ok=True)
+
+    config = config_for(a.seeds, a.budget, a.sigma)
+    run_id = provenance.sha256_text(provenance.canonical_json(config))[:12]
+
     rows = run_all(a.seeds, a.budget, a.sigma)
-    with open(os.path.join(a.out, "runs.csv"), "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=FIELDS)
-        w.writeheader()
-        w.writerows(rows)
-    table = summarize(rows)
+    csv_text = runs_csv_text(rows)
+    runs_path = os.path.join(a.out, "runs.csv")
+    with open(runs_path, "w", newline="", encoding="utf-8") as f:
+        f.write(csv_text)
+    runs_sha = provenance.sha256_file(runs_path)
+
+    runs_rel = runs_path.replace("\\", "/")
+    meas = ledger.measurement_entries(rows, run_id, runs_rel, runs_sha, a.budget)
+    entries = meas + ledger.derived_entries(meas, run_id)
+    ledger_text = ledger.dumps(entries)
+    ledger_path = os.path.join(a.out, "evidence_ledger.jsonl")
+    with open(ledger_path, "w", encoding="utf-8") as f:
+        f.write(ledger_text)
+
     header = (
         f"# Summary (seeds={a.seeds}, budget={a.budget}, sigma={a.sigma})\n\n"
+        f"run_id: `{run_id}`; runs.csv sha256: `{runs_sha}`\n\n"
         "Synthetic data only. VERIFIED-SYNTHETIC. Not evidence about LLMs.\n\n"
     )
-    with open(os.path.join(a.out, "summary.md"), "w", encoding="utf-8") as f:
+    table = summarize(rows)
+    summary_path = os.path.join(a.out, "summary.md")
+    with open(summary_path, "w", encoding="utf-8") as f:
         f.write(header + table + "\n")
+
+    metadata = {
+        "run_id": run_id,
+        "command": "PYTHONPATH=src python -m aisci.run " + " ".join(argv or sys.argv[1:]),
+        "config": config,
+        "algorithms": {
+            "M1_fixed_search": "random design, BIC over H0 (<=2 terms + intercept)",
+            "M2_active_fixed_space": "M1 + max predictive-variance design over top BIC models",
+            "M3_expand": "M2 + switch to FULL_LIB when base RMSE > expansion tol",
+        },
+        "baseline": "M1_fixed_search",
+        "budget_enforcement": "Oracle raises BudgetExceeded after `budget` calls",
+        "environment": provenance.environment_info(),
+        "git": provenance.git_info(REPO_DIR),
+        "code_sha256": provenance.code_hashes(),
+        "artifacts": {
+            "runs.csv": {"sha256": runs_sha},
+            "summary.md": {"sha256": provenance.sha256_file(summary_path)},
+            "evidence_ledger.jsonl": {"sha256": provenance.sha256_file(ledger_path)},
+        },
+        "isolation": "soft: in-process; see src/aisci/environment.py docstring",
+    }
+    with open(os.path.join(a.out, "run_metadata.json"), "w", encoding="utf-8") as f:
+        json.dump(metadata, f, indent=2, ensure_ascii=False, sort_keys=True)
+        f.write("\n")
     print(header + table)
 
 

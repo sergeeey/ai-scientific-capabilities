@@ -1,0 +1,72 @@
+{
+  "algorithms": {
+    "M1_fixed_search": "random design, BIC over H0 (<=2 terms + intercept)",
+    "M2_active_fixed_space": "M1 + max predictive-variance design over top BIC models",
+    "M3_expand": "M2 + switch to FULL_LIB when base RMSE > expansion tol"
+  },
+  "artifacts": {
+    "evidence_ledger.jsonl": {
+      "sha256": "5503c7ff71f3dce41b20291aeba75bb35c7f5c5f88ab70294587612d5634ebfb"
+    },
+    "runs.csv": {
+      "sha256": "8731f8bc8232d099dc5bf57b73bf7976b57236373c90042e25c08fe347a12185"
+    },
+    "summary.md": {
+      "sha256": "983ceb6902dcc7f2005c2968dcc7de5b7e9eda1a1c2aaba09e549e0ee2385281"
+    }
+  },
+  "baseline": "M1_fixed_search",
+  "budget_enforcement": "Oracle raises BudgetExceeded after `budget` calls",
+  "code_sha256": {
+    "src/aisci/agents.py": "449c77fd6761de7b07f4b7426dbbfea2a8e08f79514ef90e7c6e2f06fc7a00e4",
+    "src/aisci/checker.py": "31e565b0707541e502133b0fa13843e68d443dcd588fc27354230e351dbad969",
+    "src/aisci/environment.py": "3d83d42bf1567dbb99615e6c511a342e23eb26aa6f81f6003fad8b7d5f02dab5",
+    "src/aisci/features.py": "25d91e260c85b949672dd73204770025e0bd918b05ba14055d6ea8f02119585d",
+    "src/aisci/fit.py": "5e03aa80ab350c8e23f18e447d758f9a5cf28fdb6d21a9965a1bcb35333433f2",
+    "src/aisci/hidden_laws.py": "c7588c732a6da7dfe06cb7135cfdf1c1a6ddb4cde3acbc25552c349e1407efbe",
+    "src/aisci/ledger.py": "f33035891945fbd8a2de7885dd3db34086d3bcfbd71fdf1dfbc42e5370a4d7a0",
+    "src/aisci/provenance.py": "6c853d212cf8b16d72e78dac2d897b48310facc98baeadea4da0f30a3f9bdb8e",
+    "src/aisci/run.py": "4221faf2ff2e889494a4690add13b7e0a0e088a0f97dc66d996ede7862585582"
+  },
+  "command": "PYTHONPATH=src python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results",
+  "config": {
+    "budget": 30,
+    "dim": 3,
+    "domain_bounds": [
+      -2.0,
+      2.0
+    ],
+    "laws": [
+      "in_space",
+      "needs_expansion",
+      "null"
+    ],
+    "mechanisms": [
+      "M1_fixed_search",
+      "M2_active_fixed_space",
+      "M3_expand"
+    ],
+    "n_test": 400,
+    "recovery_rmse": 0.05,
+    "seed_range": [
+      0,
+      29
+    ],
+    "seeds": 30,
+    "sigma": 0.1,
+    "test_seed": 12345
+  },
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytest": "8.4.2",
+    "python": "3.13.2",
+    "third_party_dependencies": []
+  },
+  "git": {
+    "branch_dirty_in_src_tests_docs": true,
+    "commit": "2f0033518d9d9423dd41887058fb0db8fe3df190"
+  },
+  "isolation": "soft: in-process; see src/aisci/environment.py docstring",
+  "run_id": "67332cbf9f27"
+}

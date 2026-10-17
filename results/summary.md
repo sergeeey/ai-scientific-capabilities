@@ -1,5 +1,7 @@
 # Summary (seeds=30, budget=30, sigma=0.1)
 
+run_id: `67332cbf9f27`; runs.csv sha256: `8731f8bc8232d099dc5bf57b73bf7976b57236373c90042e25c08fe347a12185`
+
 Synthetic data only. VERIFIED-SYNTHETIC. Not evidence about LLMs.
 
 | law | mechanism | recovered | exact terms | median test RMSE | expansions | null: any false term |

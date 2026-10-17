@@ -1,7 +1,6 @@
 import math
 import os
 import random
-import re
 
 from aisci.agents import MECHANISMS
 from aisci.checker import score
@@ -34,9 +33,19 @@ def test_fit_all_finds_true_terms_on_noiseless_data():
 
 
 def test_agents_cannot_import_hidden_laws():
+    # AST-based: a docstring that mentions hidden_laws is not an import.
+    import ast
+
     for fname in AGENT_SIDE:
-        text = open(os.path.join(SRC, fname), encoding="utf-8").read()
-        assert not re.search(r"hidden_laws|LAWS\b", text), fname
+        with open(os.path.join(SRC, fname), encoding="utf-8") as f:
+            tree = ast.parse(f.read())
+        mods = set()
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                mods |= {a.name.split(".")[-1] for a in node.names}
+            elif isinstance(node, ast.ImportFrom) and node.module:
+                mods.add(node.module.split(".")[-1])
+        assert "hidden_laws" not in mods, fname
 
 
 def test_oracle_counts_calls_and_hides_law():
