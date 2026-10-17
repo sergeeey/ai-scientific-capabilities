@@ -1,0 +1,271 @@
+law,mechanism,seed,n_calls,chosen_terms,expanded_at,test_rmse,recovered,exact_terms,false_terms
+in_space,M1_fixed_search,0,30,x1*x2+x3^2,,0.046424,True,True,
+in_space,M1_fixed_search,1,30,x1*x2+x3^2,,0.029955,True,True,
+in_space,M1_fixed_search,2,30,x1*x2+x3^2,,0.042814,True,True,
+in_space,M1_fixed_search,3,30,x1*x2+x3^2,,0.016914,True,True,
+in_space,M1_fixed_search,4,30,x1*x2+x3^2,,0.018547,True,True,
+in_space,M1_fixed_search,5,30,x1*x2+x3^2,,0.038373,True,True,
+in_space,M1_fixed_search,6,30,x1*x2+x3^2,,0.036935,True,True,
+in_space,M1_fixed_search,7,30,x1*x2+x3^2,,0.021065,True,True,
+in_space,M1_fixed_search,8,30,x1*x2+x3^2,,0.051743,False,True,
+in_space,M1_fixed_search,9,30,x1*x2+x3^2,,0.023871,True,True,
+in_space,M1_fixed_search,10,30,x1*x2+x3^2,,0.020989,True,True,
+in_space,M1_fixed_search,11,30,x1*x2+x3^2,,0.025002,True,True,
+in_space,M1_fixed_search,12,30,x1*x2+x3^2,,0.041142,True,True,
+in_space,M1_fixed_search,13,30,x1*x2+x3^2,,0.032353,True,True,
+in_space,M1_fixed_search,14,30,x1*x2+x3^2,,0.019391,True,True,
+in_space,M1_fixed_search,15,30,x1*x2+x3^2,,0.021177,True,True,
+in_space,M1_fixed_search,16,30,x1*x2+x3^2,,0.035852,True,True,
+in_space,M1_fixed_search,17,30,x1*x2+x3^2,,0.037887,True,True,
+in_space,M1_fixed_search,18,30,x1*x2+x3^2,,0.020151,True,True,
+in_space,M1_fixed_search,19,30,x1*x2+x3^2,,0.038128,True,True,
+in_space,M1_fixed_search,20,30,x1*x2+x3^2,,0.051323,False,True,
+in_space,M1_fixed_search,21,30,x1*x2+x3^2,,0.032287,True,True,
+in_space,M1_fixed_search,22,30,x1*x2+x3^2,,0.048478,True,True,
+in_space,M1_fixed_search,23,30,x1*x2+x3^2,,0.019372,True,True,
+in_space,M1_fixed_search,24,30,x1*x2+x3^2,,0.039423,True,True,
+in_space,M1_fixed_search,25,30,x1*x2+x3^2,,0.030639,True,True,
+in_space,M1_fixed_search,26,30,x1*x2+x3^2,,0.032159,True,True,
+in_space,M1_fixed_search,27,30,x1*x2+x3^2,,0.020924,True,True,
+in_space,M1_fixed_search,28,30,x1*x2+x3^2,,0.052278,False,True,
+in_space,M1_fixed_search,29,30,x1*x2+x3^2,,0.042141,True,True,
+in_space,M2_active_fixed_space,0,30,x1*x2+x3^2,,0.0218,True,True,
+in_space,M2_active_fixed_space,1,30,x1*x2+x3^2,,0.017729,True,True,
+in_space,M2_active_fixed_space,2,30,x1*x2+x3^2,,0.046432,True,True,
+in_space,M2_active_fixed_space,3,30,x1*x2+x3^2,,0.020727,True,True,
+in_space,M2_active_fixed_space,4,30,x1*x2+x3^2,,0.014409,True,True,
+in_space,M2_active_fixed_space,5,30,x1*x2+x3^2,,0.023367,True,True,
+in_space,M2_active_fixed_space,6,30,x1*x2+x3^2,,0.019235,True,True,
+in_space,M2_active_fixed_space,7,30,x1*x2+x3^2,,0.011726,True,True,
+in_space,M2_active_fixed_space,8,30,x1*x2+x3^2,,0.054792,False,True,
+in_space,M2_active_fixed_space,9,30,x1*x2+x3^2,,0.015011,True,True,
+in_space,M2_active_fixed_space,10,30,x1*x2+x3^2,,0.022028,True,True,
+in_space,M2_active_fixed_space,11,30,x1*x2+x3^2,,0.012555,True,True,
+in_space,M2_active_fixed_space,12,30,x1*x2+x3^2,,0.041801,True,True,
+in_space,M2_active_fixed_space,13,30,x1*x2+x3^2,,0.019539,True,True,
+in_space,M2_active_fixed_space,14,30,x1*x2+x3^2,,0.014534,True,True,
+in_space,M2_active_fixed_space,15,30,x1*x2+x3^2,,0.016161,True,True,
+in_space,M2_active_fixed_space,16,30,x1*x2+x3^2,,0.03016,True,True,
+in_space,M2_active_fixed_space,17,30,x1*x2+x3^2,,0.026552,True,True,
+in_space,M2_active_fixed_space,18,30,x1*x2+x3^2,,0.023548,True,True,
+in_space,M2_active_fixed_space,19,30,x1*x2+x3^2,,0.012647,True,True,
+in_space,M2_active_fixed_space,20,30,x1*x2+x3^2,,0.024633,True,True,
+in_space,M2_active_fixed_space,21,30,x1*x2+x3^2,,0.037599,True,True,
+in_space,M2_active_fixed_space,22,30,x1*x2+x3^2,,0.020277,True,True,
+in_space,M2_active_fixed_space,23,30,x1*x2+x3^2,,0.046682,True,True,
+in_space,M2_active_fixed_space,24,30,x1*x2+x3^2,,0.03655,True,True,
+in_space,M2_active_fixed_space,25,30,x1*x2+x3^2,,0.018849,True,True,
+in_space,M2_active_fixed_space,26,30,x1*x2+x3^2,,0.022345,True,True,
+in_space,M2_active_fixed_space,27,30,x1*x2+x3^2,,0.019004,True,True,
+in_space,M2_active_fixed_space,28,30,x1*x2+x3^2,,0.033428,True,True,
+in_space,M2_active_fixed_space,29,30,x1*x2+x3^2,,0.020413,True,True,
+in_space,M3_expand,0,30,x1*x2+x3^2,,0.042296,True,True,
+in_space,M3_expand,1,30,x1*x2+x3^2,,0.010182,True,True,
+in_space,M3_expand,2,30,x1*x2+x3^2,,0.029136,True,True,
+in_space,M3_expand,3,30,x1*x2+x3^2,,0.020044,True,True,
+in_space,M3_expand,4,30,x1*x2+x3^2,,0.017491,True,True,
+in_space,M3_expand,5,30,x1*x2+x3^2,,0.021013,True,True,
+in_space,M3_expand,6,30,x1*x2+x3^2,,0.015265,True,True,
+in_space,M3_expand,7,30,x1*x2+x3^2,,0.00978,True,True,
+in_space,M3_expand,8,30,x1*x2+x3^2,,0.074379,False,True,
+in_space,M3_expand,9,30,x1*x2+x3^2,,0.017323,True,True,
+in_space,M3_expand,10,30,x1*x2+x3^2,,0.005422,True,True,
+in_space,M3_expand,11,30,x1*x2+x3^2,,0.009376,True,True,
+in_space,M3_expand,12,30,x1*x2+x3^2,,0.032898,True,True,
+in_space,M3_expand,13,30,x1*x2+x3^2,,0.012971,True,True,
+in_space,M3_expand,14,30,x1*x2+x3^2,,0.019183,True,True,
+in_space,M3_expand,15,30,x1*x2+x3^2,,0.021822,True,True,
+in_space,M3_expand,16,30,x1*x2+x3^2,,0.03689,True,True,
+in_space,M3_expand,17,30,x1*x2+x3^2,,0.024433,True,True,
+in_space,M3_expand,18,30,x1*x2+x3^2,,0.012737,True,True,
+in_space,M3_expand,19,30,x1*x2+x3^2,,0.001801,True,True,
+in_space,M3_expand,20,30,x1*x2+x3^2,,0.016711,True,True,
+in_space,M3_expand,21,30,x1*x2+x3^2,,0.024058,True,True,
+in_space,M3_expand,22,30,x1*x2+x3^2,,0.010933,True,True,
+in_space,M3_expand,23,30,x1*x2+x3^2,,0.023614,True,True,
+in_space,M3_expand,24,30,x1*x2+x3^2,,0.027839,True,True,
+in_space,M3_expand,25,30,x1*x2+x3^2,,0.024364,True,True,
+in_space,M3_expand,26,30,x1*x2+x3^2,,0.018812,True,True,
+in_space,M3_expand,27,30,x1*x2+x3^2,,0.015032,True,True,
+in_space,M3_expand,28,30,x1*x2+x3^2,,0.050179,False,True,
+in_space,M3_expand,29,30,x1*x2+x3^2,,0.027045,True,True,
+needs_expansion,M1_fixed_search,0,30,x3+x1*x2,,0.367939,False,False,
+needs_expansion,M1_fixed_search,1,30,x3+x1*x2,,0.326546,False,False,
+needs_expansion,M1_fixed_search,2,30,x3+x1*x2,,0.321947,False,False,
+needs_expansion,M1_fixed_search,3,30,x3+x1*x2,,0.337152,False,False,
+needs_expansion,M1_fixed_search,4,30,x3+x1*x2,,0.336168,False,False,
+needs_expansion,M1_fixed_search,5,30,x3+x1*x2,,0.36786,False,False,
+needs_expansion,M1_fixed_search,6,30,x1*x2+sin(x3),,0.368357,False,False,
+needs_expansion,M1_fixed_search,7,30,x3+x1*x2,,0.32867,False,False,
+needs_expansion,M1_fixed_search,8,30,x3+x1*x2,,0.359114,False,False,
+needs_expansion,M1_fixed_search,9,30,x3+x1*x2,,0.328873,False,False,
+needs_expansion,M1_fixed_search,10,30,x3+x1*x2,,0.322764,False,False,
+needs_expansion,M1_fixed_search,11,30,x3+x1*x2,,0.32679,False,False,
+needs_expansion,M1_fixed_search,12,30,x3+x1*x2,,0.352024,False,False,
+needs_expansion,M1_fixed_search,13,30,x1*x2+sin(x3),,0.354805,False,False,
+needs_expansion,M1_fixed_search,14,30,x3+x1*x2,,0.330832,False,False,
+needs_expansion,M1_fixed_search,15,30,x1*x2+sin(x3),,0.389008,False,False,
+needs_expansion,M1_fixed_search,16,30,x3+x1*x2,,0.342068,False,False,
+needs_expansion,M1_fixed_search,17,30,x3+x1*x2,,0.345594,False,False,
+needs_expansion,M1_fixed_search,18,30,x3+x1*x2,,0.414011,False,False,
+needs_expansion,M1_fixed_search,19,30,x3+x1*x2,,0.328917,False,False,
+needs_expansion,M1_fixed_search,20,30,x3+x1*x2,,0.328135,False,False,
+needs_expansion,M1_fixed_search,21,30,x3+x1*x2,,0.345394,False,False,
+needs_expansion,M1_fixed_search,22,30,x3+x1*x2,,0.32875,False,False,
+needs_expansion,M1_fixed_search,23,30,x3+x1*x2,,0.327318,False,False,
+needs_expansion,M1_fixed_search,24,30,x3+x1*x2,,0.32393,False,False,
+needs_expansion,M1_fixed_search,25,30,x3+x1*x2,,0.337816,False,False,
+needs_expansion,M1_fixed_search,26,30,x3+x1*x2,,0.357222,False,False,
+needs_expansion,M1_fixed_search,27,30,x1*x2+sin(x3),,0.350462,False,False,
+needs_expansion,M1_fixed_search,28,30,x1*x2+sin(x3),,0.391965,False,False,
+needs_expansion,M1_fixed_search,29,30,x3+x1*x2,,0.332975,False,False,
+needs_expansion,M2_active_fixed_space,0,30,x3+x1*x2,,0.343749,False,False,
+needs_expansion,M2_active_fixed_space,1,30,x3+x1*x2,,0.356704,False,False,
+needs_expansion,M2_active_fixed_space,2,30,x3+x1*x2,,0.357209,False,False,
+needs_expansion,M2_active_fixed_space,3,30,x3+x1*x2,,0.349992,False,False,
+needs_expansion,M2_active_fixed_space,4,30,x3+x1*x2,,0.349231,False,False,
+needs_expansion,M2_active_fixed_space,5,30,x3+x1*x2,,0.381597,False,False,
+needs_expansion,M2_active_fixed_space,6,30,x3+x1*x2,,0.374097,False,False,
+needs_expansion,M2_active_fixed_space,7,30,x3+x1*x2,,0.338109,False,False,
+needs_expansion,M2_active_fixed_space,8,30,x3+x1*x2,,0.338842,False,False,
+needs_expansion,M2_active_fixed_space,9,30,x3+x1*x2,,0.328694,False,False,
+needs_expansion,M2_active_fixed_space,10,30,x1*x2+sin(x3),,0.376777,False,False,
+needs_expansion,M2_active_fixed_space,11,30,x1*x2+sin(x3),,0.397072,False,False,
+needs_expansion,M2_active_fixed_space,12,30,x3+x1*x2,,0.355204,False,False,
+needs_expansion,M2_active_fixed_space,13,30,x3+x1*x2,,0.375027,False,False,
+needs_expansion,M2_active_fixed_space,14,30,x3+x1*x2,,0.348304,False,False,
+needs_expansion,M2_active_fixed_space,15,30,x3+x1*x2,,0.341606,False,False,
+needs_expansion,M2_active_fixed_space,16,30,x1*x2+sin(x3),,0.403872,False,False,
+needs_expansion,M2_active_fixed_space,17,30,x3+x1*x2,,0.346029,False,False,
+needs_expansion,M2_active_fixed_space,18,30,x3+x1*x2,,0.334419,False,False,
+needs_expansion,M2_active_fixed_space,19,30,x3+x1*x2,,0.331568,False,False,
+needs_expansion,M2_active_fixed_space,20,30,x3+x1*x2,,0.358359,False,False,
+needs_expansion,M2_active_fixed_space,21,30,x3+x1*x2,,0.336953,False,False,
+needs_expansion,M2_active_fixed_space,22,30,x3+x1*x2,,0.36436,False,False,
+needs_expansion,M2_active_fixed_space,23,30,x3+x1*x2,,0.336084,False,False,
+needs_expansion,M2_active_fixed_space,24,30,x3+x1*x2,,0.326155,False,False,
+needs_expansion,M2_active_fixed_space,25,30,x3+x1*x2,,0.33027,False,False,
+needs_expansion,M2_active_fixed_space,26,30,x3+x1*x2,,0.321784,False,False,
+needs_expansion,M2_active_fixed_space,27,30,x1*x2+sin(x3),,0.345338,False,False,
+needs_expansion,M2_active_fixed_space,28,30,x3+x1*x2,,0.326962,False,False,
+needs_expansion,M2_active_fixed_space,29,30,x3+x1*x2,,0.356698,False,False,
+needs_expansion,M3_expand,0,30,x3+tanh(x1)*x2,11,0.036273,True,True,
+needs_expansion,M3_expand,1,30,x3+tanh(x1)*x2,14,0.020139,True,True,
+needs_expansion,M3_expand,2,30,x3+tanh(x1)*x2,8,0.026333,True,True,
+needs_expansion,M3_expand,3,30,x3+tanh(x1)*x2,8,0.026175,True,True,
+needs_expansion,M3_expand,4,30,x3+tanh(x1)*x2,11,0.003589,True,True,
+needs_expansion,M3_expand,5,30,x3+tanh(x1)*x2,9,0.025699,True,True,
+needs_expansion,M3_expand,6,30,x3+tanh(x1)*x2,10,0.028574,True,True,
+needs_expansion,M3_expand,7,30,x3+tanh(x1)*x2,13,0.0199,True,True,
+needs_expansion,M3_expand,8,30,x3+tanh(x1)*x2,8,0.055931,False,True,
+needs_expansion,M3_expand,9,30,x3+tanh(x1)*x2,9,0.018445,True,True,
+needs_expansion,M3_expand,10,30,x3+tanh(x1)*x2,13,0.037516,True,True,
+needs_expansion,M3_expand,11,30,x3+tanh(x1)*x2,12,0.007256,True,True,
+needs_expansion,M3_expand,12,30,x3+tanh(x1)*x2,8,0.039476,True,True,
+needs_expansion,M3_expand,13,30,x3+tanh(x1)*x2,15,0.020267,True,True,
+needs_expansion,M3_expand,14,30,x3+tanh(x1)*x2,9,0.01491,True,True,
+needs_expansion,M3_expand,15,30,x3+tanh(x1)*x2,11,0.032002,True,True,
+needs_expansion,M3_expand,16,30,x3+tanh(x1)*x2,23,0.020665,True,True,
+needs_expansion,M3_expand,17,30,x3+tanh(x1)*x2,10,0.037041,True,True,
+needs_expansion,M3_expand,18,30,x3+tanh(x1)*x2,13,0.028212,True,True,
+needs_expansion,M3_expand,19,30,x3+tanh(x1)*x2,10,0.024756,True,True,
+needs_expansion,M3_expand,20,30,x3+tanh(x1)*x2,8,0.020502,True,True,
+needs_expansion,M3_expand,21,30,x3+tanh(x1)*x2,8,0.041464,True,True,
+needs_expansion,M3_expand,22,30,x3+tanh(x1)*x2,15,0.035496,True,True,
+needs_expansion,M3_expand,23,30,x3+tanh(x1)*x2,11,0.023753,True,True,
+needs_expansion,M3_expand,24,30,x3+tanh(x1)*x2,8,0.031908,True,True,
+needs_expansion,M3_expand,25,30,x3+tanh(x1)*x2,9,0.029325,True,True,
+needs_expansion,M3_expand,26,30,x3+tanh(x1)*x2,15,0.022721,True,True,
+needs_expansion,M3_expand,27,30,x3+tanh(x1)*x2,8,0.016712,True,True,
+needs_expansion,M3_expand,28,30,x3+tanh(x1)*x2,8,0.034653,True,True,
+needs_expansion,M3_expand,29,30,x3+tanh(x1)*x2,11,0.016017,True,True,
+null,M1_fixed_search,0,30,(intercept only),,0.007828,True,True,
+null,M1_fixed_search,1,30,x2+sin(x2),,0.042762,True,False,sin(x2)+x2
+null,M1_fixed_search,2,30,(intercept only),,0.026162,True,True,
+null,M1_fixed_search,3,30,(intercept only),,0.01761,True,True,
+null,M1_fixed_search,4,30,sin(x2),,0.034774,True,False,sin(x2)
+null,M1_fixed_search,5,30,x1*x3+x3^2,,0.05213,False,False,x1*x3+x3^2
+null,M1_fixed_search,6,30,(intercept only),,0.001867,True,True,
+null,M1_fixed_search,7,30,x1^2,,0.038547,True,False,x1^2
+null,M1_fixed_search,8,30,(intercept only),,0.044607,True,True,
+null,M1_fixed_search,9,30,x3,,0.050386,False,False,x3
+null,M1_fixed_search,10,30,(intercept only),,0.003851,True,True,
+null,M1_fixed_search,11,30,(intercept only),,0.006682,True,True,
+null,M1_fixed_search,12,30,(intercept only),,0.036016,True,True,
+null,M1_fixed_search,13,30,(intercept only),,0.010498,True,True,
+null,M1_fixed_search,14,30,(intercept only),,0.012791,True,True,
+null,M1_fixed_search,15,30,(intercept only),,0.012718,True,True,
+null,M1_fixed_search,16,30,x3^2,,0.036164,True,False,x3^2
+null,M1_fixed_search,17,30,x3+sin(x3),,0.074182,False,False,sin(x3)+x3
+null,M1_fixed_search,18,30,(intercept only),,0.013614,True,True,
+null,M1_fixed_search,19,30,x2+x2^2,,0.104288,False,False,x2+x2^2
+null,M1_fixed_search,20,30,x1^2+sin(x3),,0.049932,True,False,sin(x3)+x1^2
+null,M1_fixed_search,21,30,x1^2,,0.051329,False,False,x1^2
+null,M1_fixed_search,22,30,x2*x3,,0.057332,False,False,x2*x3
+null,M1_fixed_search,23,30,x2*x3,,0.067732,False,False,x2*x3
+null,M1_fixed_search,24,30,sin(x1),,0.055005,False,False,sin(x1)
+null,M1_fixed_search,25,30,(intercept only),,0.020434,True,True,
+null,M1_fixed_search,26,30,x3+sin(x3),,0.050287,False,False,sin(x3)+x3
+null,M1_fixed_search,27,30,x2+sin(x2),,0.058693,False,False,sin(x2)+x2
+null,M1_fixed_search,28,30,x2^2+sin(x1),,0.082409,False,False,sin(x1)+x2^2
+null,M1_fixed_search,29,30,x1,,0.04279,True,False,x1
+null,M2_active_fixed_space,0,30,x2*x3+x1^2,,0.053754,False,False,x1^2+x2*x3
+null,M2_active_fixed_space,1,30,(intercept only),,0.012102,True,True,
+null,M2_active_fixed_space,2,30,sin(x1)+sin(x2),,0.061598,False,False,sin(x1)+sin(x2)
+null,M2_active_fixed_space,3,30,(intercept only),,0.01761,True,True,
+null,M2_active_fixed_space,4,30,x3,,0.022918,True,False,x3
+null,M2_active_fixed_space,5,30,x1*x2+x1^2,,0.06378,False,False,x1*x2+x1^2
+null,M2_active_fixed_space,6,30,(intercept only),,0.001867,True,True,
+null,M2_active_fixed_space,7,30,x2^2,,0.027633,True,False,x2^2
+null,M2_active_fixed_space,8,30,x2^2+x3^2,,0.091295,False,False,x2^2+x3^2
+null,M2_active_fixed_space,9,30,x1^2,,0.03008,True,False,x1^2
+null,M2_active_fixed_space,10,30,(intercept only),,0.003851,True,True,
+null,M2_active_fixed_space,11,30,x2,,0.029095,True,False,x2
+null,M2_active_fixed_space,12,30,(intercept only),,0.036016,True,True,
+null,M2_active_fixed_space,13,30,x1^2,,0.028918,True,False,x1^2
+null,M2_active_fixed_space,14,30,sin(x3),,0.034103,True,False,sin(x3)
+null,M2_active_fixed_space,15,30,(intercept only),,0.012718,True,True,
+null,M2_active_fixed_space,16,30,sin(x2),,0.039393,True,False,sin(x2)
+null,M2_active_fixed_space,17,30,x1*x2+x3^2,,0.057272,False,False,x1*x2+x3^2
+null,M2_active_fixed_space,18,30,x1*x3,,0.02581,True,False,x1*x3
+null,M2_active_fixed_space,19,30,(intercept only),,0.001691,True,True,
+null,M2_active_fixed_space,20,30,x1*x2+sin(x2),,0.056108,False,False,sin(x2)+x1*x2
+null,M2_active_fixed_space,21,30,x1,,0.032354,True,False,x1
+null,M2_active_fixed_space,22,30,(intercept only),,0.005696,True,True,
+null,M2_active_fixed_space,23,30,(intercept only),,0.019383,True,True,
+null,M2_active_fixed_space,24,30,(intercept only),,0.017,True,True,
+null,M2_active_fixed_space,25,30,sin(x3),,0.036013,True,False,sin(x3)
+null,M2_active_fixed_space,26,30,(intercept only),,0.013928,True,True,
+null,M2_active_fixed_space,27,30,(intercept only),,0.010339,True,True,
+null,M2_active_fixed_space,28,30,x1,,0.042714,True,False,x1
+null,M2_active_fixed_space,29,30,x1*x2,,0.020895,True,False,x1*x2
+null,M3_expand,0,30,x1*x2,,0.027116,True,False,x1*x2
+null,M3_expand,1,30,(intercept only),,0.012102,True,True,
+null,M3_expand,2,30,(intercept only),,0.026162,True,True,
+null,M3_expand,3,30,(intercept only),,0.01761,True,True,
+null,M3_expand,4,30,x2+sin(x2),,0.028037,True,False,sin(x2)+x2
+null,M3_expand,5,30,x2^2,,0.028724,True,False,x2^2
+null,M3_expand,6,30,x1*x2,,0.018168,True,False,x1*x2
+null,M3_expand,7,30,sin(x1),,0.029456,True,False,sin(x1)
+null,M3_expand,8,30,x1+x1^2,,0.093356,False,False,x1+x1^2
+null,M3_expand,9,30,x2+x3^2,,0.052478,False,False,x2+x3^2
+null,M3_expand,10,30,(intercept only),,0.003851,True,True,
+null,M3_expand,11,30,x2+sin(x1),,0.046123,True,False,sin(x1)+x2
+null,M3_expand,12,30,x1^2,,0.034711,True,False,x1^2
+null,M3_expand,13,30,x2+x3,,0.047304,True,False,x2+x3
+null,M3_expand,14,30,x2*x3,,0.024481,True,False,x2*x3
+null,M3_expand,15,30,x2+x3,,0.056699,False,False,x2+x3
+null,M3_expand,16,30,x2^2+sin(x3),,0.037647,True,False,sin(x3)+x2^2
+null,M3_expand,17,30,x2*x3,,0.047733,True,False,x2*x3
+null,M3_expand,18,30,(intercept only),,0.013614,True,True,
+null,M3_expand,19,30,x1*x3,,0.021753,True,False,x1*x3
+null,M3_expand,20,30,sin(x2),,0.038587,True,False,sin(x2)
+null,M3_expand,21,30,(intercept only),,0.022693,True,True,
+null,M3_expand,22,30,(intercept only),,0.005696,True,True,
+null,M3_expand,23,30,(intercept only),,0.019383,True,True,
+null,M3_expand,24,30,(intercept only),,0.017,True,True,
+null,M3_expand,25,30,x1*x3+x2*x3,,0.030419,True,False,x1*x3+x2*x3
+null,M3_expand,26,30,(intercept only),,0.013928,True,True,
+null,M3_expand,27,30,x1*x2+x1*x3,,0.031902,True,False,x1*x2+x1*x3
+null,M3_expand,28,30,x1*x3+x2^2,,0.04625,True,False,x1*x3+x2^2
+null,M3_expand,29,30,(intercept only),,0.016331,True,True,
