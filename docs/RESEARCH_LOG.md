@@ -112,6 +112,12 @@ Not verified:
 3. exp02 artifacts are hashed in `results/exp02/run_metadata.json`, but **not yet in the evidence ledger** and not in `claims.json`. Under Foundation rules, exp02 conclusions are not yet traceable through the ledger. This is the next gap to close.
 4. The default scenario is the exp01 laws, as I chose without your decision. The delay-differential scenario is not run.
 
+**Narrow review of exp02 (commit f495ccd): LGTM, no P0 or P1.** Reviewer confirmed: calibration uses only seeds 1000–1199; margin and tau are the first grid values meeting the limit; verdicts use test seeds only for reporting; test-seed data does not choose thresholds. Its P2 notes and my response:
+- **Calibration hash not recorded (PREREG section 3 requires it).** Recorded now: `results/exp02/calibration.json` sha256 `639dd3d4b915b2413753e3d5f0a3781e95e73869eb20ddffa14e443d43c8506f`. Re-running exp02 reproduced it.
+- **Wording mismatch on A.** PREREG says "CI lower bound > 0.2"; `verdicts()` uses `>= 0.2`. The outcome is the same (bound is 0.0), so the PREREG text is not edited after seeing results. The mismatch stays on record here.
+- **B checks only M2 in the verdict dict.** M1 (0.625) is also above 5%. The outcome is the same and both values are in the table above.
+- **Thresholds are passed in memory, not reloaded from calibration.json.** A standalone rerun of the test phase would recalibrate, which gives the same values here. Left as is, recorded as a limit.
+
 ## Open decisions for the user
 - The project's research question (LLM vs algorithm) needs an LLM. Approval is needed before any paid API is used, and the task says not to use one without approval. Until then the LLM part is NOT-VERIFIED.
 - Whether to keep the folder as a standalone repo or move it into a larger workspace.
