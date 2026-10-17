@@ -1,0 +1,47 @@
+{
+  "artifacts": {
+    "calibration.json": "cd03c150ece804f388fb79bec47b080744d59a053736ef147099b24735c2f1c0",
+    "test_results.json": "93b087b59a9466429209f4029a5cbe2648ef03ea5ce70cbe607ed51995609480",
+    "verdicts.json": "71837ef3a3a7b74483dc8caa85a4bca08073df3560f3a669a117da4e2264283e"
+  },
+  "code_sha256": {
+    "src/aisci/agents.py": "3344423e8b5073688848b00698ed0ef84139953b3ab375ae55014bb6635a6d5d",
+    "src/aisci/checker.py": "31e565b0707541e502133b0fa13843e68d443dcd588fc27354230e351dbad969",
+    "src/aisci/environment.py": "3d83d42bf1567dbb99615e6c511a342e23eb26aa6f81f6003fad8b7d5f02dab5",
+    "src/aisci/exp02.py": "7ef8e513db738511087a87751434244996d5f2def1626fef10f00a945d642642",
+    "src/aisci/exp03.py": "6f1d00d6987a20828b8f0ba395061c2dc9740ac914c2f01f2419f7e3f05b86e4",
+    "src/aisci/features.py": "25d91e260c85b949672dd73204770025e0bd918b05ba14055d6ea8f02119585d",
+    "src/aisci/fit.py": "5e03aa80ab350c8e23f18e447d758f9a5cf28fdb6d21a9965a1bcb35333433f2",
+    "src/aisci/hidden_laws.py": "c7588c732a6da7dfe06cb7135cfdf1c1a6ddb4cde3acbc25552c349e1407efbe",
+    "src/aisci/ledger.py": "0216b27b2a54b4fd4655bf653b777547c81ef7a09ece9657823607ab5c938616",
+    "src/aisci/provenance.py": "6c853d212cf8b16d72e78dac2d897b48310facc98baeadea4da0f30a3f9bdb8e",
+    "src/aisci/rules.py": "4fcfec16074d7cc0f52e161403a959d4ba51474c6af79fa7e7b56fed79ac51cc",
+    "src/aisci/run.py": "70b3bca72ccc4520ab1101edf39214a972594be71be945e0e07e90b4174c8245"
+  },
+  "config": {
+    "budget": 30,
+    "calibration_seeds": [
+      1000,
+      1199
+    ],
+    "ceiling_max": 0.05,
+    "mcid_ratio": 0.8,
+    "pos_control_max_ratio": 0.8,
+    "sigma": 0.1,
+    "test_seeds": [
+      0,
+      199
+    ]
+  },
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytest": "8.4.2",
+    "python": "3.13.2",
+    "third_party_dependencies": []
+  },
+  "git": {
+    "branch_dirty_in_src_tests_docs": true,
+    "commit": "9e255ef8473405c37554efb76c89bae06213860f"
+  }
+}

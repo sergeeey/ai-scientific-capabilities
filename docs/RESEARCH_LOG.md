@@ -118,6 +118,26 @@ Not verified:
 - **B checks only M2 in the verdict dict.** M1 (0.625) is also above 5%. The outcome is the same and both values are in the table above.
 - **Thresholds are passed in memory, not reloaded from calibration.json.** A standalone rerun of the test phase would recalibrate, which gives the same values here. Left as is, recorded as a limit.
 
+## 2026-10-18 — exp03: continuous endpoint for hypothesis A (pre-registered, run)
+Protocol: `docs/PREREG_exp03.md` (written before any run). Runner: `src/aisci/exp03.py`, using `run_one` unchanged.
+
+**Sensitivity checks on calibration seeds 1000–1199 (passed, gate for the test run):**
+- Positive control: median RMSE of M1 at budget 60 / budget 30 = **0.721** (pass if ≤ 0.80). Doubling the budget gives about 28% lower RMSE, so the endpoint sees effects of this size.
+- Ceiling check: RMSE of M1 and M2 exactly equal on 0% of seeds (pass if < 5%). Unlike `exact_terms`, RMSE is not saturated.
+
+**Test run, seeds 0–199 (frozen rule):**
+- Law `in_space`: median paired ratio RMSE(M2)/RMSE(M1) = **0.767**, bootstrap 95% CI [0.698, 0.843]. Verdict under the frozen rule: **supported** (median ≤ 0.80 and CI upper < 1.00).
+- Negative control, law `null` (reported, not a gate): median ratio **0.917**, CI [0.712, 1.000].
+
+**Warning, which weakens the in_space verdict:** on the null law, where there is nothing to discover, M2 still gives about 8% lower RMSE (CI reaches 1.00). So the RMSE endpoint rewards M2 even without a law. A plausible cause is that M2's design picks points that pull fitted models toward zero. That would make it a property of the metric and procedure, not evidence of discovering the law. The in_space result must not be read as proof that active design finds laws better. It shows only that M2's fitted models are closer to the true function on the holdout grid than M1's, and the null control suggests this may not be specific to real structure.
+
+**What this changes:**
+1. Hypothesis A now has a sensitive endpoint, and the calibration shows the endpoint is not saturated.
+2. The next test must separate "closer to truth" from "closer to zero" on the null law, for example a null-law baseline that always returns intercept-only (its RMSE is set by the intercept). Pre-register it before running.
+3. Like exp02, exp03 artifacts are hashed in `results/exp03/run_metadata.json` but are **not yet in the evidence ledger**. Foundation traceability does not yet cover exp02 or exp03.
+
+**Decisions applied from the external review:** exp03 chosen as the next step (not the delay-differential scenario); isolation for LLM stays a prerequisite before any API call; `c49524a` on master left unchanged.
+
 ## Open decisions for the user
 - The project's research question (LLM vs algorithm) needs an LLM. Approval is needed before any paid API is used, and the task says not to use one without approval. Until then the LLM part is NOT-VERIFIED.
 - Whether to keep the folder as a standalone repo or move it into a larger workspace.

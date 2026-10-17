@@ -1,0 +1,17 @@
+{
+  "calibration_seeds": [
+    1000,
+    1199
+  ],
+  "ceiling_check": {
+    "fraction_exact_equal": 0.0,
+    "pass": true
+  },
+  "passed": true,
+  "positive_control": {
+    "median_rmse_m1_b30": 0.029580500000000003,
+    "median_rmse_m1_b60": 0.021337000000000002,
+    "pass": true,
+    "ratio_b60_over_b30": 0.7213197883740978
+  }
+}
