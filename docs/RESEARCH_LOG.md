@@ -53,6 +53,12 @@ Command: `python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results`.
 - **Would falsify** "active design helps": M2 vs M1 paired difference < MCID (0.2) with CI including 0.
 - **Would falsify** "BIC is fine for discovery": null false-term rate stays above 5% after the control.
 
+## 2026-10-17 — roadmap intake (document, not an experiment)
+- A strategic document with ten questions, a target architecture (five blocks) and three stages was added as `docs/ROADMAP.md`. This is a plan, not a result: no new evidence was produced.
+- Mapping: exp01 partly covers Q3, Q4, Q5, Q9, Q10. Q1, Q2, Q6, Q7, Q8 are not started.
+- The document cites external work (FIRE-Bench, SciAgentArena, "Into the Unknown", figures 135 and 114, date 13.10.2026). **These are [UNKNOWN]: not opened, not verified.** They are listed in `ROADMAP.md` under "to verify" and must not be used as facts until checked against the primary sources.
+- No code was changed in this step.
+
 ## Open decisions for the user
 - The project's research question (LLM vs algorithm) needs an LLM. Approval is needed before any paid API is used, and the task says not to use one without approval. Until then the LLM part is NOT-VERIFIED.
 - Whether to keep the folder as a standalone repo or move it into a larger workspace.

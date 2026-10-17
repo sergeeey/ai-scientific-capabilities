@@ -57,5 +57,11 @@ See `results/summary.md` for the full table. Key findings:
 
 Details and deviations: `docs/RESEARCH_LOG.md`.
 
-## Next decisive experiment
-See the bottom of `docs/RESEARCH_LOG.md`.
+## Roadmap
+Full text of the ten questions, the target architecture, and the three stages (Foundation → Scientific Discovery → Production Validation): `docs/ROADMAP.md`.
+
+Coverage after exp01:
+- Partly covered: Q3 (fixed expansion only), Q4 (algorithmic ablation, no LLM), Q5 (active design, no stopping rule), Q9 (results and log, no ledger or checksums), Q10 (baseline at equal budget, no cost model).
+- Not started: Q1, Q2, Q6, Q7, Q8.
+
+Next decisive experiment: `docs/RESEARCH_LOG.md`, section "Next decisive experiment" (exp02, proposal, not run).
