@@ -1,0 +1,11 @@
+{"id": "E2-A-01", "path": "calibration.json", "sha256": "639dd3d4b915b2413753e3d5f0a3781e95e73869eb20ddffa14e443d43c8506f", "type": "artifact"}
+{"id": "E2-A-02", "path": "calibration_runs.csv", "sha256": "e0174cca67319b96d7fe5730caaf19b4d97f64b31ffad0eb69e3b5fbca697724", "type": "artifact"}
+{"id": "E2-A-03", "path": "test_runs.csv", "sha256": "bfff1491cc16ce7965efc7d036034e47942c2a62f66d8263ca584f2c02612cff", "type": "artifact"}
+{"id": "E2-A-04", "path": "verdicts.json", "sha256": "a8098ad387068b47c4e0319205ac8b9bccea327de2db2744545a50bd38f9090f", "type": "artifact"}
+{"id": "E2-D-001", "metric": "margin_star", "source_artifact": "E2-A-01", "type": "derived", "value": 10}
+{"id": "E2-D-002", "metric": "tau_star", "source_artifact": "E2-A-01", "type": "derived", "value": 0.15}
+{"id": "E2-D-003", "metric": "B_null_fdr_M2_raw", "source_artifact": "E2-A-04", "type": "derived", "value": 0.565}
+{"id": "E2-D-004", "metric": "C_null_fdr", "source_artifact": "E2-A-04", "type": "derived", "value": 0.015}
+{"id": "E2-D-005", "metric": "C_in_space_exact", "source_artifact": "E2-A-04", "type": "derived", "value": 1.0}
+{"id": "E2-D-006", "metric": "D_needs_expansion_abstain", "source_artifact": "E2-A-04", "type": "derived", "value": 1.0}
+{"id": "E2-D-007", "metric": "A_mean_diff", "source_artifact": "E2-A-04", "type": "derived", "value": 0.0}

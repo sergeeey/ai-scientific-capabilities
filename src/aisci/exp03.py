@@ -12,8 +12,11 @@ import json
 import os
 import random
 
-from aisci import provenance
+from aisci import pinned, provenance
 from aisci.run import run_one
+
+# SHA-256 of results/exp03/calibration.json as recorded in docs/RESEARCH_LOG.md (2026-10-18).
+CAL_SHA256 = "cd03c150ece804f388fb79bec47b080744d59a053736ef147099b24735c2f1c0"
 
 BUDGET = 30
 SIGMA = 0.1
@@ -123,6 +126,12 @@ def main(argv=None):
         f.write("\n")
     artifacts = ["calibration.json"]
 
+    # The gate is read from the pinned calibration file; a fresh calibration must agree.
+    frozen = pinned.load_pinned_json(os.path.join(a.out, "calibration.json"), CAL_SHA256)
+    if frozen["passed"] != cal["passed"]:
+        raise RuntimeError("fresh calibration does not reproduce the pinned gate")
+    cal = frozen
+
     if cal["passed"]:
         res = test_run()
         with open(os.path.join(a.out, "test_results.json"), "w", encoding="utf-8") as f:
@@ -135,6 +144,25 @@ def main(argv=None):
         artifacts += ["test_results.json", "verdicts.json"]
     else:
         v = {"status": "not run: calibration checks failed; see calibration.json"}
+
+    derived = [
+        (
+            "positive_control_ratio",
+            cal["positive_control"]["ratio_b60_over_b30"],
+            "calibration.json",
+        ),
+        ("ceiling_fraction", cal["ceiling_check"]["fraction_exact_equal"], "calibration.json"),
+    ]
+    if "H-A_prime" in v:
+        derived += [
+            ("H_A_in_space_median_ratio", v["in_space_median_ratio"], "verdicts.json"),
+            (
+                "negative_control_null_median_ratio",
+                v["negative_control_null"]["median_ratio"],
+                "verdicts.json",
+            ),
+        ]
+    pinned.artifact_ledger(a.out, "E3", artifacts, derived)
 
     meta = {
         "config": {

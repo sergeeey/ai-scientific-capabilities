@@ -1,0 +1,3 @@
+{"id": "BL-A-01", "path": "null_baseline.json", "sha256": "b12159f6f84cdf3a4076335d445048a76645c1496da59836b4ea712e09f82c80", "type": "artifact"}
+{"id": "BL-D-001", "metric": "M1_null_median", "source_artifact": "BL-A-01", "type": "derived", "value": 0.04159398022899688}
+{"id": "BL-D-002", "metric": "M1_formula_p26_for_comparison", "source_artifact": "BL-A-01", "type": "derived", "value": 0.029759592291114027}

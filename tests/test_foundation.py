@@ -200,6 +200,7 @@ def test_claims_resolve_to_matching_ledger_entries():
     with open(os.path.join(ROOT, "docs", "claims.json"), encoding="utf-8") as f:
         claims = json.load(f)["claims"]
     by_id = {e["id"]: e for e in _ledger()}
+    ledgers = {}
     statuses = {"supported", "falsified", "unverified"}
     for c in claims:
         assert c["status"] in statuses, c["id"]
@@ -208,6 +209,15 @@ def test_claims_resolve_to_matching_ledger_entries():
             continue
         assert c["checks"], f"{c['id']} is {c['status']} but cites nothing"
         for chk in c["checks"]:
+            if "ledger" in chk:
+                # Experiment ledgers: id and metric must match exactly; value to float tolerance.
+                path = chk["ledger"]
+                if path not in ledgers:
+                    ledgers[path] = {e["id"]: e for e in ledger.load(os.path.join(ROOT, path))}
+                e = ledgers[path][chk["id"]]
+                assert e["metric"] == chk["metric"], c["id"]
+                assert e["value"] == pytest.approx(chk["value"], rel=1e-9, abs=1e-12), c["id"]
+                continue
             e = by_id[chk["id"]]
             if "metric" in chk:
                 assert e["type"] == "derived"

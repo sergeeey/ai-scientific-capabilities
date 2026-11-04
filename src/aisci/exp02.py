@@ -14,7 +14,7 @@ import json
 import os
 import random
 
-from aisci import provenance
+from aisci import pinned, provenance
 from aisci.agents import MECHANISMS
 from aisci.checker import score
 from aisci.environment import Oracle
@@ -33,6 +33,8 @@ RECOVERY_MIN = 0.80
 ABSTAIN_MAX_NULL_LIKE = 0.05
 ABSTAIN_MIN_EXPANSION = 0.90
 BOOT_RESAMPLES = 10000
+# SHA-256 of results/exp02/calibration.json as recorded in docs/RESEARCH_LOG.md (2026-10-18).
+CAL_SHA256 = "639dd3d4b915b2413753e3d5f0a3781e95e73869eb20ddffa14e443d43c8506f"
 REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 FIELDS = [
@@ -302,12 +304,35 @@ def main(argv=None):
         f.write("\n")
     _write_rows(os.path.join(a.out, "calibration_runs.csv"), cal_rows)
 
+    # The test run reads its thresholds from the pinned calibration file, not from memory.
+    # A fresh calibration must reproduce the pinned values; otherwise the run stops.
+    frozen = pinned.load_pinned_json(os.path.join(a.out, "calibration.json"), CAL_SHA256)
+    if (frozen["margin_star"], frozen["tau_star"]) != (cal["margin_star"], cal["tau_star"]):
+        raise RuntimeError("fresh calibration does not reproduce the pinned thresholds")
+    cal = frozen
+
     rows = test_run(cal)
     _write_rows(os.path.join(a.out, "test_runs.csv"), rows)
     v = verdicts(cal, rows)
     with open(os.path.join(a.out, "verdicts.json"), "w", encoding="utf-8") as f:
         json.dump(v, f, indent=2, sort_keys=True, default=float)
         f.write("\n")
+    files = ["calibration.json", "calibration_runs.csv", "test_runs.csv", "verdicts.json"]
+    derived = [
+        ("margin_star", cal["margin_star"], "calibration.json"),
+        ("tau_star", cal["tau_star"], "calibration.json"),
+        ("B_null_fdr_M2_raw", v["B_plain_bic_null_fdr"]["M2_raw"], "verdicts.json"),
+        ("C_null_fdr", v["C_margin_rule"]["null_fdr"], "verdicts.json"),
+        ("C_in_space_exact", v["C_margin_rule"]["in_space_exact"], "verdicts.json"),
+        (
+            "D_needs_expansion_abstain",
+            v["D_abstention"]["needs_expansion_abstain"],
+            "verdicts.json",
+        ),
+        ("A_mean_diff", v["A_active_vs_fixed"]["mean_diff"], "verdicts.json"),
+    ]
+    pinned.artifact_ledger(a.out, "E2", files, derived)
+
     meta = {
         "config": {
             "budget": BUDGET,

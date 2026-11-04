@@ -21,15 +21,16 @@
     "src/aisci/agents.py": "3344423e8b5073688848b00698ed0ef84139953b3ab375ae55014bb6635a6d5d",
     "src/aisci/checker.py": "31e565b0707541e502133b0fa13843e68d443dcd588fc27354230e351dbad969",
     "src/aisci/environment.py": "3d83d42bf1567dbb99615e6c511a342e23eb26aa6f81f6003fad8b7d5f02dab5",
-    "src/aisci/exp02.py": "7ef8e513db738511087a87751434244996d5f2def1626fef10f00a945d642642",
+    "src/aisci/exp02.py": "f754869073a4d300a7f7b83102cfc0927d5f28502726b53c77ff8487234f1b12",
     "src/aisci/exp03.py": "8c9e23a98ca5cab8d9087662414c5b78220976984d7048248428bb3e80780592",
+    "src/aisci/exp_config.py": "e4b2b18b0822bd69f394037e0739399f366ed2e3e2000cb1f490b4efebc10c8d",
     "src/aisci/features.py": "25d91e260c85b949672dd73204770025e0bd918b05ba14055d6ea8f02119585d",
     "src/aisci/fit.py": "5e03aa80ab350c8e23f18e447d758f9a5cf28fdb6d21a9965a1bcb35333433f2",
-    "src/aisci/hidden_laws.py": "0995c262dde6c3cca733a687240f3c27ef0c64011a877f6574ed7571247891f9",
-    "src/aisci/ledger.py": "0216b27b2a54b4fd4655bf653b777547c81ef7a09ece9657823607ab5c938616",
+    "src/aisci/hidden_laws.py": "6f4b5ef2df58b304ef88dda7f970bb2e782a5d028047281f908f86c0b0a6c5bf",
+    "src/aisci/ledger.py": "e500eea9c3cf5f311f72f6fb005d958e5dc406569c46205665c8875be6241368",
     "src/aisci/provenance.py": "6c853d212cf8b16d72e78dac2d897b48310facc98baeadea4da0f30a3f9bdb8e",
     "src/aisci/rules.py": "4fcfec16074d7cc0f52e161403a959d4ba51474c6af79fa7e7b56fed79ac51cc",
-    "src/aisci/run.py": "70b3bca72ccc4520ab1101edf39214a972594be71be945e0e07e90b4174c8245"
+    "src/aisci/run.py": "5fd880a0aed7e255770808a063cb581295798732c155644e3231a135bff7e75d"
   },
   "command": "PYTHONPATH=src python -m aisci.run --seeds 30 --budget 30 --sigma 0.1 --out results",
   "config": {
@@ -68,7 +69,7 @@
   },
   "git": {
     "branch_dirty_in_src_tests_docs": true,
-    "commit": "b055a13f90132ac9b8eff0ae0ae8586909c3dca6"
+    "commit": "e868dab7b9f9de453f8a7164b46445367a194d94"
   },
   "isolation": "soft: in-process; see src/aisci/environment.py docstring",
   "run_id": "67332cbf9f27"

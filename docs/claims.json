@@ -71,6 +71,78 @@
       "status": "unverified",
       "checks": [],
       "caveat": "Primary sources not opened (see docs/ROADMAP.md, section 'to verify'). Must not be cited as fact."
+    },
+    {
+      "id": "C-08",
+      "prediction": "exp02 B",
+      "statement": "Plain BIC selection (M2) does not control false discoveries on the null law: null false-term rate on test seeds is above 5%.",
+      "status": "supported",
+      "checks": [
+        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-003", "metric": "B_null_fdr_M2_raw", "value": 0.565}
+      ],
+      "caveat": "Test seeds 0-199, one law, sigma 0.1, budget 30."
+    },
+    {
+      "id": "C-09",
+      "prediction": "exp02 C",
+      "statement": "The calibrated margin rule (margin 10, the grid edge) brings the null false-term rate under 5% on test seeds, while in_space exact recovery stays at 1.00.",
+      "status": "supported",
+      "checks": [
+        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-004", "metric": "C_null_fdr", "value": 0.015},
+        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-005", "metric": "C_in_space_exact", "value": 1.0}
+      ],
+      "caveat": "Margin 10 is the largest grid value; the true threshold may be higher. Not tested beyond the grid."
+    },
+    {
+      "id": "C-10",
+      "prediction": "exp02 A",
+      "statement": "Exact recovery on in_space is at ceiling for both M1 and M2, so the active-vs-fixed comparison cannot be tested with exact_terms.",
+      "status": "supported",
+      "checks": [
+        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-007", "metric": "A_mean_diff", "value": 0.0}
+      ],
+      "caveat": "A zero mean difference at ceiling is not evidence that active design has no effect."
+    },
+    {
+      "id": "C-11",
+      "prediction": "exp03 positive control",
+      "statement": "Doubling the budget reduces median RMSE of M1 on in_space by about 28% (ratio 0.721), so the RMSE endpoint can see effects of this size.",
+      "status": "supported",
+      "checks": [
+        {"ledger": "results/exp03/ledger.jsonl", "id": "E3-D-001", "metric": "positive_control_ratio", "value": 0.7213197883740978}
+      ],
+      "caveat": "Calibration seeds 1000-1199 only."
+    },
+    {
+      "id": "C-12",
+      "prediction": "exp03 H-A'",
+      "statement": "On in_space, the median RMSE ratio M2/M1 is 0.767 with 95% CI [0.698, 0.843], which meets the frozen supported rule.",
+      "status": "supported",
+      "checks": [
+        {"ledger": "results/exp03/ledger.jsonl", "id": "E3-D-003", "metric": "H_A_in_space_median_ratio", "value": 0.7666639670486224}
+      ],
+      "caveat": "The same metric gives ratio 0.917 on the null law (C-13). The in_space result does NOT show that active design finds laws better."
+    },
+    {
+      "id": "C-13",
+      "prediction": "exp03 negative control",
+      "statement": "On the null law the RMSE ratio M2/M1 is 0.917 (CI reaches 1.00): the RMSE endpoint rewards M2 even when there is no law.",
+      "status": "supported",
+      "checks": [
+        {"ledger": "results/exp03/ledger.jsonl", "id": "E3-D-004", "metric": "negative_control_null_median_ratio", "value": 0.917132877877935}
+      ],
+      "caveat": "Finite-sample effect; motivates the measured null baseline (C-14)."
+    },
+    {
+      "id": "C-14",
+      "prediction": "null baseline",
+      "statement": "The measured null median RMSE of M1 (0.0416) differs by more than 20% from the P26 formula 1.63*sigma/sqrt(N) (0.0298), so the formula is not used as the baseline.",
+      "status": "supported",
+      "checks": [
+        {"ledger": "results/baseline/ledger.jsonl", "id": "BL-D-001", "metric": "M1_null_median", "value": 0.04159398022899688},
+        {"ledger": "results/baseline/ledger.jsonl", "id": "BL-D-002", "metric": "M1_formula_p26_for_comparison", "value": 0.029759592291114027}
+      ],
+      "caveat": "Measured on calibration seeds 1000-1199 only. The formula matches M2 and M3 medians closely, so it is not wrong for them, only not general."
     }
   ]
 }

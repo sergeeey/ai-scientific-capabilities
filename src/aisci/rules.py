@@ -25,3 +25,24 @@ def abstain_select(X, y, tau, lib=BASE_LIB, k=2):
     if best.rmse > tau:
         return None  # UNEXPLAINED
     return best
+
+
+def identifiability_certificate(predictors, admissible_inputs, sigma, k=3.0):
+    """Can the rival predictors be told apart by ANY admissible experiment?
+
+    predictors: list of callables f(u) -> predicted measurement for experiment u.
+    admissible_inputs: experiments the protocol allows (chosen before any budget is spent).
+    For each pair, the largest predicted gap over admissible experiments is compared with the
+    noise threshold k*sigma. If any pair never exceeds it, the family is NON_IDENTIFIABLE
+    under this protocol, and the budget should not be spent on it.
+    """
+    if len(predictors) < 2:
+        return {"verdict": "IDENTIFIABLE", "min_pairwise_gap": None, "threshold": k * sigma}
+    worst = None
+    for i in range(len(predictors)):
+        for j in range(i + 1, len(predictors)):
+            gap = max(abs(predictors[i](u) - predictors[j](u)) for u in admissible_inputs)
+            worst = gap if worst is None or gap < worst else worst
+    threshold = k * sigma
+    verdict = "IDENTIFIABLE" if worst > threshold else "NON_IDENTIFIABLE"
+    return {"verdict": verdict, "min_pairwise_gap": worst, "threshold": threshold}

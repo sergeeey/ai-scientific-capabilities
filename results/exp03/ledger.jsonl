@@ -1,0 +1,7 @@
+{"id": "E3-A-01", "path": "calibration.json", "sha256": "cd03c150ece804f388fb79bec47b080744d59a053736ef147099b24735c2f1c0", "type": "artifact"}
+{"id": "E3-A-02", "path": "test_results.json", "sha256": "93b087b59a9466429209f4029a5cbe2648ef03ea5ce70cbe607ed51995609480", "type": "artifact"}
+{"id": "E3-A-03", "path": "verdicts.json", "sha256": "71837ef3a3a7b74483dc8caa85a4bca08073df3560f3a669a117da4e2264283e", "type": "artifact"}
+{"id": "E3-D-001", "metric": "positive_control_ratio", "source_artifact": "E3-A-01", "type": "derived", "value": 0.7213197883740978}
+{"id": "E3-D-002", "metric": "ceiling_fraction", "source_artifact": "E3-A-01", "type": "derived", "value": 0.0}
+{"id": "E3-D-003", "metric": "H_A_in_space_median_ratio", "source_artifact": "E3-A-03", "type": "derived", "value": 0.7666639670486224}
+{"id": "E3-D-004", "metric": "negative_control_null_median_ratio", "source_artifact": "E3-A-03", "type": "derived", "value": 0.917132877877935}

@@ -1,0 +1,42 @@
+{
+  "budget": 30,
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytest": "8.4.2",
+    "python": "3.13.2",
+    "third_party_dependencies": []
+  },
+  "git": {
+    "branch_dirty_in_src_tests_docs": true,
+    "commit": "9b8a90c43697feecc129edfafb5f1120fe794fad"
+  },
+  "per_mechanism": {
+    "M1_fixed_search": {
+      "formula_p26_for_comparison": 0.029759592291114027,
+      "mean": 0.040129467409431976,
+      "mechanism": "M1_fixed_search",
+      "median": 0.04159398022899688,
+      "n_seeds": 200
+    },
+    "M2_active_fixed_space": {
+      "formula_p26_for_comparison": 0.029759592291114027,
+      "mean": 0.029572395884684913,
+      "mechanism": "M2_active_fixed_space",
+      "median": 0.03081402449977191,
+      "n_seeds": 200
+    },
+    "M3_expand": {
+      "formula_p26_for_comparison": 0.029759592291114027,
+      "mean": 0.03038172094001874,
+      "mechanism": "M3_expand",
+      "median": 0.029929422021048264,
+      "n_seeds": 200
+    }
+  },
+  "seeds": [
+    1000,
+    1199
+  ],
+  "sigma": 0.1
+}
