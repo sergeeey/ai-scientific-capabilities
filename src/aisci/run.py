@@ -23,6 +23,7 @@ from aisci import checker, ledger, provenance
 from aisci.agents import MECHANISMS
 from aisci.checker import score
 from aisci.environment import Oracle
+from aisci.exp_config import EXP01_LAWS
 from aisci.features import BOUNDS, DIM
 from aisci.hidden_laws import LAWS
 
@@ -67,7 +68,7 @@ def run_one(law_name, mech_name, seed, budget, sigma):
 
 def run_all(seeds, budget, sigma):
     rows = []
-    for law_name in LAWS:
+    for law_name in EXP01_LAWS:
         for mech_name in MECHANISMS:
             for seed in range(seeds):
                 rows.append(run_one(law_name, mech_name, seed, budget, sigma))
@@ -84,7 +85,7 @@ def runs_csv_text(rows):
 
 def config_for(seeds, budget, sigma):
     return {
-        "laws": list(LAWS),
+        "laws": list(EXP01_LAWS),
         "mechanisms": sorted(MECHANISMS),
         "seeds": seeds,
         "seed_range": [0, seeds - 1],
@@ -103,7 +104,7 @@ def summarize(rows):
         "| law | mechanism | recovered | exact terms | median test RMSE | expansions | null: any false term |",
         "|---|---|---|---|---|---|---|",
     ]
-    for law_name in LAWS:
+    for law_name in EXP01_LAWS:
         for mech_name in MECHANISMS:
             sub = [r for r in rows if r["law"] == law_name and r["mechanism"] == mech_name]
             n = len(sub)

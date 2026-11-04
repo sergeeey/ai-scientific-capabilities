@@ -18,6 +18,7 @@ from aisci import provenance
 from aisci.agents import MECHANISMS
 from aisci.checker import score
 from aisci.environment import Oracle
+from aisci.exp_config import EXP01_LAWS
 from aisci.hidden_laws import LAWS
 from aisci.rules import abstain_select, margin_select
 
@@ -204,7 +205,7 @@ def test_run(cal):
     rows = []
     m_star = cal["margin_star"]
     t_star = cal["tau_star"]
-    for law_name in LAWS:
+    for law_name in EXP01_LAWS:
         for seed in TEST_SEEDS:
             out, data = _rows_for(law_name, seed)
             rows += out

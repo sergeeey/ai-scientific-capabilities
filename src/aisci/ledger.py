@@ -13,7 +13,7 @@ import json
 import statistics
 
 from aisci.agents import MECHANISMS
-from aisci.hidden_laws import LAWS
+from aisci.exp_config import EXP01_LAWS
 
 
 def measurement_entries(rows, run_id, runs_file, runs_sha256, budget):
@@ -46,7 +46,7 @@ def measurement_entries(rows, run_id, runs_file, runs_sha256, budget):
 def derived_entries(meas, run_id):
     out = []
     k = 0
-    for law in LAWS:
+    for law in EXP01_LAWS:
         for mech in MECHANISMS:
             sub = [m for m in meas if m["law"] == law and m["mechanism"] == mech]
             if not sub:

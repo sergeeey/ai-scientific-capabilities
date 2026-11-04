@@ -17,6 +17,7 @@ import pytest
 from aisci import checker, ledger, provenance
 from aisci.agents import MECHANISMS
 from aisci.environment import BudgetExceeded, Oracle
+from aisci.exp_config import EXP01_LAWS
 from aisci.hidden_laws import LAWS
 from aisci.run import config_for, main, run_all, runs_csv_text
 
@@ -46,7 +47,7 @@ def test_oracle_budget_is_a_hard_cap():
 
 def test_every_mechanism_spends_exactly_the_shared_budget():
     rows = run_all(seeds=2, budget=20, sigma=0.1)
-    assert len(rows) == len(LAWS) * len(MECHANISMS) * 2
+    assert len(rows) == len(EXP01_LAWS) * len(MECHANISMS) * 2
     assert {r["n_calls"] for r in rows} == {20}
 
 
@@ -170,7 +171,7 @@ def _ledger():
 
 def test_ledger_measurements_cite_the_current_runs_file():
     entries = [e for e in _ledger() if e["type"] == "measurement"]
-    assert len(entries) == len(LAWS) * len(MECHANISMS) * 30
+    assert len(entries) == len(EXP01_LAWS) * len(MECHANISMS) * 30
     shas = {e["source_sha256"] for e in entries}
     assert shas == {_sha(os.path.join(RESULTS, "runs.csv"))}
 
