@@ -27,6 +27,13 @@ def abstain_select(X, y, tau, lib=BASE_LIB, k=2):
     return best
 
 
+def _max_gap(a, b):
+    """Largest absolute difference between two predictions (scalars or equal-length sequences)."""
+    if isinstance(a, (list, tuple)):
+        return max(abs(p - q) for p, q in zip(a, b))
+    return abs(a - b)
+
+
 def identifiability_certificate(predictors, admissible_inputs, sigma, k=3.0):
     """Can the rival predictors be told apart by ANY admissible experiment?
 
@@ -41,7 +48,7 @@ def identifiability_certificate(predictors, admissible_inputs, sigma, k=3.0):
     worst = None
     for i in range(len(predictors)):
         for j in range(i + 1, len(predictors)):
-            gap = max(abs(predictors[i](u) - predictors[j](u)) for u in admissible_inputs)
+            gap = max(_max_gap(predictors[i](u), predictors[j](u)) for u in admissible_inputs)
             worst = gap if worst is None or gap < worst else worst
     threshold = k * sigma
     verdict = "IDENTIFIABLE" if worst > threshold else "NON_IDENTIFIABLE"

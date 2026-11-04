@@ -1,0 +1,11 @@
+{"id": "E4-A-01", "path": "calibration.json", "sha256": "878d0b515c5c8627acd289dd4cfaff31e575b2dd34d82a0cabd63f91177c7bae", "type": "artifact"}
+{"id": "E4-A-02", "path": "summary.json", "sha256": "968cb5a3e035095a95953d1489aa95c3c72831d0285affd9e73471e3f63e392a", "type": "artifact"}
+{"id": "E4-D-001", "metric": "A1_delay_correct_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 0.0}
+{"id": "E4-D-002", "metric": "A1_delay_abstain_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 1.0}
+{"id": "E4-D-003", "metric": "A1_control_false_delay_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 0.0}
+{"id": "E4-D-004", "metric": "A2_delay_correct_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 0.0}
+{"id": "E4-D-005", "metric": "A2_delay_abstain_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 1.0}
+{"id": "E4-D-006", "metric": "A2_control_false_delay_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 0.0}
+{"id": "E4-D-007", "metric": "A3_delay_correct_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 0.9625}
+{"id": "E4-D-008", "metric": "A3_delay_abstain_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 0.0375}
+{"id": "E4-D-009", "metric": "A3_control_false_delay_rate", "source_artifact": "E4-A-02", "type": "derived", "value": 0.0}

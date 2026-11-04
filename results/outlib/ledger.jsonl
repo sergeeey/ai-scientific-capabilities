@@ -1,0 +1,4 @@
+{"id": "OL-A-01", "path": "summary.json", "sha256": "458977c3f8ea70e106622da432dbd35ad37191a1165bcbd474b1251fe1357616", "type": "artifact"}
+{"id": "OL-D-001", "metric": "M1_abstain_rate", "source_artifact": "OL-A-01", "type": "derived", "value": 1.0}
+{"id": "OL-D-002", "metric": "M3_named_any_term_rate", "source_artifact": "OL-A-01", "type": "derived", "value": 1.0}
+{"id": "OL-D-003", "metric": "M3_matches_true_term_rate", "source_artifact": "OL-A-01", "type": "derived", "value": 0.0}

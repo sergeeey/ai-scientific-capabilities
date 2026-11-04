@@ -21,7 +21,7 @@ import os
 from dataclasses import dataclass
 
 # Commitment to the truth vault file (public; reveals nothing about the laws).
-TRUTH_SHA256 = "acc272f14e1896b3dad4a54997473380a262f16738ae9545b54d02f69d723b12"
+TRUTH_SHA256 = "a81c89c8a50be92fcc7c9c8046db3b5ebd95b6caad19748655e774ffcfb83034"
 
 _REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 _DEFAULT_VAULT = os.path.join(os.path.dirname(_REPO_DIR), "aisci-truth-vault", "laws.json")
@@ -108,7 +108,7 @@ def _vault_path():
     return os.environ.get("AISCI_TRUTH_VAULT", _DEFAULT_VAULT)
 
 
-def _load_laws():
+def _read_vault():
     path = _vault_path()
     if not os.path.exists(path):
         raise FileNotFoundError(
@@ -119,7 +119,16 @@ def _load_laws():
     digest = hashlib.sha256(raw).hexdigest()
     if digest != TRUTH_SHA256:
         raise ValueError("truth vault SHA-256 mismatch: refusing to load")
-    data = json.loads(raw.decode("utf-8"))
+    return json.loads(raw.decode("utf-8"))
+
+
+def load_dde_worlds():
+    """Hidden delay worlds for exp04 (runner-side only). Same vault, same hash check."""
+    return _read_vault()["dde_worlds"]
+
+
+def _load_laws():
+    data = _read_vault()
     laws = {}
     for name, spec in data["laws"].items():
         laws[name] = Law(

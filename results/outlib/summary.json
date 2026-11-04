@@ -1,0 +1,23 @@
+{
+  "M1_abstain_rate": 1.0,
+  "M3_matches_true_term_rate": 0.0,
+  "M3_named_any_term_rate": 1.0,
+  "budget": 30,
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytest": "8.4.2",
+    "python": "3.13.2",
+    "third_party_dependencies": []
+  },
+  "frozen_tau_from_exp02": 0.15,
+  "git": {
+    "branch_dirty_in_src_tests_docs": true,
+    "commit": "f76150496d1f6ee8c81167ca54f095e8874e7a0d"
+  },
+  "law": "out_of_library",
+  "seeds": [
+    0,
+    29
+  ]
+}

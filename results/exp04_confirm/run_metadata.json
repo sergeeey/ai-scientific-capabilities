@@ -1,0 +1,58 @@
+{
+  "artifacts": {
+    "calibration.json": "878d0b515c5c8627acd289dd4cfaff31e575b2dd34d82a0cabd63f91177c7bae",
+    "summary.json": "968cb5a3e035095a95953d1489aa95c3c72831d0285affd9e73471e3f63e392a"
+  },
+  "code_sha256": {
+    "src/aisci/agents.py": "3344423e8b5073688848b00698ed0ef84139953b3ab375ae55014bb6635a6d5d",
+    "src/aisci/baseline.py": "da3ea66c81cf0a4e50e8997fcdedbe42239177c64c8bdb8c933cb16299b0f218",
+    "src/aisci/checker.py": "31e565b0707541e502133b0fa13843e68d443dcd588fc27354230e351dbad969",
+    "src/aisci/dde.py": "f4723686880d309dc21a4e7bc0b292d562ac816349eb72081ca24869ae7f8bde",
+    "src/aisci/environment.py": "3d83d42bf1567dbb99615e6c511a342e23eb26aa6f81f6003fad8b7d5f02dab5",
+    "src/aisci/exp02.py": "221eafca5e6d98a2304362242dc6b5b8cc8e4266a08eabcb534ca3a7028aa986",
+    "src/aisci/exp03.py": "89352b7bed7c2732b409a5e49efe04d162e255f5ca80f994f4f6f039ee75d3a0",
+    "src/aisci/exp04.py": "d0c87e9a19930bee6d93629e54001af126a88e00fc37212eec3518678814f10e",
+    "src/aisci/exp_config.py": "e4b2b18b0822bd69f394037e0739399f366ed2e3e2000cb1f490b4efebc10c8d",
+    "src/aisci/features.py": "25d91e260c85b949672dd73204770025e0bd918b05ba14055d6ea8f02119585d",
+    "src/aisci/fit.py": "5e03aa80ab350c8e23f18e447d758f9a5cf28fdb6d21a9965a1bcb35333433f2",
+    "src/aisci/hidden_laws.py": "87724d5685afc0de27d30e7651e28dc9b83683220cdcc61778c6303bf3a71e87",
+    "src/aisci/ledger.py": "e500eea9c3cf5f311f72f6fb005d958e5dc406569c46205665c8875be6241368",
+    "src/aisci/pinned.py": "d06b1bead3a3b837bff07c471b8994a110b4adf8e23d1b82db059fb8556c3488",
+    "src/aisci/provenance.py": "6c853d212cf8b16d72e78dac2d897b48310facc98baeadea4da0f30a3f9bdb8e",
+    "src/aisci/rules.py": "a9e9d034264177cb4860b9db8be7bbf56afd8307248451445269acecc95ce142",
+    "src/aisci/run.py": "5fd880a0aed7e255770808a063cb581295798732c155644e3231a135bff7e75d"
+  },
+  "config": {
+    "budget": 30,
+    "calibration_seeds": [
+      1000,
+      1004
+    ],
+    "conditions": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "n_holdout": 10,
+    "sigma": 0.01,
+    "test_seeds": [
+      10,
+      19
+    ]
+  },
+  "environment": {
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pytest": "8.4.2",
+    "python": "3.13.2",
+    "third_party_dependencies": []
+  },
+  "git": {
+    "branch_dirty_in_src_tests_docs": true,
+    "commit": "f76150496d1f6ee8c81167ca54f095e8874e7a0d"
+  },
+  "private_artifacts_outside_repo": {
+    "calibration_runs.csv": "4838bc0ac40e0d2b0477c372431f26e447384916679a4d6902e8561bc07ecacf",
+    "test_runs.csv": "3f7b59f33f21043ec9534f958a0828c5c4c79066c00afc70acc2c70aefa27b68"
+  }
+}

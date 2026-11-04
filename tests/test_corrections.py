@@ -54,3 +54,20 @@ def test_measured_null_baseline_is_not_the_formula_for_m1():
     rel = abs(m1["median"] - m1["formula_p26_for_comparison"]) / m1["median"]
     assert rel > 0.20
     assert m1["n_seeds"] == 200
+
+
+def test_exp_primitive_is_in_no_library():
+    from aisci.features import BASE_LIB, EXPANSION_LIB, FULL_LIB
+
+    assert not any("exp" in name for name in BASE_LIB)
+    assert not any("exp" in name for name in EXPANSION_LIB)
+    assert not any("exp" in name for name in FULL_LIB)
+
+
+def test_out_of_library_law_is_loaded_and_has_no_library_term():
+    from aisci.features import FULL_LIB
+    from aisci.hidden_laws import LAWS
+
+    law = LAWS["out_of_library"]
+    assert law.fn((1.0, 0.0, 0.0)) == 1.2  # 1.2 * 1 * exp(0)
+    assert all(t not in FULL_LIB for t in law.terms)

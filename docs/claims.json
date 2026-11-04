@@ -7,8 +7,20 @@
       "statement": "On needs_expansion, M1 and M2 never recover the law (0/30 runs).",
       "status": "supported",
       "checks": [
-        {"id": "D-0020", "law": "needs_expansion", "mechanism": "M1_fixed_search", "metric": "recovered_count", "value": 0},
-        {"id": "D-0026", "law": "needs_expansion", "mechanism": "M2_active_fixed_space", "metric": "recovered_count", "value": 0}
+        {
+          "id": "D-0020",
+          "law": "needs_expansion",
+          "mechanism": "M1_fixed_search",
+          "metric": "recovered_count",
+          "value": 0
+        },
+        {
+          "id": "D-0026",
+          "law": "needs_expansion",
+          "mechanism": "M2_active_fixed_space",
+          "metric": "recovered_count",
+          "value": 0
+        }
       ],
       "caveat": "Expected by construction: tanh is not in the base space H0 (control test in tests/test_core.py)."
     },
@@ -18,8 +30,20 @@
       "statement": "On needs_expansion, M3 expands the library in 30/30 runs and selects the exact true terms in 30/30 runs.",
       "status": "supported",
       "checks": [
-        {"id": "D-0033", "law": "needs_expansion", "mechanism": "M3_expand", "metric": "expansion_count", "value": 30},
-        {"id": "D-0031", "law": "needs_expansion", "mechanism": "M3_expand", "metric": "exact_terms_count", "value": 30}
+        {
+          "id": "D-0033",
+          "law": "needs_expansion",
+          "mechanism": "M3_expand",
+          "metric": "expansion_count",
+          "value": 30
+        },
+        {
+          "id": "D-0031",
+          "law": "needs_expansion",
+          "mechanism": "M3_expand",
+          "metric": "exact_terms_count",
+          "value": 30
+        }
       ],
       "caveat": "The expansion library EXPANSION_LIB was written to contain the true operator. This shows the mechanism works when the operator is pre-specified. It does not show open-ended discovery."
     },
@@ -29,8 +53,20 @@
       "statement": "On in_space, the recovered-count difference between M2 and M1 is 2 of 30 runs (below the pre-registered MCID of 0.2, i.e. 6 runs).",
       "status": "supported",
       "checks": [
-        {"id": "D-0008", "law": "in_space", "mechanism": "M2_active_fixed_space", "metric": "recovered_count", "value": 29},
-        {"id": "D-0002", "law": "in_space", "mechanism": "M1_fixed_search", "metric": "recovered_count", "value": 27}
+        {
+          "id": "D-0008",
+          "law": "in_space",
+          "mechanism": "M2_active_fixed_space",
+          "metric": "recovered_count",
+          "value": 29
+        },
+        {
+          "id": "D-0002",
+          "law": "in_space",
+          "mechanism": "M1_fixed_search",
+          "metric": "recovered_count",
+          "value": 27
+        }
       ],
       "caveat": "Single 30-seed comparison. Not a power calculation. Says only that the observed difference is below the pre-registered MCID."
     },
@@ -40,9 +76,27 @@
       "statement": "On the null law, false terms are selected in at most 5% of runs for each mechanism.",
       "status": "falsified",
       "checks": [
-        {"id": "D-0040", "law": "null", "mechanism": "M1_fixed_search", "metric": "false_term_runs", "value": 17},
-        {"id": "D-0046", "law": "null", "mechanism": "M2_active_fixed_space", "metric": "false_term_runs", "value": 18},
-        {"id": "D-0052", "law": "null", "mechanism": "M3_expand", "metric": "false_term_runs", "value": 19}
+        {
+          "id": "D-0040",
+          "law": "null",
+          "mechanism": "M1_fixed_search",
+          "metric": "false_term_runs",
+          "value": 17
+        },
+        {
+          "id": "D-0046",
+          "law": "null",
+          "mechanism": "M2_active_fixed_space",
+          "metric": "false_term_runs",
+          "value": 18
+        },
+        {
+          "id": "D-0052",
+          "law": "null",
+          "mechanism": "M3_expand",
+          "metric": "false_term_runs",
+          "value": 19
+        }
       ],
       "caveat": "Counts are out of 30 runs per mechanism (57-63%). BIC selection over subsets does not control false discoveries at n=30."
     },
@@ -52,7 +106,11 @@
       "statement": "The exp01 runs.csv is reproduced byte-for-byte by the current code, and the ledger's measurement entries cite that file's SHA-256.",
       "status": "supported",
       "checks": [
-        {"id": "M-0001", "field": "source_sha256", "value": "8731f8bc8232d099dc5bf57b73bf7976b57236373c90042e25c08fe347a12185"}
+        {
+          "id": "M-0001",
+          "field": "source_sha256",
+          "value": "8731f8bc8232d099dc5bf57b73bf7976b57236373c90042e25c08fe347a12185"
+        }
       ],
       "caveat": "Verified by tests/test_foundation.py::test_reproduces_committed_exp01 and by hashing the file on disk."
     },
@@ -78,7 +136,12 @@
       "statement": "Plain BIC selection (M2) does not control false discoveries on the null law: null false-term rate on test seeds is above 5%.",
       "status": "supported",
       "checks": [
-        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-003", "metric": "B_null_fdr_M2_raw", "value": 0.565}
+        {
+          "ledger": "results/exp02/ledger.jsonl",
+          "id": "E2-D-003",
+          "metric": "B_null_fdr_M2_raw",
+          "value": 0.565
+        }
       ],
       "caveat": "Test seeds 0-199, one law, sigma 0.1, budget 30."
     },
@@ -88,8 +151,18 @@
       "statement": "The calibrated margin rule (margin 10, the grid edge) brings the null false-term rate under 5% on test seeds, while in_space exact recovery stays at 1.00.",
       "status": "supported",
       "checks": [
-        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-004", "metric": "C_null_fdr", "value": 0.015},
-        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-005", "metric": "C_in_space_exact", "value": 1.0}
+        {
+          "ledger": "results/exp02/ledger.jsonl",
+          "id": "E2-D-004",
+          "metric": "C_null_fdr",
+          "value": 0.015
+        },
+        {
+          "ledger": "results/exp02/ledger.jsonl",
+          "id": "E2-D-005",
+          "metric": "C_in_space_exact",
+          "value": 1.0
+        }
       ],
       "caveat": "Margin 10 is the largest grid value; the true threshold may be higher. Not tested beyond the grid."
     },
@@ -99,7 +172,12 @@
       "statement": "Exact recovery on in_space is at ceiling for both M1 and M2, so the active-vs-fixed comparison cannot be tested with exact_terms.",
       "status": "supported",
       "checks": [
-        {"ledger": "results/exp02/ledger.jsonl", "id": "E2-D-007", "metric": "A_mean_diff", "value": 0.0}
+        {
+          "ledger": "results/exp02/ledger.jsonl",
+          "id": "E2-D-007",
+          "metric": "A_mean_diff",
+          "value": 0.0
+        }
       ],
       "caveat": "A zero mean difference at ceiling is not evidence that active design has no effect."
     },
@@ -109,7 +187,12 @@
       "statement": "Doubling the budget reduces median RMSE of M1 on in_space by about 28% (ratio 0.721), so the RMSE endpoint can see effects of this size.",
       "status": "supported",
       "checks": [
-        {"ledger": "results/exp03/ledger.jsonl", "id": "E3-D-001", "metric": "positive_control_ratio", "value": 0.7213197883740978}
+        {
+          "ledger": "results/exp03/ledger.jsonl",
+          "id": "E3-D-001",
+          "metric": "positive_control_ratio",
+          "value": 0.7213197883740978
+        }
       ],
       "caveat": "Calibration seeds 1000-1199 only."
     },
@@ -119,7 +202,12 @@
       "statement": "On in_space, the median RMSE ratio M2/M1 is 0.767 with 95% CI [0.698, 0.843], which meets the frozen supported rule.",
       "status": "supported",
       "checks": [
-        {"ledger": "results/exp03/ledger.jsonl", "id": "E3-D-003", "metric": "H_A_in_space_median_ratio", "value": 0.7666639670486224}
+        {
+          "ledger": "results/exp03/ledger.jsonl",
+          "id": "E3-D-003",
+          "metric": "H_A_in_space_median_ratio",
+          "value": 0.7666639670486224
+        }
       ],
       "caveat": "The same metric gives ratio 0.917 on the null law (C-13). The in_space result does NOT show that active design finds laws better."
     },
@@ -129,7 +217,12 @@
       "statement": "On the null law the RMSE ratio M2/M1 is 0.917 (CI reaches 1.00): the RMSE endpoint rewards M2 even when there is no law.",
       "status": "supported",
       "checks": [
-        {"ledger": "results/exp03/ledger.jsonl", "id": "E3-D-004", "metric": "negative_control_null_median_ratio", "value": 0.917132877877935}
+        {
+          "ledger": "results/exp03/ledger.jsonl",
+          "id": "E3-D-004",
+          "metric": "negative_control_null_median_ratio",
+          "value": 0.917132877877935
+        }
       ],
       "caveat": "Finite-sample effect; motivates the measured null baseline (C-14)."
     },
@@ -139,10 +232,113 @@
       "statement": "The measured null median RMSE of M1 (0.0416) differs by more than 20% from the P26 formula 1.63*sigma/sqrt(N) (0.0298), so the formula is not used as the baseline.",
       "status": "supported",
       "checks": [
-        {"ledger": "results/baseline/ledger.jsonl", "id": "BL-D-001", "metric": "M1_null_median", "value": 0.04159398022899688},
-        {"ledger": "results/baseline/ledger.jsonl", "id": "BL-D-002", "metric": "M1_formula_p26_for_comparison", "value": 0.029759592291114027}
+        {
+          "ledger": "results/baseline/ledger.jsonl",
+          "id": "BL-D-001",
+          "metric": "M1_null_median",
+          "value": 0.04159398022899688
+        },
+        {
+          "ledger": "results/baseline/ledger.jsonl",
+          "id": "BL-D-002",
+          "metric": "M1_formula_p26_for_comparison",
+          "value": 0.029759592291114027
+        }
       ],
       "caveat": "Measured on calibration seeds 1000-1199 only. The formula matches M2 and M3 medians closely, so it is not wrong for them, only not general."
+    },
+    {
+      "id": "C-15",
+      "prediction": "exp04 H-D",
+      "statement": "Without expansion (A1 and A2) the agent abstains on every delay world (abstain rate 1.0 on test seeds 0-9).",
+      "status": "supported",
+      "checks": [
+        {
+          "ledger": "results/exp04/ledger.jsonl",
+          "id": "E4-D-002",
+          "metric": "A1_delay_abstain_rate",
+          "value": 1.0
+        },
+        {
+          "ledger": "results/exp04/ledger.jsonl",
+          "id": "E4-D-005",
+          "metric": "A2_delay_abstain_rate",
+          "value": 1.0
+        }
+      ],
+      "caveat": "Holds by construction: the base space (memoryless f(x)) cannot represent a delay. It shows the abstention rule works, not that the agent discovers anything."
+    },
+    {
+      "id": "C-16",
+      "prediction": "exp04 H-A3",
+      "statement": "With expansion (A3) the agent names the true delay on 92.5% of delay runs (test seeds 0-9), with median holdout RMSE about 0.0024.",
+      "status": "supported",
+      "checks": [
+        {
+          "ledger": "results/exp04/ledger.jsonl",
+          "id": "E4-D-007",
+          "metric": "A3_delay_correct_rate",
+          "value": 0.925
+        }
+      ],
+      "caveat": "The delay family (tau in {0.4, 0.6, 0.8, 1.0}) contains every true tau by construction, like tanh in exp01. This is search inside a pre-specified family, not discovery of a missing representation. 10 seeds, 8 worlds: descriptive."
+    },
+    {
+      "id": "C-17",
+      "prediction": "exp04 H-N",
+      "statement": "A3 names no false delay on the control worlds (memoryless, weak, zero): false-delay rate 0.0.",
+      "status": "supported",
+      "checks": [
+        {
+          "ledger": "results/exp04/ledger.jsonl",
+          "id": "E4-D-009",
+          "metric": "A3_control_false_delay_rate",
+          "value": 0.0
+        }
+      ],
+      "caveat": "The weak world (b = 0.02) is classified as memoryless or NON_IDENTIFIABLE, which is the intended outcome, not a failure to find a delay."
+    },
+    {
+      "id": "C-18",
+      "prediction": "exp04 H-A3 (confirmation)",
+      "statement": "On fresh seeds 10-19, never used in development, A3 names the true delay on 96.3% of delay runs, and the same verdicts hold.",
+      "status": "supported",
+      "checks": [
+        {
+          "ledger": "results/exp04_confirm/ledger.jsonl",
+          "id": "E4-D-007",
+          "metric": "A3_delay_correct_rate",
+          "value": 0.9625
+        }
+      ],
+      "caveat": "Same caveat as C-16: the delay family contains the true tau by construction. Confirmation only shows the rule is stable across seeds, not that a missing representation was found."
+    },
+    {
+      "id": "C-19",
+      "prediction": "out_of_library D",
+      "statement": "On the out-of-library law (primitive exp), M1 with the frozen exp02 threshold abstains on 100% of seeds 0-29, and the M3 expansion never names the true term. M3 still names some model on every seed.",
+      "status": "supported",
+      "checks": [
+        {
+          "ledger": "results/outlib/ledger.jsonl",
+          "id": "OL-D-001",
+          "metric": "M1_abstain_rate",
+          "value": 1.0
+        },
+        {
+          "ledger": "results/outlib/ledger.jsonl",
+          "id": "OL-D-002",
+          "metric": "M3_named_any_term_rate",
+          "value": 1.0
+        },
+        {
+          "ledger": "results/outlib/ledger.jsonl",
+          "id": "OL-D-003",
+          "metric": "M3_matches_true_term_rate",
+          "value": 0.0
+        }
+      ],
+      "caveat": "The abstention rule detects insufficiency on the base path, but the M3 expansion does not abstain: it names a wrong model every time. A constructive expansion is not claimed. Seeds 0-29, descriptive."
     }
   ]
 }

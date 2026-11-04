@@ -1,0 +1,13 @@
+{
+  "gate": {
+    "G1_negative_c03_tau06_vs_08": "NON_IDENTIFIABLE",
+    "G1_positive_w01_tau04_vs_08": "IDENTIFIABLE",
+    "G2_A3_correct_on_delay": 0.95,
+    "G3_A3_false_delay_on_controls": 0.0
+  },
+  "gate_passed": true,
+  "seeds": [
+    1000,
+    1004
+  ]
+}

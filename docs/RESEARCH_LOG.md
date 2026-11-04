@@ -162,6 +162,51 @@ Limits, stated plainly:
 - Test fixtures in `tests/test_exp02.py` no longer use the `needs_expansion` structure; the abstention test is now structure-agnostic (exp outside BASE_LIB vs an in-space law).
 - The first sec-auditor run stopped at its turn limit without a report; a narrower second run delivered the report above. Recorded here so the gap is visible.
 
+## 2026-11-04 — steps 1–4 of the approved plan (no API calls)
+Done, in order (each verified before the next):
+1. **exp01 law set fixed** (`exp_config.EXP01_LAWS`). `LAWS` may grow without changing exp01. exp01 `runs.csv`, `summary.md`, `evidence_ledger.jsonl` byte-identical to the baseline.
+2. **Ledgers and pinned thresholds for exp02/exp03.** Thresholds are read from the calibration file, whose SHA-256 is pinned in code; a fresh calibration must reproduce them. Artifact + derived entries in `results/exp0{2,3}/ledger.jsonl`. Claims C-08..C-14 reference them; reproduced hashes unchanged.
+3. **Identifiability certificate** (`rules.identifiability_certificate`): pairwise max gap over admissible inputs vs `k*sigma`. Works for scalars and trajectories. Gate check: distinct rivals → IDENTIFIABLE; identical → NON_IDENTIFIABLE.
+4. **Measured null baseline** (`baseline.py`, seeds 1000–1199, budget 30). M1 median **0.0416** vs P26 formula **0.0298**, a 40% gap. The formula fits M2 (0.0308) and M3 (0.0299) but not M1, so it is not used as a general correction. Claim C-14.
+5. **Out-of-library primitive** (vault v2): `1.2·x1·exp(x2)`. `exp` is in no library. Expected outcome: abstain or detect insufficiency; no constructive expansion is claimed. No run yet.
+6. **exp04 delay testbed** (`dde.py`, `exp04.py`, vault v3 with 8 delay worlds and 4 controls). History-controlled oracle: the agent picks 6 knots on [-1, 0] and gets 61 noisy samples of x on [0, 3]. Conditions A1–A3 at budget 30. Pre-registration `docs/PREREG_exp04.md` written before calibration.
+
+Measured along the way (zero noise unless stated):
+- Central-difference derivative at sample step 0.2 is biased by a sharp transient near t≈0.4 (`tau=0.4` coefficients −0.23, 0.31 vs truth −0.5, 0.6). Step 0.1 halves the error; step 0.05 gives ~2% (−0.49, 0.59). Chosen: step 0.05.
+- Derivative noise at step 0.05 is σ·√2/(2h) ≈ 0.14. The fixed threshold 0.10 became invalid, so the threshold is now noise-derived: `σ_d·sqrt(1 + 3·sqrt(2/n))`.
+
+Results (`docs/PREREG_exp04.md` gate: positive control IDENTIFIABLE, negative control NON_IDENTIFIABLE, G2 ≥ 0.5, G3 ≤ 0.10 — all passed on calibration seeds 1000–1004):
+
+| run | seeds | A3 correct on delay worlds | A1 / A2 abstain on delay | A3 false delay on controls |
+|---|---|---|---|---|
+| development (`results/exp04`) | 0–9 | 0.925 | 1.0 / 1.0 | 0.0 |
+| **confirmation (`results/exp04_confirm`)** | **10–19** | **0.9625** | **1.0 / 1.0** | **0.0** |
+
+Holdout median RMSE on correct delays: 0.0024 (dev), 0.0026 (confirm).
+
+**Deviations and disclosure (read before citing):**
+- **Development touched test seeds.** The step size and the noise-derived threshold were chosen while debugging world `w01` at seed 7, which lies inside the test seeds 0–9. The dev run `results/exp04` is therefore development evidence. The confirmation run on fresh seeds 10–19 is the one to cite, and it reproduces the verdicts.
+- **Per-run files are not committed.** A correct run names the true delay, so per-run CSVs reveal the hidden worlds. They are written to `../aisci-private-results/exp04*` outside the repo. The repo holds aggregates, the gate, and hashes.
+- **The delay family contains every true tau by construction** (tau in {0.4, 0.6, 0.8, 1.0}), the same situation as `tanh` in exp01. H-A3 is search inside a pre-specified family, not discovery of a missing representation.
+- **H-D holds by construction**: a memoryless base cannot represent a delay. It shows the abstention rule works.
+- **The vault worlds were written by the author before the pre-registration was frozen.** The protocol does not use their values, but the author knows them. Not blind in the strict sense.
+- Ten seeds, eight worlds: descriptive. No power claim.
+
+Not done: LLM conditions (L1–L2), any API call, out-of-library run (`exp` law), controlled cross-platform reproduction.
+
+### Out-of-library run (step 3) — `results/outlib`
+Frozen exp02 threshold (tau = 0.15), seeds 0–29, budget 30, law `1.2·x1·exp(x2)`:
+- M1 (base path) abstains on **1.0** of runs.
+- M3 (expansion) names some model on **1.0** of runs and the true term on **0.0**.
+
+Reading: the abstention rule detects that the base space is insufficient, which is hypothesis D on the base path. The expansion path does not abstain: it always names a wrong model. A constructive expansion is not claimed. Claim C-19.
+
+### Reviews and fixes (2026-11-04)
+- **Logic review of exp04** (reviewer): no defect in the integrator, the lag indexing, the lagged regressor, the certificate gate, or agent-side isolation. Fixed two items: the delay label is compared numerically (`math.isclose`), and stale docstrings (16 samples at step 0.2) now say 61 at step 0.05.
+- **Open finding, NOT patched (prereg is frozen):** the history RNG and the oracle noise RNG are seeded identically for condition A1 (`seed*1000 + 0 + widx`). The two streams are correlated. The effect is probably small. Recorded as exploratory; the reported results stand as they are.
+- **Security review of exp04** (sec-auditor): per-run files are outside the repo and only aggregates are committed (OK). Fixed: (1) the PREREG stated the control parameters in plain text, so they were removed (the vault keeps them; this is a documentation-only edit after freeze, the protocol is unchanged); (2) `--out` must now be under `results/`, which closes the empty-basename and `..` cases. Parent folder checked: not a git repository.
+- **Residual leak, accepted:** the public gate code and `calibration.json` name the rival pairs used in the controls (e.g. 0.6 vs 0.8 on the weak world). The true parameter values are not published, but the code is public, so the choice of rivals is visible. Not hidden further, to keep the code readable.
+
 ## Open decisions for the user
 - The project's research question (LLM vs algorithm) needs an LLM. Approval is needed before any paid API is used, and the task says not to use one without approval. Until then the LLM part is NOT-VERIFIED.
 - Whether to keep the folder as a standalone repo or move it into a larger workspace.

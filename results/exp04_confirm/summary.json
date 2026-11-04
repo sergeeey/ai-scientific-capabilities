@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "A1": {
+      "control_false_delay_rate": 0.0,
+      "delay_abstain_rate": 1.0,
+      "delay_correct_median_holdout_rmse": null,
+      "delay_correct_rate": 0.0,
+      "n_runs": 120
+    },
+    "A2": {
+      "control_false_delay_rate": 0.0,
+      "delay_abstain_rate": 1.0,
+      "delay_correct_median_holdout_rmse": null,
+      "delay_correct_rate": 0.0,
+      "n_runs": 120
+    },
+    "A3": {
+      "control_false_delay_rate": 0.0,
+      "delay_abstain_rate": 0.0375,
+      "delay_correct_median_holdout_rmse": 0.002602,
+      "delay_correct_rate": 0.9625,
+      "n_runs": 120
+    }
+  },
+  "verdict": {
+    "H-A3": "supported",
+    "H-D": "supported",
+    "H-N": "supported"
+  }
+}
